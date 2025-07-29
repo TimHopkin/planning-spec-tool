@@ -1,103 +1,223 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { ApplicationCard } from '@/components/ApplicationCard';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
+import { FileText, Settings, Database, Code, Search, BookOpen, ArrowRight } from 'lucide-react';
 
-export default function Home() {
+async function getApplications() {
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'}/api/applications`, {
+      cache: 'no-store'
+    });
+    const data = await response.json();
+    return data.success ? data.data.slice(0, 6) : [];
+  } catch (error) {
+    console.error('Failed to fetch applications:', error);
+    return [];
+  }
+}
+
+async function getModules() {
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'}/api/modules`, {
+      cache: 'no-store'
+    });
+    const data = await response.json();
+    return data.success ? data.data.slice(0, 3) : [];
+  } catch (error) {
+    console.error('Failed to fetch modules:', error);
+    return [];
+  }
+}
+
+export default async function Home() {
+  const applications = await getApplications();
+  const modules = await getModules();
+
+  const features = [
+    {
+      title: 'Application Types',
+      description: 'Explore 18+ planning application types with detailed specifications',
+      icon: FileText,
+      href: '/applications',
+      color: 'bg-blue-500'
+    },
+    {
+      title: 'Planning Modules',
+      description: 'Browse modular components used across different application types',
+      icon: Settings,
+      href: '/modules',
+      color: 'bg-green-500'
+    },
+    {
+      title: 'Field Reference',
+      description: 'Comprehensive field definitions with validation rules and data types',
+      icon: Database,
+      href: '/fields',
+      color: 'bg-purple-500'
+    },
+    {
+      title: 'JSON Examples',
+      description: 'Real-world JSON examples for every application type and scenario',
+      icon: Code,
+      href: '/examples',
+      color: 'bg-orange-500'
+    },
+    {
+      title: 'Search & Discovery',
+      description: 'Powerful search across all specifications, fields, and examples',
+      icon: Search,
+      href: '/search',
+      color: 'bg-red-500'
+    },
+    {
+      title: 'Documentation',
+      description: 'Complete documentation and integration guides',
+      icon: BookOpen,
+      href: '/docs',
+      color: 'bg-indigo-500'
+    }
+  ];
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Hero Section */}
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          Planning Application Data Specification Tool
+        </h1>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          Interactive tool for exploring the UK government's standardized planning application data specifications. 
+          Navigate 18+ application types, hundreds of fields, and comprehensive examples.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/applications"
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <FileText className="w-5 h-5 mr-2" />
+            Explore Applications
+          </Link>
+          <Link
+            href="/examples"
+            className="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors"
           >
-            Read our docs
-          </a>
+            <Code className="w-5 h-5 mr-2" />
+            View Examples
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Features Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {features.map((feature) => {
+          const Icon = feature.icon;
+          return (
+            <Link key={feature.href} href={feature.href}>
+              <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer">
+                <CardHeader>
+                  <div className="flex items-center space-x-3">
+                    <div className={`w-10 h-10 ${feature.color} rounded-lg flex items-center justify-center`}>
+                      <Icon className="w-5 h-5 text-white" />
+                    </div>
+                    <CardTitle className="text-lg">{feature.title}</CardTitle>
+                  </div>
+                  <CardDescription>
+                    {feature.description}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
+          );
+        })}
+      </div>
+
+      {/* Recent Applications */}
+      <div className="mb-12">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold text-gray-900">Popular Application Types</h2>
+          <Link
+            href="/applications"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+          >
+            View all applications
+            <ArrowRight className="w-4 h-4 ml-1" />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {applications.map((app) => (
+            <ApplicationCard key={app.reference} application={app} />
+          ))}
+        </div>
+      </div>
+
+      {/* Quick Stats */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <Card>
+          <CardContent className="p-6 text-center">
+            <div className="text-2xl font-bold text-blue-600 mb-1">18+</div>
+            <div className="text-sm text-gray-600">Application Types</div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="p-6 text-center">
+            <div className="text-2xl font-bold text-green-600 mb-1">50+</div>
+            <div className="text-sm text-gray-600">Planning Modules</div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="p-6 text-center">
+            <div className="text-2xl font-bold text-purple-600 mb-1">200+</div>
+            <div className="text-sm text-gray-600">Field Definitions</div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="p-6 text-center">
+            <div className="text-2xl font-bold text-orange-600 mb-1">100+</div>
+            <div className="text-sm text-gray-600">JSON Examples</div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Getting Started */}
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Getting Started</CardTitle>
+          <CardDescription>
+            Learn how to use the planning application data specifications in your projects
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span className="text-lg font-bold text-blue-600">1</span>
+              </div>
+              <h3 className="font-medium mb-2">Explore Applications</h3>
+              <p className="text-sm text-gray-600">
+                Browse the different planning application types and understand their requirements
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span className="text-lg font-bold text-green-600">2</span>
+              </div>
+              <h3 className="font-medium mb-2">Review Examples</h3>
+              <p className="text-sm text-gray-600">
+                Study real JSON examples to understand the data structure and formatting
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <span className="text-lg font-bold text-purple-600">3</span>
+              </div>
+              <h3 className="font-medium mb-2">Implement</h3>
+              <p className="text-sm text-gray-600">
+                Use the schemas and validation rules to implement the specifications in your system
+              </p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }

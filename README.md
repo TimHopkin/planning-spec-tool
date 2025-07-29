@@ -1,36 +1,202 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Planning Application Data Specification Tool
+
+A comprehensive web-based tool for exploring and working with the UK Planning Application Data Specification. This tool provides an interactive interface for browsing application types, modules, fields, examples, and generating JSON schemas.
+
+## Features
+
+### 🏠 Interactive Application Explorer
+- Browse 18+ planning application types with detailed specifications
+- View required modules and sub-types for each application
+- Drill down into specific application requirements
+- Filter and search applications
+
+### 🔧 Planning Modules Browser
+- Explore 50+ reusable planning modules
+- View module dependencies and relationships
+- Filter by active/deprecated status
+- Search across all module definitions
+
+### 🏷️ Comprehensive Field Reference
+- Browse 200+ field definitions with data types
+- View validation rules and requirements
+- Filter by data type and required status
+- Search field descriptions and references
+
+### 📝 JSON Examples Gallery
+- Browse 100+ real-world JSON examples
+- Filter examples by application type
+- Copy and download example data
+- Use as templates for your implementations
+
+### 🛠️ Schema Tools
+- Generate JSON schemas for any application type
+- Validate your JSON data against schemas
+- Download schemas for use in your projects
+- Built-in data validation with error reporting
+
+### 🔍 Global Search
+- Search across all specifications content
+- Find applications, modules, fields, and examples
+- Advanced filtering and result categorization
+- Score-based relevance ranking
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repository-url]
+cd planning-spec-tool
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Building for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+planning-spec-tool/
+├── src/
+│   ├── app/                    # Next.js App Router pages
+│   │   ├── api/               # API routes
+│   │   ├── applications/      # Application explorer pages
+│   │   ├── modules/          # Module browser pages
+│   │   ├── fields/           # Field reference pages
+│   │   ├── examples/         # Examples gallery
+│   │   ├── schema/           # Schema tools
+│   │   ├── search/           # Search functionality
+│   │   └── docs/             # Documentation
+│   ├── components/           # Reusable UI components
+│   ├── lib/                 # Utility libraries
+│   │   ├── data-parser.ts   # CSV/Markdown parser
+│   │   └── schema-generator.ts # JSON schema generator
+│   └── types/               # TypeScript type definitions
+└── README.md
+```
 
-## Deploy on Vercel
+## Key Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Data Parser (`src/lib/data-parser.ts`)
+- Parses CSV files and Markdown specifications
+- Loads planning application types, modules, fields
+- Provides search and filtering capabilities
+- Singleton pattern for efficient data loading
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Schema Generator (`src/lib/schema-generator.ts`)
+- Generates JSON schemas from specification data
+- Validates JSON data against schemas
+- Creates example data from schemas
+- Supports complex validation rules
+
+### API Layer (`src/app/api/`)
+- RESTful API endpoints for all data
+- Consistent error handling and response format
+- Supports filtering and search parameters
+- Built on Next.js API routes
+
+## API Reference
+
+### Applications
+- `GET /api/applications` - List all application types
+- `GET /api/applications/[reference]` - Get specific application details
+
+### Modules
+- `GET /api/modules` - List all planning modules
+- `GET /api/modules/[reference]` - Get specific module details
+
+### Fields
+- `GET /api/fields` - List all field definitions
+
+### Examples
+- `GET /api/examples` - List all JSON examples
+- `GET /api/examples?applicationType=[ref]` - Filter by application type
+
+### Schema Tools
+- `GET /api/schema/[reference]` - Generate schema for application type
+- `POST /api/validate` - Validate JSON data against schema
+
+### Search
+- `GET /api/search?q=[query]` - Search across all content
+
+## Usage Examples
+
+### Generating a Schema
+```javascript
+const response = await fetch('/api/schema/full');
+const { data: schema } = await response.json();
+```
+
+### Validating Data
+```javascript
+const response = await fetch('/api/validate', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    data: yourJsonData,
+    applicationReference: 'full'
+  })
+});
+const validation = await response.json();
+```
+
+### Searching Content
+```javascript
+const response = await fetch('/api/search?q=householder');
+const { data: results } = await response.json();
+```
+
+## Data Sources
+
+This tool processes data from the official UK Planning Application Data Specification repository, including:
+
+- `data/planning-application-type.csv` - Application type definitions
+- `data/planning-application-module.csv` - Module definitions  
+- `specification/field/*.md` - Field definitions
+- `specification/component/*.md` - Component definitions
+- `specification/example/*.json` - Example data files
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Related Resources
+
+- [Planning Application Data Specification](https://github.com/digital-land/planning-application-data-specification)
+- [Planning.data.gov.uk](https://planning.data.gov.uk)
+- [Digital Land Platform](https://digital-land.github.io)
+
+## Support
+
+For issues and questions:
+- Create an issue in this repository
+- Refer to the [official specification discussions](https://github.com/digital-land/planning-application-data-specification/discussions)
+- Check the built-in documentation at `/docs`
