@@ -40,38 +40,37 @@ A comprehensive web-based tool for exploring and working with the UK Planning Ap
 - Advanced filtering and result categorization
 - Score-based relevance ranking
 
-## Getting Started
+## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/TimHopkin/planning-spec-tool.git
 cd planning-spec-tool
-```
-
-2. Install dependencies:
-```bash
 npm install
-```
-
-3. Start the development server:
-```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📖 Complete Setup & Usage Guide
+
+**👉 For detailed setup instructions, deployment guide, troubleshooting, and comprehensive usage documentation, see [SETUP-GUIDE.md](./SETUP-GUIDE.md)**
+
+The setup guide covers:
+- ✅ System architecture and components
+- ✅ Development workflow and best practices  
+- ✅ Static deployment to Netlify/other platforms
+- ✅ Data structure reference and examples
+- ✅ Current limitations and workarounds
+- ✅ Troubleshooting common issues
+- ✅ Future enhancement possibilities
 
 ### Building for Production
 
 ```bash
-npm run build
-npm start
+npm run build  # Creates static files in 'out/' directory
 ```
+
+The build creates a static export suitable for deployment to Netlify, Vercel, or any static hosting platform.
 
 ## Project Structure
 
