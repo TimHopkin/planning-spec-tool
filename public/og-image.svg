@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  
+  <!-- Top section with gradient -->
+  <rect width="1200" height="200" fill="url(#headerGradient)"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main file icon -->
+  <g transform="translate(100, 50)">
+    <rect width="120" height="100" rx="12" fill="white" opacity="0.2"/>
+    <g transform="translate(20, 15) scale(3.5)" stroke="white" stroke-width="2" fill="none">
+      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+      <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+      <path d="M10 9H8"/>
+      <path d="M16 13H8"/>
+      <path d="M16 17H8"/>
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="280" y="85" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700">
+    Planning Application Data
+  </text>
+  <text x="280" y="140" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700">
+    Specification Tool
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="260" fill="#1e293b" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="400">
+    Interactive tool for exploring UK government's standardized planning application data specifications
+  </text>
+  
+  <!-- Feature boxes -->
+  <g transform="translate(100, 320)">
+    <!-- Applications -->
+    <rect width="240" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="30" cy="25" r="12" fill="#1e40af"/>
+    <text x="30" y="30" fill="white" font-family="system-ui" font-size="12" text-anchor="middle">📋</text>
+    <text x="55" y="25" fill="#1e293b" font-family="system-ui" font-size="16" font-weight="600">18+ Application Types</text>
+    <text x="55" y="45" fill="#64748b" font-family="system-ui" font-size="12">From householder to full planning</text>
+    
+    <!-- Modules -->
+    <rect x="260" width="240" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="290" cy="25" r="12" fill="#059669"/>
+    <text x="290" y="30" fill="white" font-family="system-ui" font-size="12" text-anchor="middle">⚙️</text>
+    <text x="315" y="25" fill="#1e293b" font-family="system-ui" font-size="16" font-weight="600">50+ Planning Modules</text>
+    <text x="315" y="45" fill="#64748b" font-family="system-ui" font-size="12">Reusable components & sections</text>
+    
+    <!-- Fields -->
+    <rect x="520" width="240" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="550" cy="25" r="12" fill="#7c3aed"/>
+    <text x="550" y="30" fill="white" font-family="system-ui" font-size="12" text-anchor="middle">🗃️</text>
+    <text x="575" y="25" fill="#1e293b" font-family="system-ui" font-size="16" font-weight="600">200+ Field Definitions</text>
+    <text x="575" y="45" fill="#64748b" font-family="system-ui" font-size="12">Comprehensive field reference</text>
+    
+    <!-- Examples -->
+    <rect x="780" width="240" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="810" cy="25" r="12" fill="#ea580c"/>
+    <text x="810" y="30" fill="white" font-family="system-ui" font-size="12" text-anchor="middle">💾</text>
+    <text x="835" y="25" fill="#1e293b" font-family="system-ui" font-size="16" font-weight="600">100+ JSON Examples</text>
+    <text x="835" y="45" fill="#64748b" font-family="system-ui" font-size="12">Real-world implementation data</text>
+  </g>
+  
+  <!-- Bottom branding -->
+  <text x="100" y="550" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="18">
+    UK Government • Digital Land Platform • planning.data.gov.uk
+  </text>
+  
+  <!-- URL -->
+  <text x="100" y="590" fill="#1e40af" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="500">
+    planning-spec-tool.netlify.app
+  </text>
+</svg>

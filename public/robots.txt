@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Allow all crawlers access to CSS and JS files
+User-agent: *
+Allow: /*.css$
+Allow: /*.js$
+
+# Sitemap location
+Sitemap: https://planning-spec-tool.netlify.app/sitemap.xml
+
+# Block crawling of build artifacts and internal files
+Disallow: /_next/
+Disallow: /api/
+Disallow: /*.json$
+
+# Encourage crawling of main content areas
+Allow: /applications
+Allow: /modules  
+Allow: /fields
+Allow: /examples
+Allow: /docs
+Allow: /search
+Allow: /schema
