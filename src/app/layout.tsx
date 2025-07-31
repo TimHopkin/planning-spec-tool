@@ -10,6 +10,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Planning Application Data Specification Tool",
   description: "Interactive tool for exploring UK planning application data specifications",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-16x16.svg', sizes: '16x16', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.svg', sizes: '32x32', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.svg',
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
