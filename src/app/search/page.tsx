@@ -94,7 +94,7 @@ export default function SearchPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
           Search Planning Specifications
         </h1>
-        <p className="text-lg text-gray-600 mb-6">
+        <p className="text-lg text-slate-700 mb-6">
           Search across all planning application types, modules, fields, components, and examples.
         </p>
 
@@ -112,7 +112,7 @@ export default function SearchPage() {
       {isLoading && (
         <div className="flex items-center justify-center py-12">
           <div className="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full"></div>
-          <span className="ml-3 text-gray-600">Searching...</span>
+          <span className="ml-3 text-slate-700">Searching...</span>
         </div>
       )}
 
@@ -133,7 +133,7 @@ export default function SearchPage() {
               <h2 className="text-xl font-bold text-gray-900">
                 Search Results for "{searchQuery}"
               </h2>
-              <p className="text-sm text-gray-600 mt-1">
+              <p className="text-sm text-slate-700 mt-1">
                 {filteredResults.length} of {searchResults.length} results
                 {filterType !== 'all' && ` (filtered by ${getTypeName(filterType)})`}
               </p>
@@ -184,11 +184,11 @@ export default function SearchPage() {
                             </span>
                           </div>
                           
-                          <p className="text-gray-600 mb-2">
+                          <p className="text-slate-700 mb-2">
                             {result.description}
                           </p>
                           
-                          <div className="flex items-center gap-4 text-sm text-gray-500">
+                          <div className="flex items-center gap-4 text-sm text-slate-600">
                             <code className="px-2 py-1 bg-gray-100 rounded">
                               {result.reference}
                             </code>
@@ -212,11 +212,11 @@ export default function SearchPage() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <div className="text-gray-400 mb-4">
+              <div className="text-slate-500 mb-4">
                 <Search className="w-12 h-12 mx-auto" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 mb-2">No results found</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-slate-700 mb-4">
                 No items match your search query "{searchQuery}".
                 {filterType !== 'all' && (
                   <span>
@@ -251,7 +251,7 @@ export default function SearchPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-medium mb-2">What can you search for?</h3>
-                  <ul className="text-sm text-gray-600 space-y-1">
+                  <ul className="text-sm text-slate-700 space-y-1">
                     <li>• Application types (e.g., "householder", "full planning")</li>
                     <li>• Planning modules (e.g., "applicant details", "site area")</li>
                     <li>• Field definitions (e.g., "postcode", "reference")</li>
@@ -260,7 +260,7 @@ export default function SearchPage() {
                 </div>
                 <div>
                   <h3 className="font-medium mb-2">Search techniques</h3>
-                  <ul className="text-sm text-gray-600 space-y-1">
+                  <ul className="text-sm text-slate-700 space-y-1">
                     <li>• Use specific terms for better matches</li>
                     <li>• Search by reference codes (e.g., "hh", "full")</li>
                     <li>• Try different variations of terms</li>

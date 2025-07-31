@@ -85,7 +85,7 @@ export default async function Home() {
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Planning Application Data Specification Tool
         </h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+        <p className="text-xl text-slate-700 max-w-3xl mx-auto mb-8">
           Interactive tool for exploring the UK government's standardized planning application data specifications. 
           Navigate 18+ application types, hundreds of fields, and comprehensive examples.
         </p>
@@ -99,7 +99,7 @@ export default async function Home() {
           </Link>
           <Link
             href="/examples"
-            className="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors"
+            className="inline-flex items-center px-6 py-3 border border-gray-300 text-slate-800 font-medium rounded-lg hover:bg-gray-50 transition-colors"
           >
             <Code className="w-5 h-5 mr-2" />
             View Examples
@@ -155,25 +155,25 @@ export default async function Home() {
         <Card>
           <CardContent className="p-6 text-center">
             <div className="text-2xl font-bold text-blue-600 mb-1">18+</div>
-            <div className="text-sm text-gray-600">Application Types</div>
+            <div className="text-sm text-slate-700">Application Types</div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-6 text-center">
             <div className="text-2xl font-bold text-green-600 mb-1">50+</div>
-            <div className="text-sm text-gray-600">Planning Modules</div>
+            <div className="text-sm text-slate-700">Planning Modules</div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-6 text-center">
             <div className="text-2xl font-bold text-purple-600 mb-1">200+</div>
-            <div className="text-sm text-gray-600">Field Definitions</div>
+            <div className="text-sm text-slate-700">Field Definitions</div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-6 text-center">
             <div className="text-2xl font-bold text-orange-600 mb-1">100+</div>
-            <div className="text-sm text-gray-600">JSON Examples</div>
+            <div className="text-sm text-slate-700">JSON Examples</div>
           </CardContent>
         </Card>
       </div>
@@ -193,7 +193,7 @@ export default async function Home() {
                 <span className="text-lg font-bold text-blue-600">1</span>
               </div>
               <h3 className="font-medium mb-2">Explore Applications</h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-slate-700">
                 Browse the different planning application types and understand their requirements
               </p>
             </div>
@@ -202,7 +202,7 @@ export default async function Home() {
                 <span className="text-lg font-bold text-green-600">2</span>
               </div>
               <h3 className="font-medium mb-2">Review Examples</h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-slate-700">
                 Study real JSON examples to understand the data structure and formatting
               </p>
             </div>
@@ -211,7 +211,7 @@ export default async function Home() {
                 <span className="text-lg font-bold text-purple-600">3</span>
               </div>
               <h3 className="font-medium mb-2">Implement</h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-slate-700">
                 Use the schemas and validation rules to implement the specifications in your system
               </p>
             </div>

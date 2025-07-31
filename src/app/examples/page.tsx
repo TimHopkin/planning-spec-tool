@@ -118,7 +118,7 @@ export default function ExamplesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center justify-center h-64">
           <div className="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full"></div>
-          <span className="ml-3 text-gray-600">Loading examples...</span>
+          <span className="ml-3 text-slate-700">Loading examples...</span>
         </div>
       </div>
     );
@@ -148,7 +148,7 @@ export default function ExamplesPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
           JSON Examples
         </h1>
-        <p className="text-lg text-gray-600 mb-6">
+        <p className="text-lg text-slate-700 mb-6">
           Browse real-world JSON examples for planning applications. 
           Use these as templates or reference implementations for your projects.
         </p>
@@ -195,7 +195,7 @@ export default function ExamplesPage() {
                 className={`p-2 ${
                   viewMode === 'grid'
                     ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'
+                    : 'bg-white text-slate-700 hover:bg-gray-50'
                 }`}
                 title="Grid view"
               >
@@ -206,7 +206,7 @@ export default function ExamplesPage() {
                 className={`p-2 ${
                   viewMode === 'list'
                     ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'
+                    : 'bg-white text-slate-700 hover:bg-gray-50'
                 }`}
                 title="List view"
               >
@@ -217,7 +217,7 @@ export default function ExamplesPage() {
         </div>
 
         {/* Results count */}
-        <div className="mt-4 text-sm text-gray-600">
+        <div className="mt-4 text-sm text-slate-700">
           {filteredExamples.length === examples.length
             ? `Showing all ${examples.length} examples`
             : `Showing ${filteredExamples.length} of ${examples.length} examples`}
@@ -227,11 +227,11 @@ export default function ExamplesPage() {
       {/* Examples Grid/List */}
       {filteredExamples.length === 0 && (searchQuery || selectedApp !== 'all') ? (
         <div className="text-center py-12">
-          <div className="text-gray-400 mb-4">
+          <div className="text-slate-500 mb-4">
             <Filter className="w-12 h-12 mx-auto" />
           </div>
           <h3 className="text-lg font-medium text-gray-900 mb-2">No examples found</h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-slate-700 mb-4">
             No examples match your current filters. Try adjusting your search or filter criteria.
           </p>
           <div className="space-x-4">
@@ -270,7 +270,7 @@ export default function ExamplesPage() {
                     )}
                   </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-500">
+                <div className="flex items-center gap-2 text-sm text-slate-600">
                   <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">
                     {getApplicationName(example.applicationType)}
                   </span>
@@ -282,7 +282,7 @@ export default function ExamplesPage() {
               
               <CardContent>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">
+                  <span className="text-sm text-slate-700">
                     {Object.keys(example.data).length} properties
                   </span>
                   <div className="flex items-center gap-2">
@@ -295,14 +295,14 @@ export default function ExamplesPage() {
                     </button>
                     <button
                       onClick={() => copyToClipboard(JSON.stringify(example.data, null, 2))}
-                      className="flex items-center gap-1 px-2 py-1 text-sm text-gray-600 hover:text-gray-800"
+                      className="flex items-center gap-1 px-2 py-1 text-sm text-slate-700 hover:text-slate-900"
                       title="Copy JSON"
                     >
                       <Copy className="w-4 h-4" />
                     </button>
                     <button
                       onClick={() => downloadExample(example)}
-                      className="flex items-center gap-1 px-2 py-1 text-sm text-gray-600 hover:text-gray-800"
+                      className="flex items-center gap-1 px-2 py-1 text-sm text-slate-700 hover:text-slate-900"
                       title="Download JSON"
                     >
                       <Download className="w-4 h-4" />
@@ -322,7 +322,7 @@ export default function ExamplesPage() {
             <div className="flex items-center justify-between p-6 border-b">
               <div>
                 <h2 className="text-xl font-bold">{selectedExample.name}</h2>
-                <p className="text-sm text-gray-600 mt-1">
+                <p className="text-sm text-slate-700 mt-1">
                   {getApplicationName(selectedExample.applicationType)} Example
                 </p>
               </div>
@@ -343,7 +343,7 @@ export default function ExamplesPage() {
                 </button>
                 <button
                   onClick={() => setSelectedExample(null)}
-                  className="text-gray-400 hover:text-gray-600 text-xl font-bold px-2"
+                  className="text-slate-500 hover:text-slate-700 text-xl font-bold px-2"
                 >
                   ×
                 </button>

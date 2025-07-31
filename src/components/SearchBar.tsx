@@ -99,7 +99,7 @@ export function SearchBar({
   return (
     <div ref={searchRef} className={`relative ${className}`}>
       <div className="relative">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-500" />
         <input
           ref={inputRef}
           type="text"
@@ -111,7 +111,7 @@ export function SearchBar({
         {query && (
           <button
             onClick={clearSearch}
-            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-slate-500 hover:text-slate-700"
           >
             <X className="w-4 h-4" />
           </button>
@@ -121,7 +121,7 @@ export function SearchBar({
       {isOpen && (
         <div className="absolute top-full mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-96 overflow-y-auto">
           {isLoading ? (
-            <div className="p-4 text-center text-gray-500">
+            <div className="p-4 text-center text-slate-600">
               <div className="animate-spin w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full mx-auto mb-2"></div>
               Searching...
             </div>
@@ -141,11 +141,11 @@ export function SearchBar({
                         <span className="font-medium text-gray-900 truncate">
                           {result.name}
                         </span>
-                        <span className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded">
+                        <span className="text-xs text-slate-600 bg-gray-100 px-2 py-0.5 rounded">
                           {getResultTypeName(result.type)}
                         </span>
                       </div>
-                      <p className="text-sm text-gray-600 truncate mt-0.5">
+                      <p className="text-sm text-slate-700 truncate mt-0.5">
                         {result.description}
                       </p>
                     </div>
@@ -154,7 +154,7 @@ export function SearchBar({
               ))}
             </div>
           ) : query.trim() ? (
-            <div className="p-4 text-center text-gray-500">
+            <div className="p-4 text-center text-slate-600">
               No results found for "{query}"
             </div>
           ) : null}

@@ -97,7 +97,7 @@ export default function FieldsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center justify-center h-64">
           <div className="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full"></div>
-          <span className="ml-3 text-gray-600">Loading fields...</span>
+          <span className="ml-3 text-slate-700">Loading fields...</span>
         </div>
       </div>
     );
@@ -127,7 +127,7 @@ export default function FieldsPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
           Field Reference
         </h1>
-        <p className="text-lg text-gray-600 mb-6">
+        <p className="text-lg text-slate-700 mb-6">
           Comprehensive reference of all field definitions used across planning applications. 
           Each field includes data types, validation rules, and usage requirements.
         </p>
@@ -136,19 +136,19 @@ export default function FieldsPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
           <div className="bg-white p-4 rounded-lg border">
             <div className="text-2xl font-bold text-blue-600">{fields.length}</div>
-            <div className="text-sm text-gray-600">Total Fields</div>
+            <div className="text-sm text-slate-700">Total Fields</div>
           </div>
           <div className="bg-white p-4 rounded-lg border">
             <div className="text-2xl font-bold text-green-600">{requiredFields}</div>
-            <div className="text-sm text-gray-600">Required</div>
+            <div className="text-sm text-slate-700">Required</div>
           </div>
           <div className="bg-white p-4 rounded-lg border">
-            <div className="text-2xl font-bold text-gray-600">{optionalFields}</div>
-            <div className="text-sm text-gray-600">Optional</div>
+            <div className="text-2xl font-bold text-slate-700">{optionalFields}</div>
+            <div className="text-sm text-slate-700">Optional</div>
           </div>
           <div className="bg-white p-4 rounded-lg border">
             <div className="text-2xl font-bold text-purple-600">{dataTypes.length}</div>
-            <div className="text-sm text-gray-600">Data Types</div>
+            <div className="text-sm text-slate-700">Data Types</div>
           </div>
         </div>
 
@@ -205,7 +205,7 @@ export default function FieldsPage() {
                 className={`p-2 ${
                   viewMode === 'grid'
                     ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'
+                    : 'bg-white text-slate-700 hover:bg-gray-50'
                 }`}
                 title="Grid view"
               >
@@ -216,7 +216,7 @@ export default function FieldsPage() {
                 className={`p-2 ${
                   viewMode === 'list'
                     ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'
+                    : 'bg-white text-slate-700 hover:bg-gray-50'
                 }`}
                 title="List view"
               >
@@ -227,7 +227,7 @@ export default function FieldsPage() {
         </div>
 
         {/* Results count */}
-        <div className="mt-4 text-sm text-gray-600">
+        <div className="mt-4 text-sm text-slate-700">
           {filteredFields.length === fields.length
             ? `Showing all ${fields.length} fields`
             : `Showing ${filteredFields.length} of ${fields.length} fields`}
@@ -237,11 +237,11 @@ export default function FieldsPage() {
       {/* Fields Grid/List */}
       {filteredFields.length === 0 && (searchQuery || filterByType !== 'all' || filterByRequired !== 'all') ? (
         <div className="text-center py-12">
-          <div className="text-gray-400 mb-4">
+          <div className="text-slate-500 mb-4">
             <Filter className="w-12 h-12 mx-auto" />
           </div>
           <h3 className="text-lg font-medium text-gray-900 mb-2">No fields found</h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-slate-700 mb-4">
             No fields match your current filters. Try adjusting your search or filter criteria.
           </p>
           <div className="space-x-4">

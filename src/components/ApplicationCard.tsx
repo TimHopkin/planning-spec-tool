@@ -37,7 +37,7 @@ export function ApplicationCard({ application, showDetails = false }: Applicatio
             {application.synonyms && (
               <div>
                 <span className="font-medium">Also known as:</span> 
-                <span className="ml-2 text-gray-600">{application.synonyms}</span>
+                <span className="ml-2 text-slate-700">{application.synonyms}</span>
               </div>
             )}
             
@@ -65,7 +65,7 @@ export function ApplicationCard({ application, showDetails = false }: Applicatio
             {application.notes && (
               <div>
                 <span className="font-medium">Notes:</span> 
-                <span className="ml-2 text-gray-600">{application.notes}</span>
+                <span className="ml-2 text-slate-700">{application.notes}</span>
               </div>
             )}
           </div>

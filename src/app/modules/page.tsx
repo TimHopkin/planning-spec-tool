@@ -84,7 +84,7 @@ export default function ModulesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center justify-center h-64">
           <div className="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full"></div>
-          <span className="ml-3 text-gray-600">Loading modules...</span>
+          <span className="ml-3 text-slate-700">Loading modules...</span>
         </div>
       </div>
     );
@@ -114,7 +114,7 @@ export default function ModulesPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
           Planning Modules
         </h1>
-        <p className="text-lg text-gray-600 mb-6">
+        <p className="text-lg text-slate-700 mb-6">
           Explore the modular components used across different planning application types. 
           Modules define reusable sections like applicant details, site information, and specific requirements.
         </p>
@@ -123,21 +123,21 @@ export default function ModulesPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
           <div className="bg-white p-4 rounded-lg border">
             <div className="text-2xl font-bold text-blue-600">{modules.length}</div>
-            <div className="text-sm text-gray-600">Total Modules</div>
+            <div className="text-sm text-slate-700">Total Modules</div>
           </div>
           <div className="bg-white p-4 rounded-lg border">
             <div className="text-2xl font-bold text-green-600">{activeModules}</div>
-            <div className="text-sm text-gray-600">Active</div>
+            <div className="text-sm text-slate-700">Active</div>
           </div>
           <div className="bg-white p-4 rounded-lg border">
             <div className="text-2xl font-bold text-red-600">{deprecatedModules}</div>
-            <div className="text-sm text-gray-600">Deprecated</div>
+            <div className="text-sm text-slate-700">Deprecated</div>
           </div>
           <div className="bg-white p-4 rounded-lg border">
             <div className="text-2xl font-bold text-purple-600">
               {modules.filter(m => m.replacedBy).length}
             </div>
-            <div className="text-sm text-gray-600">Replaced</div>
+            <div className="text-sm text-slate-700">Replaced</div>
           </div>
         </div>
 
@@ -179,7 +179,7 @@ export default function ModulesPage() {
                 className={`p-2 ${
                   viewMode === 'grid'
                     ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'
+                    : 'bg-white text-slate-700 hover:bg-gray-50'
                 }`}
                 title="Grid view"
               >
@@ -190,7 +190,7 @@ export default function ModulesPage() {
                 className={`p-2 ${
                   viewMode === 'list'
                     ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'
+                    : 'bg-white text-slate-700 hover:bg-gray-50'
                 }`}
                 title="List view"
               >
@@ -201,7 +201,7 @@ export default function ModulesPage() {
         </div>
 
         {/* Results count */}
-        <div className="mt-4 text-sm text-gray-600">
+        <div className="mt-4 text-sm text-slate-700">
           {filteredModules.length === modules.length
             ? `Showing all ${modules.length} modules`
             : `Showing ${filteredModules.length} of ${modules.length} modules`}
@@ -211,11 +211,11 @@ export default function ModulesPage() {
       {/* Modules Grid/List */}
       {filteredModules.length === 0 && (searchQuery || filterBy !== 'all') ? (
         <div className="text-center py-12">
-          <div className="text-gray-400 mb-4">
+          <div className="text-slate-500 mb-4">
             <Filter className="w-12 h-12 mx-auto" />
           </div>
           <h3 className="text-lg font-medium text-gray-900 mb-2">No modules found</h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-slate-700 mb-4">
             No modules match your current filters. Try adjusting your search or filter criteria.
           </p>
           <div className="space-x-4">
