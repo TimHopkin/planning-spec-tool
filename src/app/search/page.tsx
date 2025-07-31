@@ -91,7 +91,7 @@ export default function SearchPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">
+        <h1 className="text-3xl font-bold text-slate-900 mb-4">
           Search Planning Specifications
         </h1>
         <p className="text-lg text-slate-700 mb-6">
@@ -130,7 +130,7 @@ export default function SearchPage() {
           {/* Results Header */}
           <div className="flex items-center justify-between mb-6">
             <div>
-              <h2 className="text-xl font-bold text-gray-900">
+              <h2 className="text-xl font-bold text-slate-900">
                 Search Results for "{searchQuery}"
               </h2>
               <p className="text-sm text-slate-700 mt-1">
@@ -175,7 +175,7 @@ export default function SearchPage() {
                           <div className="flex items-center gap-2 mb-2">
                             <Link
                               href={result.path}
-                              className="text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
+                              className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors"
                             >
                               {result.name}
                             </Link>
@@ -215,7 +215,7 @@ export default function SearchPage() {
               <div className="text-slate-500 mb-4">
                 <Search className="w-12 h-12 mx-auto" />
               </div>
-              <h3 className="text-lg font-medium text-gray-900 mb-2">No results found</h3>
+              <h3 className="text-lg font-medium text-slate-900 mb-2">No results found</h3>
               <p className="text-slate-700 mb-4">
                 No items match your search query "{searchQuery}".
                 {filterType !== 'all' && (

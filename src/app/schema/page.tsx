@@ -154,7 +154,7 @@ export default function SchemaPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">
+        <h1 className="text-3xl font-bold text-slate-900 mb-4">
           Schema Generator & Validator
         </h1>
         <p className="text-lg text-slate-700">
@@ -287,7 +287,7 @@ export default function SchemaPage() {
 
                   {!validationResult.valid && validationResult.errors?.length > 0 && (
                     <div>
-                      <h4 className="font-medium text-gray-900 mb-2">Errors:</h4>
+                      <h4 className="font-medium text-slate-900 mb-2">Errors:</h4>
                       <ul className="space-y-1">
                         {validationResult.errors.map((error: string, index: number) => (
                           <li key={index} className="text-sm text-red-600 flex items-start gap-1">

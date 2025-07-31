@@ -138,7 +138,7 @@ export function SearchBar({
                     <span className="text-lg mt-0.5">{getResultIcon(result.type)}</span>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <span className="font-medium text-gray-900 truncate">
+                        <span className="font-medium text-slate-900 truncate">
                           {result.name}
                         </span>
                         <span className="text-xs text-slate-600 bg-gray-100 px-2 py-0.5 rounded">

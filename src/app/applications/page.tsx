@@ -100,7 +100,7 @@ export default function ApplicationsPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">
+        <h1 className="text-3xl font-bold text-slate-900 mb-4">
           Planning Application Types
         </h1>
         <p className="text-lg text-slate-700 mb-6">
@@ -170,7 +170,7 @@ export default function ApplicationsPage() {
           <div className="text-slate-500 mb-4">
             <Filter className="w-12 h-12 mx-auto" />
           </div>
-          <h3 className="text-lg font-medium text-gray-900 mb-2">No applications found</h3>
+          <h3 className="text-lg font-medium text-slate-900 mb-2">No applications found</h3>
           <p className="text-slate-700 mb-4">
             No applications match your search criteria. Try adjusting your search terms.
           </p>

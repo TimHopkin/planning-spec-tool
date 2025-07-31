@@ -82,7 +82,7 @@ export default function DocsPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header */}
       <div className="mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl font-bold text-slate-900 mb-4">
           Documentation
         </h1>
         <p className="text-xl text-slate-700 max-w-3xl">
@@ -154,7 +154,7 @@ export default function DocsPage() {
                       href={item.href}
                       className="block p-3 rounded-lg hover:bg-gray-50 transition-colors"
                     >
-                      <div className="font-medium text-gray-900">{item.title}</div>
+                      <div className="font-medium text-slate-900">{item.title}</div>
                       <div className="text-sm text-slate-700">{item.description}</div>
                     </Link>
                   ))}
@@ -228,7 +228,7 @@ export default function DocsPage() {
 
       {/* Additional Resources */}
       <div className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Additional Resources</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">Additional Resources</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {resources.map((resource) => (
             <Card key={resource.title}>

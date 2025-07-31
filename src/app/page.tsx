@@ -82,7 +82,7 @@ export default async function Home() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Hero Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl font-bold text-slate-900 mb-4">
           Planning Application Data Specification Tool
         </h1>
         <p className="text-xl text-slate-700 max-w-3xl mx-auto mb-8">
@@ -134,7 +134,7 @@ export default async function Home() {
       {/* Recent Applications */}
       <div className="mb-12">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-gray-900">Popular Application Types</h2>
+          <h2 className="text-2xl font-bold text-slate-900">Popular Application Types</h2>
           <Link
             href="/applications"
             className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
