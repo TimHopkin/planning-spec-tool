@@ -144,7 +144,7 @@ export default function SchemaPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex items-center justify-center h-64">
           <div className="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full"></div>
-          <span className="ml-3 text-slate-700">Loading applications...</span>
+          <span className="ml-3 text-gray-800">Loading applications...</span>
         </div>
       </div>
     );
@@ -154,10 +154,10 @@ export default function SchemaPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-900 mb-4">
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">
           Schema Generator & Validator
         </h1>
-        <p className="text-lg text-slate-700">
+        <p className="text-lg text-gray-800">
           Generate JSON schemas for planning applications and validate your data against the specifications.
         </p>
       </div>
@@ -174,7 +174,7 @@ export default function SchemaPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-slate-800 mb-2">
+                <label className="block text-sm font-medium text-gray-900 mb-2">
                   Application Type
                 </label>
                 <div className="flex gap-2">
@@ -202,20 +202,20 @@ export default function SchemaPage() {
               {schema && (
                 <div>
                   <div className="flex items-center justify-between mb-2">
-                    <label className="block text-sm font-medium text-slate-800">
+                    <label className="block text-sm font-medium text-gray-900">
                       Generated Schema
                     </label>
                     <div className="flex gap-2">
                       <button
                         onClick={() => copyToClipboard(JSON.stringify(schema, null, 2))}
-                        className="flex items-center gap-1 px-2 py-1 text-sm text-slate-700 hover:text-slate-900"
+                        className="flex items-center gap-1 px-2 py-1 text-sm text-gray-800 hover:text-gray-900"
                       >
                         <Copy className="w-4 h-4" />
                         Copy
                       </button>
                       <button
                         onClick={downloadSchema}
-                        className="flex items-center gap-1 px-2 py-1 text-sm text-slate-700 hover:text-slate-900"
+                        className="flex items-center gap-1 px-2 py-1 text-sm text-gray-800 hover:text-gray-900"
                       >
                         <Download className="w-4 h-4" />
                         Download
@@ -243,7 +243,7 @@ export default function SchemaPage() {
             <CardContent className="space-y-4">
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <label className="block text-sm font-medium text-slate-800">
+                  <label className="block text-sm font-medium text-gray-900">
                     JSON Data to Validate
                   </label>
                   <button
@@ -287,7 +287,7 @@ export default function SchemaPage() {
 
                   {!validationResult.valid && validationResult.errors?.length > 0 && (
                     <div>
-                      <h4 className="font-medium text-slate-900 mb-2">Errors:</h4>
+                      <h4 className="font-medium text-gray-900 mb-2">Errors:</h4>
                       <ul className="space-y-1">
                         {validationResult.errors.map((error: string, index: number) => (
                           <li key={index} className="text-sm text-red-600 flex items-start gap-1">
@@ -319,22 +319,22 @@ export default function SchemaPage() {
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
-              <h3 className="font-medium mb-2">1. Generate Schema</h3>
-              <p className="text-sm text-slate-700">
+              <h3 className="font-medium mb-2 text-gray-900">1. Generate Schema</h3>
+              <p className="text-sm text-gray-800">
                 Select an application type and click "Generate" to create its JSON schema. 
                 This schema defines the structure and validation rules for that application type.
               </p>
             </div>
             <div>
-              <h3 className="font-medium mb-2">2. Prepare Your Data</h3>
-              <p className="text-sm text-slate-700">
+              <h3 className="font-medium mb-2 text-gray-900">2. Prepare Your Data</h3>
+              <p className="text-sm text-gray-800">
                 Format your planning application data as JSON. You can use the "Generate Example" 
                 button to get a template, then modify it with your actual data.
               </p>
             </div>
             <div>
-              <h3 className="font-medium mb-2">3. Validate</h3>
-              <p className="text-sm text-slate-700">
+              <h3 className="font-medium mb-2 text-gray-900">3. Validate</h3>
+              <p className="text-sm text-gray-800">
                 Click "Validate Data" to check if your JSON conforms to the schema. 
                 Any errors will be clearly highlighted to help you fix issues.
               </p>

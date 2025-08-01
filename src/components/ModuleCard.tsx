@@ -38,14 +38,14 @@ export function ModuleCard({ module, showDetails = false }: ModuleCardProps) {
               <div className="flex items-center gap-2">
                 <MessageSquare className="w-4 h-4" />
                 <span className="font-medium">Discussion:</span>
-                <span className="text-slate-700">{module.discussionNumber}</span>
+                <span className="text-gray-800">{module.discussionNumber}</span>
               </div>
             )}
             
             {module.notes && (
               <div>
                 <span className="font-medium">Notes:</span> 
-                <span className="ml-2 text-slate-700">{module.notes}</span>
+                <span className="ml-2 text-gray-800">{module.notes}</span>
               </div>
             )}
             

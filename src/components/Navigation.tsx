@@ -30,7 +30,7 @@ export function Navigation() {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <FileText className="w-5 h-5 text-white" />
               </div>
-              <span className="font-bold text-lg text-slate-900">
+              <span className="font-bold text-lg text-gray-900">
                 Planning Spec Tool
               </span>
             </Link>
@@ -48,7 +48,7 @@ export function Navigation() {
                     className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                       isActive
                         ? 'text-blue-600 bg-blue-50'
-                        : 'text-slate-700 hover:text-slate-900 hover:bg-gray-50'
+                        : 'text-gray-800 hover:text-gray-900 hover:bg-gray-50'
                     }`}
                   >
                     <Icon className="w-4 h-4" />
@@ -68,7 +68,7 @@ export function Navigation() {
           <div className="flex items-center space-x-4">
             <Link
               href="/docs"
-              className="text-slate-700 hover:text-slate-900 flex items-center space-x-1"
+              className="text-gray-800 hover:text-gray-900 flex items-center space-x-1"
             >
               <BookOpen className="w-4 h-4" />
               <span className="hidden sm:inline">Docs</span>
@@ -93,7 +93,7 @@ export function Navigation() {
                   className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
                     isActive
                       ? 'text-blue-600 bg-blue-50'
-                      : 'text-slate-700 hover:text-slate-900 hover:bg-gray-50'
+                      : 'text-gray-800 hover:text-gray-900 hover:bg-gray-50'
                   }`}
                 >
                   <Icon className="w-4 h-4" />

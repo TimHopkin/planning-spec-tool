@@ -33,7 +33,7 @@ export function FieldCard({ field, showDetails = false }: FieldCardProps) {
             {field.required ? (
               <CheckCircle className="w-4 h-4 text-green-600" title="Required field" />
             ) : (
-              <AlertCircle className="w-4 h-4 text-slate-500" title="Optional field" />
+              <AlertCircle className="w-4 h-4 text-gray-600" title="Optional field" />
             )}
           </div>
         </div>
@@ -68,10 +68,10 @@ export function FieldCard({ field, showDetails = false }: FieldCardProps) {
           {field.validation && field.validation.length > 0 && (
             <div>
               <span className="font-medium text-sm">Validation:</span>
-              <ul className="mt-1 text-xs text-slate-700 space-y-1">
+              <ul className="mt-1 text-xs text-gray-800 space-y-1">
                 {field.validation.map((rule, index) => (
                   <li key={index} className="flex items-start gap-1">
-                    <span className="text-slate-500">•</span>
+                    <span className="text-gray-600">•</span>
                     <span>{rule}</span>
                   </li>
                 ))}
@@ -82,7 +82,7 @@ export function FieldCard({ field, showDetails = false }: FieldCardProps) {
           {field.notes && (
             <div>
               <span className="font-medium text-sm">Notes:</span>
-              <p className="mt-1 text-sm text-slate-700">{field.notes}</p>
+              <p className="mt-1 text-sm text-gray-800">{field.notes}</p>
             </div>
           )}
         </div>

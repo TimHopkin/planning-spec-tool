@@ -82,10 +82,10 @@ export default function DocsPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Header */}
       <div className="mb-12">
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Documentation
         </h1>
-        <p className="text-xl text-slate-700 max-w-3xl">
+        <p className="text-xl text-gray-800 max-w-3xl">
           Complete documentation for the UK Planning Application Data Specification. 
           Learn how to implement, validate, and work with standardized planning application data.
         </p>
@@ -98,12 +98,12 @@ export default function DocsPage() {
             <CardTitle>What is the Planning Application Data Specification?</CardTitle>
           </CardHeader>
           <CardContent className="prose max-w-none">
-            <p className="text-slate-700 mb-4">
+            <p className="text-gray-800 mb-4">
               The Planning Application Data Specification is a UK government initiative led by the 
               Ministry of Housing, Communities and Local Government (MHCLG) to standardize the data 
               exchanged when planning applications are submitted.
             </p>
-            <p className="text-slate-700 mb-4">
+            <p className="text-gray-800 mb-4">
               The specification consists of modular components that define the structure, validation 
               rules, and requirements for different types of planning applications, from simple 
               householder extensions to complex full planning applications.
@@ -112,17 +112,17 @@ export default function DocsPage() {
               <div className="text-center p-4 bg-blue-50 rounded-lg">
                 <FileText className="w-8 h-8 text-blue-600 mx-auto mb-2" />
                 <h3 className="font-medium">18+ Application Types</h3>
-                <p className="text-sm text-slate-700">From householder to full planning</p>
+                <p className="text-sm text-gray-800">From householder to full planning</p>
               </div>
               <div className="text-center p-4 bg-green-50 rounded-lg">
                 <Settings className="w-8 h-8 text-green-600 mx-auto mb-2" />
                 <h3 className="font-medium">50+ Modules</h3>
-                <p className="text-sm text-slate-700">Reusable components and sections</p>
+                <p className="text-sm text-gray-800">Reusable components and sections</p>
               </div>
               <div className="text-center p-4 bg-purple-50 rounded-lg">
                 <Database className="w-8 h-8 text-purple-600 mx-auto mb-2" />
                 <h3 className="font-medium">200+ Fields</h3>
-                <p className="text-sm text-slate-700">Comprehensive field definitions</p>
+                <p className="text-sm text-gray-800">Comprehensive field definitions</p>
               </div>
             </div>
           </CardContent>
@@ -154,8 +154,8 @@ export default function DocsPage() {
                       href={item.href}
                       className="block p-3 rounded-lg hover:bg-gray-50 transition-colors"
                     >
-                      <div className="font-medium text-slate-900">{item.title}</div>
-                      <div className="text-sm text-slate-700">{item.description}</div>
+                      <div className="font-medium text-gray-900">{item.title}</div>
+                      <div className="text-sm text-gray-800">{item.description}</div>
                     </Link>
                   ))}
                 </div>
@@ -180,8 +180,8 @@ export default function DocsPage() {
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-blue-600">1</span>
                 </div>
-                <h3 className="font-medium mb-2">Explore Application Types</h3>
-                <p className="text-sm text-slate-700 mb-4">
+                <h3 className="font-medium mb-2 text-gray-900">Explore Application Types</h3>
+                <p className="text-sm text-gray-800 mb-4">
                   Browse the different planning application types to understand their specific requirements and modules.
                 </p>
                 <Link
@@ -195,8 +195,8 @@ export default function DocsPage() {
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-green-600">2</span>
                 </div>
-                <h3 className="font-medium mb-2">Study Examples</h3>
-                <p className="text-sm text-slate-700 mb-4">
+                <h3 className="font-medium mb-2 text-gray-900">Study Examples</h3>
+                <p className="text-sm text-gray-800 mb-4">
                   Review real JSON examples to understand the data structure and formatting requirements.
                 </p>
                 <Link
@@ -210,8 +210,8 @@ export default function DocsPage() {
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-purple-600">3</span>
                 </div>
-                <h3 className="font-medium mb-2">Generate & Validate</h3>
-                <p className="text-sm text-slate-700 mb-4">
+                <h3 className="font-medium mb-2 text-gray-900">Generate & Validate</h3>
+                <p className="text-sm text-gray-800 mb-4">
                   Use the schema generator to create validation schemas and test your implementation.
                 </p>
                 <Link
@@ -228,7 +228,7 @@ export default function DocsPage() {
 
       {/* Additional Resources */}
       <div className="mb-12">
-        <h2 className="text-2xl font-bold text-slate-900 mb-6">Additional Resources</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Additional Resources</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {resources.map((resource) => (
             <Card key={resource.title}>
@@ -236,7 +236,7 @@ export default function DocsPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="font-medium mb-1">{resource.title}</h3>
-                    <p className="text-sm text-slate-700">{resource.description}</p>
+                    <p className="text-sm text-gray-800">{resource.description}</p>
                   </div>
                   <div className="ml-4">
                     {resource.external ? (
@@ -275,8 +275,8 @@ export default function DocsPage() {
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-medium mb-2">Community Support</h3>
-              <p className="text-sm text-slate-700 mb-3">
+              <h3 className="font-medium mb-2 text-gray-900">Community Support</h3>
+              <p className="text-sm text-gray-800 mb-3">
                 Join the discussion and get help from the community of developers and planning professionals.
               </p>
               <a
@@ -289,8 +289,8 @@ export default function DocsPage() {
               </a>
             </div>
             <div>
-              <h3 className="font-medium mb-2">Report Issues</h3>
-              <p className="text-sm text-slate-700 mb-3">
+              <h3 className="font-medium mb-2 text-gray-900">Report Issues</h3>
+              <p className="text-sm text-gray-800 mb-3">
                 Found a bug or have suggestions for improvement? Report issues on GitHub.
               </p>
               <a
