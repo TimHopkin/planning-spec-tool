@@ -1,0 +1,10 @@
+{
+  "eligibility-extension": {
+    "is-single-storey-extension": true,
+    "is-extension-height-over-4m": false,
+    "is-dwelling-detached": false,
+    "is-extension-beyond-rear-wall": true,
+    "extension-length": 3.2,
+    "is-within-site-constraints": false
+  }
+}

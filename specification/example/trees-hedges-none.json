@@ -1,0 +1,8 @@
+{
+  "trees-hedges": {
+    "trees-on-site": false,
+    "trees-on-adj-land": false,
+    "has-falling-trees-risk": false,
+    "tree-removal": false
+  }
+}

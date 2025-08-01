@@ -3,8 +3,8 @@ const path = require('path');
 const csv = require('csv-parser');
 const matter = require('gray-matter');
 
-// Base path to the planning specification data
-const SPEC_BASE_PATH = path.resolve(process.cwd(), '../planning-application-data-specification');
+// Base path to the planning specification data (now local to the project)
+const SPEC_BASE_PATH = path.resolve(process.cwd());
 const OUTPUT_DIR = path.resolve(process.cwd(), 'public/data');
 
 async function loadCSV(filePath, transformer) {

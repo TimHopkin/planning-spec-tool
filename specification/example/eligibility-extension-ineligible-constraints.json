@@ -1,0 +1,11 @@
+{
+  "eligibility-extension": {
+    "is-single-storey-extension": true,
+    "is-extension-height-over-4m": false,
+    "is-dwelling-detached": true,
+    "is-extension-beyond-rear-wall": true,
+    "extension-length": 3.8,
+    "is-within-site-constraints": true,
+    "site-constraints": ["conservation-area", "area-outstanding-natural-beauty"]
+  }
+}
