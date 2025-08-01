@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": [
+    {
+      "reference": "ldc-existing-use",
+      "name": "LDC Existing Use",
+      "description": "Existing use of the site",
+      "applicationType": "ldc"
+    },
+    {
+      "reference": "ldc-prospective-use",
+      "name": "LDC Proposed Use",
+      "description": "Prospective use of the site",
+      "applicationType": "ldc"
+    },
+    {
+      "reference": "ldc-proposed-work-lb",
+      "name": "LDC Proposed Work to a Listed Building",
+      "description": "Proposed work to a listed building",
+      "applicationType": "ldc"
+    },
+    {
+      "reference": "outline-some",
+      "name": "Outline Planning Permission with Some Matters Reserved",
+      "description": "Outline planning permission with some matters reserved",
+      "applicationType": "outline"
+    },
+    {
+      "reference": "outline-all",
+      "name": "Outline Planning Permission with All Matters Reserved",
+      "description": "Outline planning permission with all matters reserved",
+      "applicationType": "outline"
+    },
+    {
+      "reference": "pa-extension",
+      "name": "Larger Home Extension",
+      "description": "Planning application for extension",
+      "applicationType": "prior-approval"
+    },
+    {
+      "reference": "pa-storey",
+      "name": "Additional storeys",
+      "description": "Enlargement of a dwellinghouse by construction of additional storeys",
+      "applicationType": "prior-approval"
+    }
+  ]
+}

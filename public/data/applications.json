@@ -1,0 +1,192 @@
+{
+  "success": true,
+  "data": [
+    {
+      "reference": "hh",
+      "name": "Householder planning application",
+      "description": "A simplified process for applications to alter or enlarge a single house (but not a flat), including works within the boundary/garden",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/section/62",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "full",
+      "name": "Full planning permission",
+      "description": "This application is needed when making detailed proposals for developments which are not covered by a householder application or permitted development rights",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/section/62",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "outline",
+      "name": "Outline planning",
+      "description": "Applications that are used to understand whether the basic nature of a development is viable",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/section/92",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "reserved-matters",
+      "name": "Reserved matters",
+      "description": "This application is only required when the applicant has already been granted outline planning permission. Reserved matters can include appearance, means of access, landscaping, layout and scale",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/section/196D;https://www.legislation.gov.uk/ukpga/1990/9/section/69",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "demolition-con-area",
+      "name": "Planning permission for relevant demolition in a conservation area",
+      "description": "An application for proposals involving substantial demolition of any unlisted building or structure in a conservation area",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/uksi/2015/595/article/2/made",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "lbc",
+      "name": "Listed building consent",
+      "description": "An application for any alteration, extension, or demolition of a listed building",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/9/contents",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "advertising",
+      "name": "Advertising",
+      "description": " An application for all types of advertisements and signs",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/uksi/2007/783/introduction/made",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "ldc",
+      "name": "Lawful development certificate",
+      "description": "A legal document stating the lawfulness of past, present or future building use, operation or other matters, signifying that enforcement action cannot be carried out against the development",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/part/VII/crossheading/established-use-certificates;https://www.legislation.gov.uk/uksi/2015/595/contents/made",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "prior-approval",
+      "name": "Prior approval",
+      "description": "This applies to  developments with permitted development rights (where developments are granted planning permission by national legislation without the need to submit a planning application)",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/uksi/2015/596/contents",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "s73",
+      "name": "Removal/variation of conditions (S73)",
+      "description": "Applications for a removal or variation of a condition after planning permission has been granted",
+      "synonyms": "Minor Material Amendment",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/section/73;https://www.legislation.gov.uk/ukpga/1990/9/section/19",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "approval-condition",
+      "name": "Approval (discharge) of conditions",
+      "description": "An application to have conditions approved which have been applied at the time of granting a planning permission to limit and control the way in which the planning permission has been implemented",
+      "synonyms": "Details pursuant;Discharge of condition;Approval of details",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/section/74A;https://www.legislation.gov.uk/ukpga/1990/9/contents",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "consent-under-tpo",
+      "name": "Consent under TPO",
+      "description": "An application that will affect a protected tree including those covered by a Tree Preservation Order (TPO) or those which grow in a conservation area",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/part/VIII/chapter/I",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "non-material-amendment",
+      "name": "Non-material amendment",
+      "description": "An application for any minor changes to proposals that have already been approved",
+      "synonyms": "s96a;section 96 application",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/section/96A",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "pip",
+      "name": "Permission in principle",
+      "description": "An alternative way of getting planning permission for housing-led development which separates the consideration of matters of principle from the technical detail of the development",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/uksi/2017/1309/contents/made;https://www.legislation.gov.uk/uksi/2017/403/contents/made",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "extraction-oil-gas",
+      "name": "Development relating to the onshore extraction of oil and gas",
+      "description": "",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/contents;https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fassets.publishing.service.gov.uk%2Fmedia%2F5a7ca4fded915d6969f46560%2FOnshore_UK_oil_and_gas_exploration_all_countries_Dec13.pptx&wdOrigin=BROWSELINK;https://www.legislation.gov.uk/ukpga/1991/34/contents;https://www.legislation.gov.uk/ukpga/1995/25/contents;https://www.legislation.gov.uk/ukpga/1998/17/contents;https://www.legislation.gov.uk/ukpga/1976/76/contents;https://www.legislation.gov.uk/uksi/1995/1436/contents/made",
+      "notes": "A form of full planning",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "hedgerow-removal",
+      "name": "Hedgerow removal notice",
+      "description": "An application for anyone proposing to remove a hedgerow, or part of a hedgerow",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/uksi/1997/1160/regulation/5/made",
+      "notes": "",
+      "entryDate": "2025-01-07",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "notice-trees-in-con-area",
+      "name": "Notification of proposed works to trees in a conservation area",
+      "description": "Notification, 6 weeks prior to works being carried out, of proposed works to a tree in a conservation area that is not subject to a Tree Preservation order",
+      "synonyms": "",
+      "legislation": "https://www.legislation.gov.uk/ukpga/1990/8/section/211",
+      "notes": "",
+      "entryDate": "2025-02-12",
+      "startDate": "",
+      "endDate": ""
+    }
+  ]
+}

@@ -27,7 +27,7 @@ export default function ModulesPage() {
   const fetchModules = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('/api/modules');
+      const response = await fetch('/data/modules.json');
       const data = await response.json();
       
       if (data.success) {

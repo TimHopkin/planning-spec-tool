@@ -1,0 +1,1291 @@
+{
+  "success": true,
+  "data": [
+    {
+      "reference": "address",
+      "name": "Address",
+      "description": "Address information including text representation, postcode, and UPRN\n",
+      "fields": [
+        {
+          "field": "address-text",
+          "required": true
+        },
+        {
+          "field": "postcode",
+          "required": false
+        },
+        {
+          "field": "uprn",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-07T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "advertisement-proposal-type",
+      "name": "Advertisement proposal type",
+      "description": "Information about a specific type of advertisement including type, count, \nand additional description if 'other' type is selected\n",
+      "fields": [
+        {
+          "field": "advertisement-type",
+          "required": true
+        },
+        {
+          "field": "advertisement-count",
+          "required": true
+        },
+        {
+          "field": "advertisement-other-description",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-08T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "advertisement",
+      "name": "Advertisement",
+      "description": "Details of a proposed advertisement including dimensions, materials, and illumination",
+      "fields": [
+        {
+          "field": "height-from-ground",
+          "required": false
+        },
+        {
+          "field": "height",
+          "required": false
+        },
+        {
+          "field": "width",
+          "required": false
+        },
+        {
+          "field": "depth",
+          "required": false
+        },
+        {
+          "field": "symbol-height-max",
+          "required": false
+        },
+        {
+          "field": "colour",
+          "required": false
+        },
+        {
+          "field": "materials",
+          "required": false
+        },
+        {
+          "field": "max-projection",
+          "required": false
+        },
+        {
+          "field": "illuminated",
+          "required": false
+        },
+        {
+          "field": "illumination-method",
+          "required": false
+        },
+        {
+          "field": "illuminance-level",
+          "required": false
+        },
+        {
+          "field": "illumination-type",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-17T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "agent",
+      "name": "Agent obj",
+      "description": "Details of the agent acting on behalf of the applicant, including name and organisation if applicable\n",
+      "fields": [
+        {
+          "field": "reference",
+          "required": true
+        },
+        {
+          "field": "person",
+          "required": true
+        },
+        {
+          "field": "company",
+          "required": false
+        },
+        {
+          "field": "user-role",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-05-28T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "applicant",
+      "name": "Applicant",
+      "description": "Details of an individual applicant for the planning application,\nincluding their personal information and contact details\n",
+      "fields": [
+        {
+          "field": "reference",
+          "required": true
+        },
+        {
+          "field": "person",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-16T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "application",
+      "name": "Planning application",
+      "description": "Core planning application structure containing reference information,\napplication types, submission details, modules, documents, and fees\n",
+      "fields": [
+        {
+          "field": "reference",
+          "required": true
+        },
+        {
+          "field": "application-types",
+          "required": true
+        },
+        {
+          "field": "application-sub-type",
+          "required": false
+        },
+        {
+          "field": "planning-authority",
+          "required": true
+        },
+        {
+          "field": "submission-date",
+          "required": true
+        },
+        {
+          "field": "modules",
+          "required": true
+        },
+        {
+          "field": "documents",
+          "required": true
+        },
+        {
+          "field": "fee",
+          "required": false
+        }
+      ],
+      "validation": [
+        {
+          "rule": "reference must be a valid UUID format"
+        },
+        {
+          "rule": "application-types must reference valid application type codelist values"
+        },
+        {
+          "rule": "application-sub-type must reference valid application sub-type codelist values"
+        },
+        {
+          "rule": "planning-authority must be a valid organisation reference"
+        },
+        {
+          "rule": "modules must reference existing module definitions"
+        },
+        {
+          "rule": "document references must be unique within the application"
+        },
+        {
+          "rule": "file must contain either url or base64, but not both"
+        },
+        {
+          "rule": "document-types must reference valid planning requirement codelist values"
+        }
+      ],
+      "entryDate": "2025-06-20T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "bedroom-count",
+      "name": "Bedroom count",
+      "description": "Structure for counting units by bedroom number, allowing for unknown bedroom counts\n",
+      "fields": [
+        {
+          "field": "no-bedrooms-unknown",
+          "required": true
+        },
+        {
+          "field": "no-of-bedrooms",
+          "required": false
+        },
+        {
+          "field": "units",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-17T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "bng-details",
+      "name": "Biodiversity net gain details",
+      "description": "Details about the biodiversity net gain assessment including pre-development value,\nhabitat loss information, and required supporting documents\n",
+      "fields": [
+        {
+          "field": "pre-development-date",
+          "required": true
+        },
+        {
+          "field": "pre-development-biodiversity-value",
+          "required": true
+        },
+        {
+          "field": "earlier-date-reason",
+          "required": false
+        },
+        {
+          "field": "habitat-loss-after-2020",
+          "required": false
+        },
+        {
+          "field": "habitat-loss-details",
+          "required": false
+        },
+        {
+          "field": "metric-publication-date",
+          "required": true
+        },
+        {
+          "field": "irreplaceable-habitats",
+          "required": true
+        },
+        {
+          "field": "irreplaceable-habitats-details",
+          "required": false
+        },
+        {
+          "field": "supporting-documents",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-16T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "bng-exemption-reason",
+      "name": "BNG exemption reason",
+      "description": "Reason why Biodiversity Net Gain does not apply, referencing specific\nexemptions or transitional arrangements\n",
+      "fields": [
+        {
+          "field": "exemption-type",
+          "required": true
+        },
+        {
+          "field": "reason",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-15T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "building-element",
+      "name": "Building element",
+      "description": "Describes the materials used for a specific part of a building, \nsuch as walls, roof, windows or doors\n",
+      "fields": [
+        {
+          "field": "building-element-type",
+          "required": true
+        },
+        {
+          "field": "existing-materials",
+          "required": false
+        },
+        {
+          "field": "proposed-materials",
+          "required": false
+        },
+        {
+          "field": "materials-not-applicable",
+          "required": false
+        },
+        {
+          "field": "materials-not-known",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-13T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "contact-details",
+      "name": "Contact details",
+      "description": "A substructure for recording contact details\n",
+      "fields": [
+        {
+          "field": "email",
+          "required": true
+        },
+        {
+          "field": "phone-numbers",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-05-30T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "document",
+      "name": "Document",
+      "description": "Structure for submitted documents including reference, metadata, \nand file information\n",
+      "fields": [
+        {
+          "field": "reference",
+          "required": true
+        },
+        {
+          "field": "name",
+          "required": true
+        },
+        {
+          "field": "description",
+          "required": false
+        },
+        {
+          "field": "document-types",
+          "required": true
+        },
+        {
+          "field": "file",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-20T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "employees",
+      "name": "Employees",
+      "description": "Employee count information including full-time, part-time, and \ntotal full-time equivalent (FTE) calculations\n",
+      "fields": [
+        {
+          "field": "full-time",
+          "required": true
+        },
+        {
+          "field": "part-time",
+          "required": true
+        },
+        {
+          "field": "total-fte",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-08T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "existing-use-detail",
+      "name": "Existing use detail",
+      "description": "Information about a specific existing use on the site, including use class,\nadditional details, and which part of the land it relates to\n",
+      "fields": [
+        {
+          "field": "use",
+          "required": true
+        },
+        {
+          "field": "use-details",
+          "required": false
+        },
+        {
+          "field": "land-part",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-09T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "existing-use",
+      "name": "Existing use",
+      "description": "Information about the current use of a site, including the use classes \nand associated floorspace\n",
+      "fields": [
+        {
+          "field": "uses",
+          "required": true
+        },
+        {
+          "field": "floorspace",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-26T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "fee",
+      "name": "Fee",
+      "description": "Structure for application fees including amounts due, \namounts paid, and transaction references\n",
+      "fields": [
+        {
+          "field": "amount",
+          "required": true
+        },
+        {
+          "field": "amount-paid",
+          "required": true
+        },
+        {
+          "field": "transactions",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-20T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "file",
+      "name": "File",
+      "description": "Structure for digital files or references to stored files,\nincluding metadata and validation information\n",
+      "fields": [
+        {
+          "field": "url",
+          "required": false
+        },
+        {
+          "field": "base64-content",
+          "required": false
+        },
+        {
+          "field": "filename",
+          "required": true
+        },
+        {
+          "field": "mime-type",
+          "required": false
+        },
+        {
+          "field": "checksum",
+          "required": false
+        },
+        {
+          "field": "file-size",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-20T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "floorspace-details",
+      "name": "Floorspace details",
+      "description": "Details of non-residential floorspace changes by use class including existing, lost, and proposed amounts",
+      "fields": [
+        {
+          "field": "use",
+          "required": true
+        },
+        {
+          "field": "specified-use",
+          "required": false
+        },
+        {
+          "field": "existing-gross-floorspace",
+          "required": true
+        },
+        {
+          "field": "floorspace-lost",
+          "required": true
+        },
+        {
+          "field": "total-gross-proposed",
+          "required": true
+        },
+        {
+          "field": "net-additional-floorspace",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-17T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "habitat-loss-details",
+      "name": "Habitat loss details",
+      "description": "Details about habitat loss or degradation events that occurred after January 30, 2020\n",
+      "fields": [
+        {
+          "field": "loss-date",
+          "required": true
+        },
+        {
+          "field": "pre-loss-biodiversity-value",
+          "required": true
+        },
+        {
+          "field": "supporting-evidence",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-16T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "hazardous-substance",
+      "name": "Hazardous substance",
+      "description": "Information about a specific hazardous substance including its type,\nname (if other), and quantity in tonnes\n",
+      "fields": [
+        {
+          "field": "hazardous-substance-type",
+          "required": true
+        },
+        {
+          "field": "hazardous-substance-other",
+          "required": false
+        },
+        {
+          "field": "amount",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-09T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "hours-of-operation",
+      "name": "Hours of operation",
+      "description": "Hours of operation structure for non-residential use",
+      "fields": [
+        {
+          "field": "use",
+          "required": true
+        },
+        {
+          "field": "use-other",
+          "required": false
+        },
+        {
+          "field": "operational-times",
+          "required": false
+        },
+        {
+          "field": "hours-not-known",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-16T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "ldc-interested-person",
+      "name": "LDC Interested Person",
+      "description": "Details of persons with an interest in the property for Listed Building Consent applications including their personal information, nature of interest, and notification status\n",
+      "fields": [
+        {
+          "field": "person",
+          "required": true
+        },
+        {
+          "field": "nature-of-interest",
+          "required": true
+        },
+        {
+          "field": "informed-of-application",
+          "required": true
+        },
+        {
+          "field": "reason-not-informed",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-01-17T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "ldc-owner-details",
+      "name": "LDC Owner Details",
+      "description": "Details of property owners for Listed Building Consent applications including their personal information and whether they have been informed of the application\n",
+      "fields": [
+        {
+          "field": "person",
+          "required": true
+        },
+        {
+          "field": "informed-of-application",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-01-17T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "newspaper-notice",
+      "name": "Newspaper notice",
+      "description": "Details of the newspaper notice published for unknown owners/tenants",
+      "fields": [
+        {
+          "field": "newspaper-name",
+          "required": true
+        },
+        {
+          "field": "publication-date",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-13T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "non-residential-use",
+      "name": "Non-residential use",
+      "description": "Structure for defining non-residential use amounts, which can be expressed as \nfloorspace or site area with exact values or ranges\n",
+      "fields": [
+        {
+          "field": "non-residential-measurement-type",
+          "required": true
+        },
+        {
+          "field": "exact-value",
+          "required": false
+        },
+        {
+          "field": "min",
+          "required": false
+        },
+        {
+          "field": "max",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-26T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "notified-person",
+      "name": "Notified person",
+      "description": "Details of a person that has been notified (often owners and agricultural tenants of the land)",
+      "fields": [
+        {
+          "field": "person",
+          "required": false
+        },
+        {
+          "field": "notice-date",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-13T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "operational-times",
+      "name": "Operational times",
+      "description": "Opening times structure for operational hours by day",
+      "fields": [
+        {
+          "field": "day-type",
+          "required": true
+        },
+        {
+          "field": "closed",
+          "required": false
+        },
+        {
+          "field": "time-ranges",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-16T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "other-contact",
+      "name": "Other contact",
+      "description": "Details of another contact person for site visits when not using the applicant or agent\n",
+      "fields": [
+        {
+          "field": "fullname",
+          "required": true
+        },
+        {
+          "field": "number",
+          "required": true
+        },
+        {
+          "field": "email",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-12T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "owner",
+      "name": "Tree owner",
+      "description": "Details of a tree owner including their personal information and contact details\n",
+      "fields": [
+        {
+          "field": "person",
+          "required": true
+        },
+        {
+          "field": "contact-details",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-30T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "parking-space",
+      "name": "Parking space",
+      "description": "Information about parking spaces by vehicle type, including existing\nand proposed counts with net change calculations\n",
+      "fields": [
+        {
+          "field": "parking-space-type",
+          "required": true
+        },
+        {
+          "field": "vehicle-type-other",
+          "required": false
+        },
+        {
+          "field": "total-existing",
+          "required": true
+        },
+        {
+          "field": "total-proposed",
+          "required": true
+        },
+        {
+          "field": "unknown-proposed",
+          "required": false
+        },
+        {
+          "field": "difference-in-spaces",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-08T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "person",
+      "name": "Person obj",
+      "description": "Details of an individual\n",
+      "fields": [
+        {
+          "field": "title",
+          "required": false
+        },
+        {
+          "field": "first-name",
+          "required": true
+        },
+        {
+          "field": "last-name",
+          "required": true
+        },
+        {
+          "field": "address-text",
+          "required": true
+        },
+        {
+          "field": "postcode",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-05-28T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "phone-number",
+      "name": "Phone number",
+      "description": "A substructure for recording a phone number\n",
+      "fields": [
+        {
+          "field": "number",
+          "required": false
+        },
+        {
+          "field": "contact-priority",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-05-30T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "plans-document",
+      "name": "Plans document",
+      "description": "Structure for plans, drawings, and supporting documents in planning applications\n",
+      "fields": [
+        {
+          "field": "reference-number",
+          "required": true
+        },
+        {
+          "field": "name",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-14T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "related-application-details",
+      "name": "Related application details",
+      "description": "Details about a related application including its reference, description and decision date\n",
+      "fields": [
+        {
+          "field": "reference",
+          "required": true
+        },
+        {
+          "field": "description",
+          "required": true
+        },
+        {
+          "field": "decision-date",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-12T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "replacement-document",
+      "name": "Replacement document",
+      "description": "Structure for documents being replaced in non-material amendments,\nmapping old document references to new document references\n",
+      "fields": [
+        {
+          "field": "old-document",
+          "required": true
+        },
+        {
+          "field": "new-document",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-15T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "replacement-drawing",
+      "name": "Replacement drawing",
+      "description": "Details of an approved drawing being replaced by a new drawing, \nincluding references to both old and new drawings\n",
+      "fields": [
+        {
+          "field": "old-drawing-reference",
+          "required": true
+        },
+        {
+          "field": "new-drawing-reference",
+          "required": true
+        },
+        {
+          "field": "reason",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-26T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "residential-unit-summary",
+      "name": "Residential unit summary",
+      "description": "Breakdown of residential unit counts by tenure and housing type, with optional unit breakdowns\n",
+      "fields": [
+        {
+          "field": "tenure-type",
+          "required": true
+        },
+        {
+          "field": "housing-type",
+          "required": true
+        },
+        {
+          "field": "existing-unit-breakdown",
+          "required": false
+        },
+        {
+          "field": "proposed-unit-breakdown",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-17T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "room-details",
+      "name": "Room details",
+      "description": "Details of room changes for hotels, residential institutions and hostels (C1, C2, C2A use classes)",
+      "fields": [
+        {
+          "field": "use-class",
+          "required": true
+        },
+        {
+          "field": "existing-rooms-lost",
+          "required": true
+        },
+        {
+          "field": "total-rooms-proposed",
+          "required": true
+        },
+        {
+          "field": "net-additional-rooms",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-17T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "site-area",
+      "name": "Site area",
+      "description": "Information about the total area of a development site, including \nthe measured value, unit, and source of the measurement\n",
+      "fields": [
+        {
+          "field": "value",
+          "required": true
+        },
+        {
+          "field": "unit",
+          "required": true
+        },
+        {
+          "field": "provided-by",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-26T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "site-location",
+      "name": "Site location",
+      "description": "Details about the location of a development site, including its boundary, \naddress, and/or coordinates\n",
+      "fields": [
+        {
+          "field": "site-boundary",
+          "required": false
+        },
+        {
+          "field": "address-text",
+          "required": false
+        },
+        {
+          "field": "postcode",
+          "required": false
+        },
+        {
+          "field": "easting",
+          "required": false
+        },
+        {
+          "field": "northing",
+          "required": false
+        },
+        {
+          "field": "latitude",
+          "required": false
+        },
+        {
+          "field": "longitude",
+          "required": false
+        },
+        {
+          "field": "description",
+          "required": false
+        },
+        {
+          "field": "uprns",
+          "required": false,
+          "notes": "uprns are not needed in case of notification for work to trees in conservation area"
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-13T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "site-owner",
+      "name": "Site owner",
+      "description": "Details of the owner of the development site including name and address\n",
+      "fields": [
+        {
+          "field": "fullname",
+          "required": true
+        },
+        {
+          "field": "address-text",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-09T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "supporting-applications",
+      "name": "Supporting applications",
+      "description": "Planning permissions, certificates, or notices affecting the application site\n",
+      "fields": [
+        {
+          "field": "reference-number",
+          "required": false
+        },
+        {
+          "field": "condition-number",
+          "required": false
+        },
+        {
+          "field": "decision-date",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-10T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "supporting-document",
+      "name": "Supporting document",
+      "description": "Document to support information provided, for example, when providing further information when site constraints have been identified\n",
+      "fields": [
+        {
+          "field": "reference",
+          "required": true
+        },
+        {
+          "field": "name",
+          "required": true
+        },
+        {
+          "field": "details",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-12T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "time-range",
+      "name": "Time range",
+      "description": "Time range structure for opening and closing times",
+      "fields": [
+        {
+          "field": "open-time",
+          "required": true
+        },
+        {
+          "field": "close-time",
+          "required": true
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-16T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "tree-details",
+      "name": "Tree details",
+      "description": "Detailed information about an individual tree including identification, \nspecies and proposed works\n",
+      "fields": [
+        {
+          "field": "reference",
+          "required": true
+        },
+        {
+          "field": "species",
+          "required": false
+        },
+        {
+          "field": "description-of-works",
+          "required": false
+        },
+        {
+          "field": "reason",
+          "required": false
+        },
+        {
+          "field": "replanting-description",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-30T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "unit-quantities",
+      "name": "Unit quantities",
+      "description": "Structure for defining quantities of units, either as unknown or broken down by bedroom count\n",
+      "fields": [
+        {
+          "field": "units-unknown",
+          "required": true
+        },
+        {
+          "field": "units-per-bedroom-no",
+          "required": false
+        },
+        {
+          "field": "total-units",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-17T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "use",
+      "name": "Use",
+      "description": "A specific use class or type of use for a site or building\n",
+      "fields": [
+        {
+          "field": "use",
+          "required": true
+        },
+        {
+          "field": "specified-use",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-06-26T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "waste-management-outline",
+      "name": "Waste management",
+      "description": "Details of waste management facilities including type, capacity, and throughput information. Specifically for outline applications\n",
+      "fields": [
+        {
+          "field": "waste-management-facility-type",
+          "required": true
+        },
+        {
+          "field": "not-applicable",
+          "required": false
+        },
+        {
+          "field": "is-total-capacity-known",
+          "required": true
+        },
+        {
+          "field": "total-capacity",
+          "required": false
+        },
+        {
+          "field": "is-annual-throughput-known",
+          "required": true
+        },
+        {
+          "field": "annual-throughput",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-09T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "waste-management",
+      "name": "Waste management",
+      "description": "Details of waste management facilities including type, capacity, and throughput information\n",
+      "fields": [
+        {
+          "field": "waste-management-facility-type",
+          "required": true
+        },
+        {
+          "field": "not-applicable",
+          "required": false
+        },
+        {
+          "field": "total-capacity",
+          "required": false
+        },
+        {
+          "field": "annual-throughput",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-09T00:00:00.000Z",
+      "endDate": ""
+    },
+    {
+      "reference": "waste-streams",
+      "name": "Waste streams",
+      "description": "Annual throughput for different types of waste streams\n",
+      "fields": [
+        {
+          "field": "municipal",
+          "required": false
+        },
+        {
+          "field": "construction-demolition",
+          "required": false
+        },
+        {
+          "field": "commercial-industrial",
+          "required": false
+        },
+        {
+          "field": "hazardous",
+          "required": false
+        }
+      ],
+      "validation": [],
+      "entryDate": "2025-07-09T00:00:00.000Z",
+      "endDate": ""
+    }
+  ]
+}

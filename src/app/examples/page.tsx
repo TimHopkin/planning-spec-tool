@@ -29,7 +29,7 @@ export default function ExamplesPage() {
   const fetchExamples = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('/api/examples');
+      const response = await fetch('/data/examples.json');
       const data = await response.json();
       
       if (data.success) {
@@ -47,7 +47,7 @@ export default function ExamplesPage() {
 
   const fetchApplications = async () => {
     try {
-      const response = await fetch('/api/applications');
+      const response = await fetch('/data/applications.json');
       const data = await response.json();
       
       if (data.success) {

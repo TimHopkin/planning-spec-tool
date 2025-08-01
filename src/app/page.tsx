@@ -1,37 +1,43 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ApplicationCard } from '@/components/ApplicationCard';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import { FileText, Settings, Database, Code, Search, BookOpen, ArrowRight } from 'lucide-react';
 
-async function getApplications() {
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'}/api/applications`, {
-      cache: 'no-store'
-    });
-    const data = await response.json();
-    return data.success ? data.data.slice(0, 6) : [];
-  } catch (error) {
-    console.error('Failed to fetch applications:', error);
-    return [];
-  }
-}
+export default function Home() {
+  const [applications, setApplications] = useState([]);
+  const [modules, setModules] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-async function getModules() {
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'}/api/modules`, {
-      cache: 'no-store'
-    });
-    const data = await response.json();
-    return data.success ? data.data.slice(0, 3) : [];
-  } catch (error) {
-    console.error('Failed to fetch modules:', error);
-    return [];
-  }
-}
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const [appsResponse, modulesResponse] = await Promise.all([
+          fetch('/data/applications.json'),
+          fetch('/data/modules.json')
+        ]);
+        
+        const appsData = await appsResponse.json();
+        const modulesData = await modulesResponse.json();
+        
+        if (appsData.success) {
+          setApplications(appsData.data.slice(0, 6));
+        }
+        
+        if (modulesData.success) {
+          setModules(modulesData.data.slice(0, 3));
+        }
+      } catch (error) {
+        console.error('Failed to fetch data:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
 
-export default async function Home() {
-  const applications = await getApplications();
-  const modules = await getModules();
+    fetchData();
+  }, []);
 
   const features = [
     {

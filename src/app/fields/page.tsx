@@ -28,7 +28,7 @@ export default function FieldsPage() {
   const fetchFields = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('/api/fields');
+      const response = await fetch('/data/fields.json');
       const data = await response.json();
       
       if (data.success) {

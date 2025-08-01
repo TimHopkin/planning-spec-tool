@@ -22,7 +22,7 @@ export default function SearchPage() {
       setSearchResults([]);
       setHasSearched(false);
     }
-  }, [searchQuery]);
+  }, [searchQuery, filterType]);
 
   const performSearch = async () => {
     if (!searchQuery.trim()) return;
@@ -31,14 +31,33 @@ export default function SearchPage() {
       setIsLoading(true);
       setError(null);
       
-      const response = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`);
+      const response = await fetch('/data/search-index.json');
       const data = await response.json();
       
       if (data.success) {
-        setSearchResults(data.data);
+        // Perform client-side search
+        const query = searchQuery.toLowerCase();
+        const results = data.data.filter((item: any) => {
+          const matchesQuery = item.name.toLowerCase().includes(query) || 
+                               item.description.toLowerCase().includes(query) ||
+                               item.reference.toLowerCase().includes(query);
+          
+          const matchesFilter = filterType === 'all' || item.type === filterType;
+          
+          return matchesQuery && matchesFilter;
+        });
+        
+        // Sort by relevance (simple scoring)
+        results.sort((a: any, b: any) => {
+          const aScore = calculateScore(a.name + ' ' + a.description, query);
+          const bScore = calculateScore(b.name + ' ' + b.description, query);
+          return bScore - aScore;
+        });
+        
+        setSearchResults(results);
         setHasSearched(true);
       } else {
-        setError(data.error || 'Search failed');
+        setError('Search failed');
       }
     } catch (err) {
       setError('Failed to perform search');
@@ -46,6 +65,22 @@ export default function SearchPage() {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const calculateScore = (text: string, query: string): number => {
+    const lowerText = text.toLowerCase();
+    const lowerQuery = query.toLowerCase();
+    
+    if (lowerText === lowerQuery) return 100;
+    if (lowerText.startsWith(lowerQuery)) return 90;
+    if (lowerText.includes(lowerQuery)) return 70 + (query.length / text.length) * 20;
+    
+    // Simple word matching score
+    const queryWords = lowerQuery.split(/\s+/);
+    const textWords = lowerText.split(/\s+/);
+    const matches = queryWords.filter(qw => textWords.some(tw => tw.includes(qw)));
+    
+    return (matches.length / queryWords.length) * 50;
   };
 
   const filteredResults = filterType === 'all' 

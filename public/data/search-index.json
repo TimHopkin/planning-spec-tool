@@ -1,0 +1,3547 @@
+{
+  "success": true,
+  "data": [
+    {
+      "type": "application",
+      "reference": "hh",
+      "name": "Householder planning application",
+      "description": "A simplified process for applications to alter or enlarge a single house (but not a flat), including works within the boundary/garden",
+      "path": "/applications/hh"
+    },
+    {
+      "type": "application",
+      "reference": "full",
+      "name": "Full planning permission",
+      "description": "This application is needed when making detailed proposals for developments which are not covered by a householder application or permitted development rights",
+      "path": "/applications/full"
+    },
+    {
+      "type": "application",
+      "reference": "outline",
+      "name": "Outline planning",
+      "description": "Applications that are used to understand whether the basic nature of a development is viable",
+      "path": "/applications/outline"
+    },
+    {
+      "type": "application",
+      "reference": "reserved-matters",
+      "name": "Reserved matters",
+      "description": "This application is only required when the applicant has already been granted outline planning permission. Reserved matters can include appearance, means of access, landscaping, layout and scale",
+      "path": "/applications/reserved-matters"
+    },
+    {
+      "type": "application",
+      "reference": "demolition-con-area",
+      "name": "Planning permission for relevant demolition in a conservation area",
+      "description": "An application for proposals involving substantial demolition of any unlisted building or structure in a conservation area",
+      "path": "/applications/demolition-con-area"
+    },
+    {
+      "type": "application",
+      "reference": "lbc",
+      "name": "Listed building consent",
+      "description": "An application for any alteration, extension, or demolition of a listed building",
+      "path": "/applications/lbc"
+    },
+    {
+      "type": "application",
+      "reference": "advertising",
+      "name": "Advertising",
+      "description": " An application for all types of advertisements and signs",
+      "path": "/applications/advertising"
+    },
+    {
+      "type": "application",
+      "reference": "ldc",
+      "name": "Lawful development certificate",
+      "description": "A legal document stating the lawfulness of past, present or future building use, operation or other matters, signifying that enforcement action cannot be carried out against the development",
+      "path": "/applications/ldc"
+    },
+    {
+      "type": "application",
+      "reference": "prior-approval",
+      "name": "Prior approval",
+      "description": "This applies to  developments with permitted development rights (where developments are granted planning permission by national legislation without the need to submit a planning application)",
+      "path": "/applications/prior-approval"
+    },
+    {
+      "type": "application",
+      "reference": "s73",
+      "name": "Removal/variation of conditions (S73)",
+      "description": "Applications for a removal or variation of a condition after planning permission has been granted",
+      "path": "/applications/s73"
+    },
+    {
+      "type": "application",
+      "reference": "approval-condition",
+      "name": "Approval (discharge) of conditions",
+      "description": "An application to have conditions approved which have been applied at the time of granting a planning permission to limit and control the way in which the planning permission has been implemented",
+      "path": "/applications/approval-condition"
+    },
+    {
+      "type": "application",
+      "reference": "consent-under-tpo",
+      "name": "Consent under TPO",
+      "description": "An application that will affect a protected tree including those covered by a Tree Preservation Order (TPO) or those which grow in a conservation area",
+      "path": "/applications/consent-under-tpo"
+    },
+    {
+      "type": "application",
+      "reference": "non-material-amendment",
+      "name": "Non-material amendment",
+      "description": "An application for any minor changes to proposals that have already been approved",
+      "path": "/applications/non-material-amendment"
+    },
+    {
+      "type": "application",
+      "reference": "pip",
+      "name": "Permission in principle",
+      "description": "An alternative way of getting planning permission for housing-led development which separates the consideration of matters of principle from the technical detail of the development",
+      "path": "/applications/pip"
+    },
+    {
+      "type": "application",
+      "reference": "extraction-oil-gas",
+      "name": "Development relating to the onshore extraction of oil and gas",
+      "description": "",
+      "path": "/applications/extraction-oil-gas"
+    },
+    {
+      "type": "application",
+      "reference": "hedgerow-removal",
+      "name": "Hedgerow removal notice",
+      "description": "An application for anyone proposing to remove a hedgerow, or part of a hedgerow",
+      "path": "/applications/hedgerow-removal"
+    },
+    {
+      "type": "application",
+      "reference": "notice-trees-in-con-area",
+      "name": "Notification of proposed works to trees in a conservation area",
+      "description": "Notification, 6 weeks prior to works being carried out, of proposed works to a tree in a conservation area that is not subject to a Tree Preservation order",
+      "path": "/applications/notice-trees-in-con-area"
+    },
+    {
+      "type": "module",
+      "reference": "adj-premises",
+      "name": "Adjoining premises",
+      "description": "The addresses of any adjoining properties",
+      "path": "/modules/adj-premises"
+    },
+    {
+      "type": "module",
+      "reference": "advert-period",
+      "name": "Advertisement period",
+      "description": "The amount of time you're planning for your advert to be on display",
+      "path": "/modules/advert-period"
+    },
+    {
+      "type": "module",
+      "reference": "agent-contact",
+      "name": "Agent contact details",
+      "description": "Details needed for contacting the person representing the applicant",
+      "path": "/modules/agent-contact"
+    },
+    {
+      "type": "module",
+      "reference": "agent-details",
+      "name": "Agent name and address",
+      "description": "Details about the person representing the applicant",
+      "path": "/modules/agent-details"
+    },
+    {
+      "type": "module",
+      "reference": "non-res-floorspace",
+      "name": "All types of development: Non-residential floorspace",
+      "description": "Details of any new non-residential development involved in the proposal",
+      "path": "/modules/non-res-floorspace"
+    },
+    {
+      "type": "module",
+      "reference": "applicant-contact",
+      "name": "Applicant contact details",
+      "description": "Details needed for contacting the applicant",
+      "path": "/modules/applicant-contact"
+    },
+    {
+      "type": "module",
+      "reference": "applicant-details",
+      "name": "Applicant name and address",
+      "description": "Details about the applicant",
+      "path": "/modules/applicant-details"
+    },
+    {
+      "type": "module",
+      "reference": "flood-risk-assessment",
+      "name": "Assessment of flood risk",
+      "description": "An assessment needed for any developments within any flood risk zones",
+      "path": "/modules/flood-risk-assessment"
+    },
+    {
+      "type": "module",
+      "reference": "conflict-of-interest",
+      "name": "Authority employee/member",
+      "description": "Any connection between the applicant or agent and the local authority’s staff or elected members that could present a conflict of interest",
+      "path": "/modules/conflict-of-interest"
+    },
+    {
+      "type": "module",
+      "reference": "bio-geo-arch-con",
+      "name": "Biodiversity and geological conservation",
+      "description": "Details of any impact to biodiversity or geological convservation",
+      "path": "/modules/bio-geo-arch-con"
+    },
+    {
+      "type": "module",
+      "reference": "bng",
+      "name": "Biodiversity net gain",
+      "description": "Information to show how the development will protect or improve wildlife habitats on the site, and whether any exemptions or special rules apply",
+      "path": "/modules/bng"
+    },
+    {
+      "type": "module",
+      "reference": "ldc-interest",
+      "name": "Certificate of lawfulness for proposed works - Interest in listed buildings",
+      "description": "A legal document stating the lawfulness of proposed works to a listed building",
+      "path": "/modules/ldc-interest"
+    },
+    {
+      "type": "module",
+      "reference": "checklist",
+      "name": "Checklist",
+      "description": "Details of the national planning requirements the applicant should submit along with the application",
+      "path": "/modules/checklist"
+    },
+    {
+      "type": "module",
+      "reference": "con-remove-vary",
+      "name": "Condition(s) - removal",
+      "description": "An application to change or remove conditions which can be proved are no longer relevant or reasonable",
+      "path": "/modules/con-remove-vary"
+    },
+    {
+      "type": "module",
+      "reference": "declaration",
+      "name": "Declaration",
+      "description": "Applicants and agents must declare information provided is correct",
+      "path": "/modules/declaration"
+    },
+    {
+      "type": "module",
+      "reference": "designated-areas",
+      "name": "Designated areas",
+      "description": "Areas that are protected because of their natural and cultural importance",
+      "path": "/modules/designated-areas"
+    },
+    {
+      "type": "module",
+      "reference": "demolition",
+      "name": "Demolition",
+      "description": "Permission or prior approval that may be required to demolish a building",
+      "path": "/modules/demolition"
+    },
+    {
+      "type": "module",
+      "reference": "desc-existing-use",
+      "name": "Describing what is on the site at the time of application",
+      "description": "",
+      "path": "/modules/desc-existing-use"
+    },
+    {
+      "type": "module",
+      "reference": "desc-proposed-works",
+      "name": "Description of proposed works",
+      "description": "",
+      "path": "/modules/desc-proposed-works"
+    },
+    {
+      "type": "module",
+      "reference": "use-works-activity",
+      "name": "Description of current use, building works or activity",
+      "description": "Please state for which of these you need a lawful development certificate/building works (you must tick at least one option):",
+      "path": "/modules/use-works-activity"
+    },
+    {
+      "type": "module",
+      "reference": "proposal-details",
+      "name": "Description of the proposal",
+      "description": "Details about the proposal",
+      "path": "/modules/proposal-details"
+    },
+    {
+      "type": "module",
+      "reference": "proposal-details-ldc",
+      "name": "Details about the proposal",
+      "description": "",
+      "path": "/modules/proposal-details-ldc"
+    },
+    {
+      "type": "module",
+      "reference": "desc-your-proposal",
+      "name": "Details about the proposal",
+      "description": "",
+      "path": "/modules/desc-your-proposal"
+    },
+    {
+      "type": "module",
+      "reference": "proposal-details-inc-non-residential",
+      "name": "Description of the proposed development including any non-residential development",
+      "description": "",
+      "path": "/modules/proposal-details-inc-non-residential"
+    },
+    {
+      "type": "module",
+      "reference": "desc-work-impacts-risks",
+      "name": "Description of proposed works, impacts and risks",
+      "description": "",
+      "path": "/modules/desc-work-impacts-risks"
+    },
+    {
+      "type": "module",
+      "reference": "proposed-advert-details",
+      "name": "Details about the proposed advertisement",
+      "description": "",
+      "path": "/modules/proposed-advert-details"
+    },
+    {
+      "type": "module",
+      "reference": "discharge-con",
+      "name": "Discharge of condition",
+      "description": "Application to have conditions removed",
+      "path": "/modules/discharge-con"
+    },
+    {
+      "type": "module",
+      "reference": "eligibility",
+      "name": "Eligibility",
+      "description": "Details of the applicant's eligibility to make an application",
+      "path": "/modules/eligibility"
+    },
+    {
+      "type": "module",
+      "reference": "eligibility-extension",
+      "name": "Eligibility - Larger house extension",
+      "description": "Checking eligibility for prior approval",
+      "path": "/modules/eligibility-extension"
+    },
+    {
+      "type": "module",
+      "reference": "eligibility-related-works",
+      "name": "Eligibility - Related operations and works",
+      "description": "Checking eligibility for prior approval",
+      "path": "/modules/eligibility-related-works"
+    },
+    {
+      "type": "module",
+      "reference": "eligibility-current-building",
+      "name": "Eligibility - The current building and site",
+      "description": "Checking eligibility for prior approval",
+      "path": "/modules/eligibility-current-building"
+    },
+    {
+      "type": "module",
+      "reference": "eligibility-proposal",
+      "name": "Eligibility - The proposed development",
+      "description": "Checking eligibility for prior approval",
+      "path": "/modules/eligibility-proposal"
+    },
+    {
+      "type": "module",
+      "reference": "employment",
+      "name": "Employment",
+      "description": "Information about employees",
+      "path": "/modules/employment"
+    },
+    {
+      "type": "module",
+      "reference": "equip-method",
+      "name": "Equipment and method used",
+      "description": "Information about the equipment and methods proposed",
+      "path": "/modules/equip-method"
+    },
+    {
+      "type": "module",
+      "reference": "existing-use",
+      "name": "Existing use",
+      "description": "Application for development that doesn't change the existing use of the building",
+      "path": "/modules/existing-use"
+    },
+    {
+      "type": "module",
+      "reference": "demolition-reason",
+      "name": "Explanation for proposed demolition work",
+      "description": "Justification for proposed demolition work",
+      "path": "/modules/demolition-reason"
+    },
+    {
+      "type": "module",
+      "reference": "foul-sewage",
+      "name": "Foul sewage",
+      "description": "Description of how sewage will be dealt with for the development",
+      "path": "/modules/foul-sewage"
+    },
+    {
+      "type": "module",
+      "reference": "grounds-for-application",
+      "name": "Grounds for application",
+      "description": "Description of development",
+      "path": "/modules/grounds-for-application"
+    },
+    {
+      "type": "module",
+      "reference": "grounds-ldc",
+      "name": "Grounds for application for a lawful development certificate",
+      "description": "Description of development",
+      "path": "/modules/grounds-ldc"
+    },
+    {
+      "type": "module",
+      "reference": "grounds-existing-use",
+      "name": "Grounds for application (information about the existing use(s))",
+      "description": "Current use of the site",
+      "path": "/modules/grounds-existing-use"
+    },
+    {
+      "type": "module",
+      "reference": "grounds-proposed-use",
+      "name": "Grounds for application (information about the proposed use(s))",
+      "description": "Proposed use of development",
+      "path": "/modules/grounds-proposed-use"
+    },
+    {
+      "type": "module",
+      "reference": "haz-substances",
+      "name": "Hazardous substances",
+      "description": "Does proposal include use or storage of hazardous substances? This module is used to determine if hazardous substances consent would also be required",
+      "path": "/modules/haz-substances"
+    },
+    {
+      "type": "module",
+      "reference": "hrs-operation",
+      "name": "Hours of operation",
+      "description": "Hours of opening for each non-residential use proposed",
+      "path": "/modules/hrs-operation"
+    },
+    {
+      "type": "module",
+      "reference": "tree-work-details",
+      "name": "Identification of tree(s) and description of works",
+      "description": "Details of trees and proposed work to them",
+      "path": "/modules/tree-work-details"
+    },
+    {
+      "type": "module",
+      "reference": "processes-machinery-waste",
+      "name": "Industrial or commercial processes and machinery",
+      "description": "Activities and processes which would be carried out on the site and the end products including plant, ventilation, or air conditioning",
+      "path": "/modules/processes-machinery-waste"
+    },
+    {
+      "type": "module",
+      "reference": "info-support-ldc",
+      "name": "Information in support of a lawful development certificate",
+      "description": "Information in support of a lawful development certificate",
+      "path": "/modules/info-support-ldc"
+    },
+    {
+      "type": "module",
+      "reference": "immunity-from-listing",
+      "name": "Immunity from listing",
+      "description": "Whether you have an immunity from listing",
+      "path": "/modules/immunity-from-listing"
+    },
+    {
+      "type": "module",
+      "reference": "interest-in-land",
+      "name": "Interest in the land",
+      "description": "What your interest in the land is",
+      "path": "/modules/interest-in-land"
+    },
+    {
+      "type": "module",
+      "reference": "lb-alter",
+      "name": "Listed building alterations",
+      "description": "What you're proposing to do to a listed building",
+      "path": "/modules/lb-alter"
+    },
+    {
+      "type": "module",
+      "reference": "lb-grade",
+      "name": "Listed building grading",
+      "description": "What grade the listed building is",
+      "path": "/modules/lb-grade"
+    },
+    {
+      "type": "module",
+      "reference": "advert-location",
+      "name": "Location of advertisement(s)",
+      "description": "Where your advert will be situated",
+      "path": "/modules/advert-location"
+    },
+    {
+      "type": "module",
+      "reference": "materials",
+      "name": "Materials",
+      "description": "Details about the materials to be used or changed should be provided, including type, colour and name for each material",
+      "path": "/modules/materials"
+    },
+    {
+      "type": "module",
+      "reference": "community-consultation",
+      "name": "Neighbour and community consultation",
+      "description": "Neighbours should be informed about development proposals and seek feedback",
+      "path": "/modules/community-consultation"
+    },
+    {
+      "type": "module",
+      "reference": "nm-amendment-details",
+      "name": "Non-material amendment(s) sought",
+      "description": "Description of proposed development",
+      "path": "/modules/nm-amendment-details"
+    },
+    {
+      "type": "module",
+      "reference": "ownership-certs",
+      "name": "Ownership certificates and agricultural land declaration",
+      "description": "Ownership of the site and/or property for development needs to be understood",
+      "path": "/modules/ownership-certs"
+    },
+    {
+      "type": "module",
+      "reference": "parking",
+      "name": "Parking",
+      "description": "Details of how the proposed development will affect the parking area required",
+      "path": "/modules/parking"
+    },
+    {
+      "type": "module",
+      "reference": "part-discharge",
+      "name": "Part discharge of condition(s)",
+      "description": "Submitting information to discharge part of a condition",
+      "path": "/modules/part-discharge"
+    },
+    {
+      "type": "module",
+      "reference": "access-rights-of-way",
+      "name": "Pedestrian and vehicle access, roads and rights of way",
+      "description": "Any changes to how people or vehicles access the site, including any new or affected roads, footpaths, or public rights of way",
+      "path": "/modules/access-rights-of-way"
+    },
+    {
+      "type": "module",
+      "reference": "plans-drawings-supporting-materials",
+      "name": "Plans, drawings and other supporting material",
+      "description": "",
+      "path": "/modules/plans-drawings-supporting-materials"
+    },
+    {
+      "type": "module",
+      "reference": "pre-app-advice",
+      "name": "Pre-application advice",
+      "description": "Details of pre-application advice received from the local planning authority",
+      "path": "/modules/pre-app-advice"
+    },
+    {
+      "type": "module",
+      "reference": "related-applications",
+      "name": "Related proposals",
+      "description": "Other applications related to the same site",
+      "path": "/modules/related-applications"
+    },
+    {
+      "type": "module",
+      "reference": "res-units",
+      "name": "Residential units (including conversion)",
+      "description": "The amount of residential units included as part of your proposal",
+      "path": "/modules/res-units"
+    },
+    {
+      "type": "module",
+      "reference": "site-details",
+      "name": "Site address details",
+      "description": "Details to locate the site proposed for development",
+      "path": "/modules/site-details"
+    },
+    {
+      "type": "module",
+      "reference": "site-area",
+      "name": "Site area",
+      "description": "Size of the site",
+      "path": "/modules/site-area"
+    },
+    {
+      "type": "module",
+      "reference": "site-info",
+      "name": "Site information",
+      "description": "Additional information about the site",
+      "path": "/modules/site-info"
+    },
+    {
+      "type": "module",
+      "reference": "site-ownership",
+      "name": "Site ownership",
+      "description": "Who currently owns the site",
+      "path": "/modules/site-ownership"
+    },
+    {
+      "type": "module",
+      "reference": "site-visit",
+      "name": "Site visit",
+      "description": "Details needed to support a site visit",
+      "path": "/modules/site-visit"
+    },
+    {
+      "type": "module",
+      "reference": "storage-facilities",
+      "name": "Storage",
+      "description": "Any storage of materials proposed during construction",
+      "path": "/modules/storage-facilities"
+    },
+    {
+      "type": "module",
+      "reference": "supporting-info",
+      "name": "Supporting information",
+      "description": "Information to support the application",
+      "path": "/modules/supporting-info"
+    },
+    {
+      "type": "module",
+      "reference": "trade-effluent",
+      "name": "Trade effluent",
+      "description": "Effluents that will be produced from a process or activity undertaken on the site",
+      "path": "/modules/trade-effluent"
+    },
+    {
+      "type": "module",
+      "reference": "tpo",
+      "name": "Tree preservation order details",
+      "description": "Details of a tree preservation order",
+      "path": "/modules/tpo"
+    },
+    {
+      "type": "module",
+      "reference": "trees-additional",
+      "name": "Trees - additional information",
+      "description": "Additional information about trees on the site",
+      "path": "/modules/trees-additional"
+    },
+    {
+      "type": "module",
+      "reference": "trees-hedges",
+      "name": "Trees and hedges",
+      "description": "Details of trees and hedges affecting the site or that will be affected by the proposed development",
+      "path": "/modules/trees-hedges"
+    },
+    {
+      "type": "module",
+      "reference": "trees-location",
+      "name": "Trees location",
+      "description": "Location of trees on the site",
+      "path": "/modules/trees-location"
+    },
+    {
+      "type": "module",
+      "reference": "trees-ownership",
+      "name": "Trees ownership",
+      "description": "Ownership of trees on the site",
+      "path": "/modules/trees-ownership"
+    },
+    {
+      "type": "module",
+      "reference": "dev-type",
+      "name": "Type of development",
+      "description": "Type of development",
+      "path": "/modules/dev-type"
+    },
+    {
+      "type": "module",
+      "reference": "advertisement-types",
+      "name": "Type of proposed advertisement(s)",
+      "description": "Type of proposed advertisement",
+      "path": "/modules/advertisement-types"
+    },
+    {
+      "type": "module",
+      "reference": "types-application",
+      "name": "Types of application",
+      "description": "Type of application",
+      "path": "/modules/types-application"
+    },
+    {
+      "type": "module",
+      "reference": "vehicle-parking",
+      "name": "Vehicle parking",
+      "description": "Existing and proposed number of on-site parking spaces",
+      "path": "/modules/vehicle-parking"
+    },
+    {
+      "type": "module",
+      "reference": "vol-agreement",
+      "name": "Voluntary agreements / planning obligations",
+      "description": "Any voluntary agreements or planning obligations",
+      "path": "/modules/vol-agreement"
+    },
+    {
+      "type": "module",
+      "reference": "waste-storage-collection",
+      "name": "Waste storage and collection",
+      "description": "Proposed waste storage and collection",
+      "path": "/modules/waste-storage-collection"
+    },
+    {
+      "type": "module",
+      "reference": "interest-details",
+      "name": "Interest details",
+      "description": "Who owns the land or building and the applicant's interest",
+      "path": "/modules/interest-details"
+    },
+    {
+      "type": "module",
+      "reference": "hedgerow-removal",
+      "name": "Hedgerow removal notice",
+      "description": "Details about the hedgerows being removed",
+      "path": "/modules/hedgerow-removal"
+    },
+    {
+      "type": "field",
+      "reference": "additional-information",
+      "name": "Additional information",
+      "description": "Any additional information (such as hours of use of other machinery within the site-generators, pumps, etc)",
+      "path": "/fields/additional-information"
+    },
+    {
+      "type": "field",
+      "reference": "additional-material-information",
+      "name": "Additional material information",
+      "description": "Additional context or details about the materials to be used in the development",
+      "path": "/fields/additional-material-information"
+    },
+    {
+      "type": "field",
+      "reference": "address-text",
+      "name": "Address Text",
+      "description": "Flexible field for capturing addresses",
+      "path": "/fields/address-text"
+    },
+    {
+      "type": "field",
+      "reference": "addresses",
+      "name": "Addresses",
+      "description": "A list of addresses for the adjoining properties",
+      "path": "/fields/addresses"
+    },
+    {
+      "type": "field",
+      "reference": "advert-end-date",
+      "name": "Advert end date",
+      "description": "The end of the time period that consent to advertisement is sought",
+      "path": "/fields/advert-end-date"
+    },
+    {
+      "type": "field",
+      "reference": "advert-placed-date",
+      "name": "Advert placed date",
+      "description": "Date when the advertisement was placed (YYYY-MM-DD format)",
+      "path": "/fields/advert-placed-date"
+    },
+    {
+      "type": "field",
+      "reference": "advert-start-date",
+      "name": "Advert start date",
+      "description": "The start of the time period that consent to advertisement is sought",
+      "path": "/fields/advert-start-date"
+    },
+    {
+      "type": "field",
+      "reference": "advertisement-count",
+      "name": "Advertisement count",
+      "description": "Number of this type of advertisement",
+      "path": "/fields/advertisement-count"
+    },
+    {
+      "type": "field",
+      "reference": "advertisement-other-description",
+      "name": "Advertisement other description",
+      "description": "Details required if other advertisement type is selected",
+      "path": "/fields/advertisement-other-description"
+    },
+    {
+      "type": "field",
+      "reference": "advertisement-proposal-description",
+      "name": "Advertisement proposal description",
+      "description": "Description of the advertisement proposal",
+      "path": "/fields/advertisement-proposal-description"
+    },
+    {
+      "type": "field",
+      "reference": "advertisement-proposal-type",
+      "name": "Advertisement proposal type",
+      "description": "Expected to provide counts for each advertisement type",
+      "path": "/fields/advertisement-proposal-type"
+    },
+    {
+      "type": "field",
+      "reference": "advertisement-type",
+      "name": "Advertisement type",
+      "description": "One of the advertisement-types or other",
+      "path": "/fields/advertisement-type"
+    },
+    {
+      "type": "field",
+      "reference": "advertisements",
+      "name": "Advertisements",
+      "description": "Structured data about each proposed advertisement",
+      "path": "/fields/advertisements"
+    },
+    {
+      "type": "field",
+      "reference": "advice-date",
+      "name": "Advice date",
+      "description": "Date when pre-application advice was received, in YYYY-MM-DD format",
+      "path": "/fields/advice-date"
+    },
+    {
+      "type": "field",
+      "reference": "advice-from-authority",
+      "name": "Advice from authority",
+      "description": "Any advice provided on-site by a Local Planning Authority (LPA) officer",
+      "path": "/fields/advice-from-authority"
+    },
+    {
+      "type": "field",
+      "reference": "advice-sought",
+      "name": "Pre-application advice sought",
+      "description": "Whether pre-application advice has been sought from the planning authority",
+      "path": "/fields/advice-sought"
+    },
+    {
+      "type": "field",
+      "reference": "advice-summary",
+      "name": "Advice summary",
+      "description": "Summary of the pre-application advice received from the planning authority",
+      "path": "/fields/advice-summary"
+    },
+    {
+      "type": "field",
+      "reference": "agent-reference",
+      "name": "Agent reference",
+      "description": "A reference to an agent object",
+      "path": "/fields/agent-reference"
+    },
+    {
+      "type": "field",
+      "reference": "agent-signature",
+      "name": "Agent signature",
+      "description": "Digital signature of the agent (if applicable)",
+      "path": "/fields/agent-signature"
+    },
+    {
+      "type": "field",
+      "reference": "agent",
+      "name": "agent",
+      "description": "Details of the agent",
+      "path": "/fields/agent"
+    },
+    {
+      "type": "field",
+      "reference": "agreement-summary",
+      "name": "Agreement summary",
+      "description": "Summary of the agreement",
+      "path": "/fields/agreement-summary"
+    },
+    {
+      "type": "field",
+      "reference": "agricultural-tenants",
+      "name": "Agricultural tenants",
+      "description": "Are there any agricultural tenants on the land?",
+      "path": "/fields/agricultural-tenants"
+    },
+    {
+      "type": "field",
+      "reference": "air-traffic-defence-impacts",
+      "name": "Air traffic defence impacts",
+      "description": "Details of any air traffic and defence asset impacts, including how these will be mitigated",
+      "path": "/fields/air-traffic-defence-impacts"
+    },
+    {
+      "type": "field",
+      "reference": "amount-paid",
+      "name": "Amount paid",
+      "description": "The amount paid towards the application fee",
+      "path": "/fields/amount-paid"
+    },
+    {
+      "type": "field",
+      "reference": "amount",
+      "name": "Amount",
+      "description": "The total amount due for the application fee",
+      "path": "/fields/amount"
+    },
+    {
+      "type": "field",
+      "reference": "annual-throughput",
+      "name": "Annual throughput",
+      "description": "Maximum annual operational throughput in tonnes/litres",
+      "path": "/fields/annual-throughput"
+    },
+    {
+      "type": "field",
+      "reference": "applicant-interest-adjoining-land",
+      "name": "Applicant interest adjoining land",
+      "description": "Description of the applicant's interest in the adjacent land",
+      "path": "/fields/applicant-interest-adjoining-land"
+    },
+    {
+      "type": "field",
+      "reference": "applicant-interest",
+      "name": "Applicant interest",
+      "description": "Description of the applicant's interest in the land",
+      "path": "/fields/applicant-interest"
+    },
+    {
+      "type": "field",
+      "reference": "applicant-land-interest",
+      "name": "Applicant land interest",
+      "description": "Does the applicant have an interest in the land",
+      "path": "/fields/applicant-land-interest"
+    },
+    {
+      "type": "field",
+      "reference": "applicant-owns-land",
+      "name": "Applicant owns land",
+      "description": "True or False indicating whether the applicant owns the land where the advertisement will be displayed",
+      "path": "/fields/applicant-owns-land"
+    },
+    {
+      "type": "field",
+      "reference": "applicant-reference",
+      "name": "Applicant reference",
+      "description": "Reference to match contact details to a named individual from the applicant details component",
+      "path": "/fields/applicant-reference"
+    },
+    {
+      "type": "field",
+      "reference": "applicant-signature",
+      "name": "Applicant signature",
+      "description": "Digital signature of the applicant",
+      "path": "/fields/applicant-signature"
+    },
+    {
+      "type": "field",
+      "reference": "applicants",
+      "name": "Applicants",
+      "description": "",
+      "path": "/fields/applicants"
+    },
+    {
+      "type": "field",
+      "reference": "application-result",
+      "name": "Application result",
+      "description": "Provide the result of the application for a certificate of immunity",
+      "path": "/fields/application-result"
+    },
+    {
+      "type": "field",
+      "reference": "application-sub-type",
+      "name": "Application sub type",
+      "description": "Further classification of the application type for specific variations within the main application type",
+      "path": "/fields/application-sub-type"
+    },
+    {
+      "type": "field",
+      "reference": "application-types",
+      "name": "Application types",
+      "description": "A list of planning application types that define the nature of the planning application",
+      "path": "/fields/application-types"
+    },
+    {
+      "type": "field",
+      "reference": "application",
+      "name": "Application",
+      "description": "The details of the application payload to be submitted",
+      "path": "/fields/application"
+    },
+    {
+      "type": "field",
+      "reference": "archaeological-features-impact",
+      "name": "Archaeological features impact",
+      "description": "Where is there a likelihood of features of archaeological conservation importance being affected?",
+      "path": "/fields/archaeological-features-impact"
+    },
+    {
+      "type": "field",
+      "reference": "base64-content",
+      "name": "Base64",
+      "description": "Base64-encoded content of the file for inline file uploads",
+      "path": "/fields/base64-content"
+    },
+    {
+      "type": "field",
+      "reference": "biodiversity-features-impact",
+      "name": "Biodiversity features impact",
+      "description": "Where is there a likelihood of important habitats or biodiversity features being affected?",
+      "path": "/fields/biodiversity-features-impact"
+    },
+    {
+      "type": "field",
+      "reference": "bng-condition-applies",
+      "name": "Biodiversity gain condition applies",
+      "description": "Does the applicant believe the Biodiversity Gain Condition applies to this application",
+      "path": "/fields/bng-condition-applies"
+    },
+    {
+      "type": "field",
+      "reference": "bng-condition-exemption-reasons",
+      "name": "Biodiversity gain condition exemption reason",
+      "description": "Reasons why BNG does not apply, referencing exemptions or transitional arrangements",
+      "path": "/fields/bng-condition-exemption-reasons"
+    },
+    {
+      "type": "field",
+      "reference": "bng-details",
+      "name": "Biodiversity net gain details",
+      "description": "Comprehensive details about biodiversity net gain assessment including pre-development value, habitat loss information, and supporting documentation",
+      "path": "/fields/bng-details"
+    },
+    {
+      "type": "field",
+      "reference": "bng-exempt",
+      "name": "Biodiversity gain exemption",
+      "description": "Statement whether the biodiversity gain condition will apply if permission is granted. Householder applicants need to confirm the biodiversity gain condition does not apply.",
+      "path": "/fields/bng-exempt"
+    },
+    {
+      "type": "field",
+      "reference": "building-element-type",
+      "name": "Building element type",
+      "description": "The part of building the materials relate to, such as walls, roofs, windows, or doors",
+      "path": "/fields/building-element-type"
+    },
+    {
+      "type": "field",
+      "reference": "building-elements",
+      "name": "Building elements",
+      "description": "Details of materials for a specific building element such as walls, roof, windows or doors",
+      "path": "/fields/building-elements"
+    },
+    {
+      "type": "field",
+      "reference": "building-height-exceeds-18m",
+      "name": "Building height exceeds 18m",
+      "description": "Will the height of the extended building exceed 18 metres",
+      "path": "/fields/building-height-exceeds-18m"
+    },
+    {
+      "type": "field",
+      "reference": "can-be-seen-from",
+      "name": "Site seen from public area",
+      "description": "Can site be seen from a public road, public footpath, bridleway or other public land",
+      "path": "/fields/can-be-seen-from"
+    },
+    {
+      "type": "field",
+      "reference": "causing-structural-damage",
+      "name": "Causing structural damage",
+      "description": "Whether structural damage is being caused by the tree(s)",
+      "path": "/fields/causing-structural-damage"
+    },
+    {
+      "type": "field",
+      "reference": "causing-subsidence",
+      "name": "Causing subsidence",
+      "description": "Whether subsidence damage is being caused by the tree(s)",
+      "path": "/fields/causing-subsidence"
+    },
+    {
+      "type": "field",
+      "reference": "ceiling-height-exceeds-3m",
+      "name": "Ceiling height exceeds 3m",
+      "description": "Will the internal floor-to-ceiling height of any additional storey exceed 3 metres",
+      "path": "/fields/ceiling-height-exceeds-3m"
+    },
+    {
+      "type": "field",
+      "reference": "cert-of-immunity-sought",
+      "name": "Certificate of immunity sought",
+      "description": "Has a certificate of immunity been sought",
+      "path": "/fields/cert-of-immunity-sought"
+    },
+    {
+      "type": "field",
+      "reference": "change-right-of-way",
+      "name": "Change to right of way",
+      "description": "Will the proposal change public rights of way (diversion/extinguishment/creation)",
+      "path": "/fields/change-right-of-way"
+    },
+    {
+      "type": "field",
+      "reference": "checksum",
+      "name": "Checksum",
+      "description": "Hash of the file contents used for file validation and checking files have not been tampered with",
+      "path": "/fields/checksum"
+    },
+    {
+      "type": "field",
+      "reference": "close-time",
+      "name": "Close time",
+      "description": "Closing time",
+      "path": "/fields/close-time"
+    },
+    {
+      "type": "field",
+      "reference": "closed",
+      "name": "Closed",
+      "description": "True or False - explicitly state when closed",
+      "path": "/fields/closed"
+    },
+    {
+      "type": "field",
+      "reference": "colour",
+      "name": "Colour",
+      "description": "Colour of proposed sign",
+      "path": "/fields/colour"
+    },
+    {
+      "type": "field",
+      "reference": "commercial-industrial",
+      "name": "Commercial industrial",
+      "description": "Maximum throughput for commercial and industrial waste (annual throughput in tonnes/litres)",
+      "path": "/fields/commercial-industrial"
+    },
+    {
+      "type": "field",
+      "reference": "company",
+      "name": "Company",
+      "description": "The name of a company (that the agent works for)",
+      "path": "/fields/company"
+    },
+    {
+      "type": "field",
+      "reference": "condition-change",
+      "name": "Condition change",
+      "description": "State how the condition should vary",
+      "path": "/fields/condition-change"
+    },
+    {
+      "type": "field",
+      "reference": "condition-concerns",
+      "name": "Condition concerns",
+      "description": "Whether there are concerns the tree(s) are diseased or might break or fall",
+      "path": "/fields/condition-concerns"
+    },
+    {
+      "type": "field",
+      "reference": "condition-number",
+      "name": "Condition number",
+      "description": "Number of any condition being breached",
+      "path": "/fields/condition-number"
+    },
+    {
+      "type": "field",
+      "reference": "condition-numbers",
+      "name": "Condition numbers",
+      "description": "List of condition numbers related to this application",
+      "path": "/fields/condition-numbers"
+    },
+    {
+      "type": "field",
+      "reference": "conflict-details",
+      "name": "Conflict details",
+      "description": "Details of the conflict of interest including name, role and how the individual is related to the planning authority",
+      "path": "/fields/conflict-details"
+    },
+    {
+      "type": "field",
+      "reference": "conflict-person-name",
+      "name": "Conflict person name",
+      "description": "Name of the individual with the conflict of interest that matches one of the names provided in applicants/agent section",
+      "path": "/fields/conflict-person-name"
+    },
+    {
+      "type": "field",
+      "reference": "conflict-to-declare",
+      "name": "Conflict to declare",
+      "description": "Indicates whether any named applicant or agent has a relationship to the planning authority that must be declared",
+      "path": "/fields/conflict-to-declare"
+    },
+    {
+      "type": "field",
+      "reference": "connect-to-drainage-system",
+      "name": "Connect to drainage system",
+      "description": "Whether the proposal needs to connect to the existing drainage system",
+      "path": "/fields/connect-to-drainage-system"
+    },
+    {
+      "type": "field",
+      "reference": "construction-demolition",
+      "name": "Construction demolition",
+      "description": "Maximum throughput for construction and demolition waste (annual throughput in tonnes/litres)",
+      "path": "/fields/construction-demolition"
+    },
+    {
+      "type": "field",
+      "reference": "contact-details",
+      "name": "Contact details",
+      "description": "A structured object containing contact information for an individual. This component is required for planning in principle (PiP) applications and optional for other application types. Contains email and phone contact information.",
+      "path": "/fields/contact-details"
+    },
+    {
+      "type": "field",
+      "reference": "contact-priority",
+      "name": "Contact priority",
+      "description": "The priority of a number",
+      "path": "/fields/contact-priority"
+    },
+    {
+      "type": "field",
+      "reference": "contact-reference",
+      "name": "Contact reference",
+      "description": "The reference of the applicant or agent who should be contacted for site visits",
+      "path": "/fields/contact-reference"
+    },
+    {
+      "type": "field",
+      "reference": "contact-type",
+      "name": "Site visit contact type",
+      "description": "Indicates who the authority should contact to arrange a site visit",
+      "path": "/fields/contact-type"
+    },
+    {
+      "type": "field",
+      "reference": "data-provided-by",
+      "name": "Data provided by",
+      "description": "Who provided the data: Applicant or System/Service?",
+      "path": "/fields/data-provided-by"
+    },
+    {
+      "type": "field",
+      "reference": "day-type",
+      "name": "Day type",
+      "description": "Day or type of day",
+      "path": "/fields/day-type"
+    },
+    {
+      "type": "field",
+      "reference": "decision-date",
+      "name": "Decision date",
+      "description": "The date when the decision was made, in YYYY-MM-DD format",
+      "path": "/fields/decision-date"
+    },
+    {
+      "type": "field",
+      "reference": "declaration-confirmed",
+      "name": "Declaration confirmed",
+      "description": "Confirms the applicant or agent has reviewed and validated the information provided in the application",
+      "path": "/fields/declaration-confirmed"
+    },
+    {
+      "type": "field",
+      "reference": "declaration-date",
+      "name": "Declaration date",
+      "description": "The date the declaration was made",
+      "path": "/fields/declaration-date"
+    },
+    {
+      "type": "field",
+      "reference": "demolition-volume",
+      "name": "Demolition volume",
+      "description": "Volume of part to be demolished in cubic metres",
+      "path": "/fields/demolition-volume"
+    },
+    {
+      "type": "field",
+      "reference": "depth",
+      "name": "Depth",
+      "description": "Depth, in metres, of dimensions of advertisement",
+      "path": "/fields/depth"
+    },
+    {
+      "type": "field",
+      "reference": "description-list",
+      "name": "Description list",
+      "description": "Description or list of materials/details that are being submitted for approval",
+      "path": "/fields/description-list"
+    },
+    {
+      "type": "field",
+      "reference": "description-of-works",
+      "name": "Description of works",
+      "description": "Description of the nature of the work to be carried out on this tree",
+      "path": "/fields/description-of-works"
+    },
+    {
+      "type": "field",
+      "reference": "description",
+      "name": "Description",
+      "description": "A text description providing details about the subject. For parking changes, this describes how the proposed works affect existing car parking arrangements.",
+      "path": "/fields/description"
+    },
+    {
+      "type": "field",
+      "reference": "designations",
+      "name": "Designations",
+      "description": "List of designated areas that apply to the site",
+      "path": "/fields/designations"
+    },
+    {
+      "type": "field",
+      "reference": "details",
+      "name": "Details",
+      "description": "Additional details or information about an item",
+      "path": "/fields/details"
+    },
+    {
+      "type": "field",
+      "reference": "development-completed-date",
+      "name": "Development completed date",
+      "description": "Date when development was completed",
+      "path": "/fields/development-completed-date"
+    },
+    {
+      "type": "field",
+      "reference": "development-description",
+      "name": "Development description",
+      "description": "Brief description of the development, including main oils, gases, and machinery",
+      "path": "/fields/development-description"
+    },
+    {
+      "type": "field",
+      "reference": "development-phase",
+      "name": "Development phase",
+      "description": "Phases of oil and gas development the application covers",
+      "path": "/fields/development-phase"
+    },
+    {
+      "type": "field",
+      "reference": "development-start-date",
+      "name": "Development start date",
+      "description": "Date when development started",
+      "path": "/fields/development-start-date"
+    },
+    {
+      "type": "field",
+      "reference": "difference-in-spaces",
+      "name": "Difference in spaces",
+      "description": "Net change in parking spaces (proposed minus existing)",
+      "path": "/fields/difference-in-spaces"
+    },
+    {
+      "type": "field",
+      "reference": "discharging-part-details",
+      "name": "Discharging part details",
+      "description": "Indicate which part of the condition the application relates to",
+      "path": "/fields/discharging-part-details"
+    },
+    {
+      "type": "field",
+      "reference": "document-reference",
+      "name": "Document reference",
+      "description": "References to documents detailing the proposed alterations",
+      "path": "/fields/document-reference"
+    },
+    {
+      "type": "field",
+      "reference": "document-types",
+      "name": "Document types",
+      "description": "List of codelist references that the document covers",
+      "path": "/fields/document-types"
+    },
+    {
+      "type": "field",
+      "reference": "documents",
+      "name": "Documents",
+      "description": "List of submitted documents with references and details",
+      "path": "/fields/documents"
+    },
+    {
+      "type": "field",
+      "reference": "draft-agreement-included",
+      "name": "Draft agreement included",
+      "description": "Has an outline or draft agreement been included? (True / False)",
+      "path": "/fields/draft-agreement-included"
+    },
+    {
+      "type": "field",
+      "reference": "drainage-system-details",
+      "name": "Drainage system details",
+      "description": "Details of the drawings/plans that show the existing drainage system",
+      "path": "/fields/drainage-system-details"
+    },
+    {
+      "type": "field",
+      "reference": "dwellinghouse-height",
+      "name": "Dwellinghouse height",
+      "description": "Height from ground to highest point of roof in metres",
+      "path": "/fields/dwellinghouse-height"
+    },
+    {
+      "type": "field",
+      "reference": "dwellinghouse-use",
+      "name": "Dwellinghouse use",
+      "description": "Will the extended dwelling remain as a Class C3 dwellinghouse or ancillary use",
+      "path": "/fields/dwellinghouse-use"
+    },
+    {
+      "type": "field",
+      "reference": "earlier-date-reason",
+      "name": "Earlier date reason",
+      "description": "Reason for using a pre-development date that is earlier than the application submission",
+      "path": "/fields/earlier-date-reason"
+    },
+    {
+      "type": "field",
+      "reference": "easting",
+      "name": "Easting",
+      "description": "Easting coordinate in British National Grid (EPSG:27700)",
+      "path": "/fields/easting"
+    },
+    {
+      "type": "field",
+      "reference": "eaves-height",
+      "name": "Eaves height",
+      "description": "Height at the eaves of the extension, measured externally from natural ground level in metres",
+      "path": "/fields/eaves-height"
+    },
+    {
+      "type": "field",
+      "reference": "email",
+      "name": "Email",
+      "description": "The email address that can be used for electronic correspondence with the individual",
+      "path": "/fields/email"
+    },
+    {
+      "type": "field",
+      "reference": "employment-impact",
+      "name": "Employment impact",
+      "description": "Summary of net employment change (gain/loss)",
+      "path": "/fields/employment-impact"
+    },
+    {
+      "type": "field",
+      "reference": "environmental-statement-reference",
+      "name": "Environmental statement reference",
+      "description": "Reference of the environmental statement document supplied with application",
+      "path": "/fields/environmental-statement-reference"
+    },
+    {
+      "type": "field",
+      "reference": "environmental-statement",
+      "name": "Environmental statement",
+      "description": "Is an Environmental Statement attached to the application",
+      "path": "/fields/environmental-statement"
+    },
+    {
+      "type": "field",
+      "reference": "equipment-plan",
+      "name": "Equipment plan",
+      "description": "Details of equipment to be used as part of the application including the maximum height and type of drilling rig to be used",
+      "path": "/fields/equipment-plan"
+    },
+    {
+      "type": "field",
+      "reference": "exact-value",
+      "name": "Exact value",
+      "description": "Exact figure of non-residential use, measured in square metres for floorspace or hectares for site area",
+      "path": "/fields/exact-value"
+    },
+    {
+      "type": "field",
+      "reference": "exemption-type",
+      "name": "Exemption type",
+      "description": "The type of biodiversity gain exemption from the bng-exemption-type enum",
+      "path": "/fields/exemption-type"
+    },
+    {
+      "type": "field",
+      "reference": "existing-ceiling-height-exceeds-3m",
+      "name": "Existing ceiling height exceeds 3m",
+      "description": "Will the internal floor-to-ceiling height of any existing storey exceed 3 metres",
+      "path": "/fields/existing-ceiling-height-exceeds-3m"
+    },
+    {
+      "type": "field",
+      "reference": "existing-employees",
+      "name": "Existing employees",
+      "description": "Counts of existing employees",
+      "path": "/fields/existing-employees"
+    },
+    {
+      "type": "field",
+      "reference": "existing-gross-floorspace",
+      "name": "Existing gross floorspace",
+      "description": "Existing gross internal floorspace, in sqm",
+      "path": "/fields/existing-gross-floorspace"
+    },
+    {
+      "type": "field",
+      "reference": "existing-materials",
+      "name": "Existing materials",
+      "description": "Description of the materials currently used for this building element",
+      "path": "/fields/existing-materials"
+    },
+    {
+      "type": "field",
+      "reference": "existing-rooms-lost",
+      "name": "Existing rooms lost",
+      "description": "Existing rooms to be lost by change of use",
+      "path": "/fields/existing-rooms-lost"
+    },
+    {
+      "type": "field",
+      "reference": "existing-unit-breakdown",
+      "name": "Existing unit breakdown",
+      "description": "Number of existing units by bedroom count",
+      "path": "/fields/existing-unit-breakdown"
+    },
+    {
+      "type": "field",
+      "reference": "existing-use-change-details",
+      "name": "Existing use change details",
+      "description": "Details of any changes to the existing use including nature of changes and dates",
+      "path": "/fields/existing-use-change-details"
+    },
+    {
+      "type": "field",
+      "reference": "existing-use-details",
+      "name": "Existing use details",
+      "description": "List of existing site uses and related land areas",
+      "path": "/fields/existing-use-details"
+    },
+    {
+      "type": "field",
+      "reference": "existing-use-start-date",
+      "name": "Existing use start date",
+      "description": "Date when the existing use of the land or building commenced, in YYYY-MM-DD format",
+      "path": "/fields/existing-use-start-date"
+    },
+    {
+      "type": "field",
+      "reference": "existing-use",
+      "name": "Existing use",
+      "description": "Structured information on the current use of the site",
+      "path": "/fields/existing-use"
+    },
+    {
+      "type": "field",
+      "reference": "extension-below-terrace-roof",
+      "name": "Extension below terrace roof",
+      "description": "Will the extension result in the highest part exceeding 3.5 metres above any roof in the terrace",
+      "path": "/fields/extension-below-terrace-roof"
+    },
+    {
+      "type": "field",
+      "reference": "extension-depth",
+      "name": "Extension depth",
+      "description": "How far the extension extends beyond the rear wall, measured externally in metres",
+      "path": "/fields/extension-depth"
+    },
+    {
+      "type": "field",
+      "reference": "extension-length",
+      "name": "Extension length",
+      "description": "Length of rear extension in metres",
+      "path": "/fields/extension-length"
+    },
+    {
+      "type": "field",
+      "reference": "extension-on-attached-dwelling",
+      "name": "Extension on attached dwelling",
+      "description": "Will the extension result in the highest part exceeding 3.5 metres above the attached roof",
+      "path": "/fields/extension-on-attached-dwelling"
+    },
+    {
+      "type": "field",
+      "reference": "external-support-required",
+      "name": "External support required",
+      "description": "Will the proposed engineering works include external support structures or extend beyond the curtilage for wall or foundation strengthening",
+      "path": "/fields/external-support-required"
+    },
+    {
+      "type": "field",
+      "reference": "falling-trees-document",
+      "name": "Falling trees document",
+      "description": "Details of document showing location of trees that pose a risk to the development",
+      "path": "/fields/falling-trees-document"
+    },
+    {
+      "type": "field",
+      "reference": "fax-number",
+      "name": "Fax number",
+      "description": "Fax number used to contact the individual",
+      "path": "/fields/fax-number"
+    },
+    {
+      "type": "field",
+      "reference": "fee",
+      "name": "Fee",
+      "description": "The fee payable for the application including amounts and transaction details",
+      "path": "/fields/fee"
+    },
+    {
+      "type": "field",
+      "reference": "file-size",
+      "name": "File size",
+      "description": "Size of the file in bytes that can be used to enforce limits",
+      "path": "/fields/file-size"
+    },
+    {
+      "type": "field",
+      "reference": "file",
+      "name": "File",
+      "description": "The digital file or a reference to where the file is stored",
+      "path": "/fields/file"
+    },
+    {
+      "type": "field",
+      "reference": "filename",
+      "name": "Filename",
+      "description": "Name of the file being uploaded useful for identifying and preserving the file",
+      "path": "/fields/filename"
+    },
+    {
+      "type": "field",
+      "reference": "first-name",
+      "name": "First Name",
+      "description": "The first name of the individual",
+      "path": "/fields/first-name"
+    },
+    {
+      "type": "field",
+      "reference": "flood-risk-area",
+      "name": "Flood risk area",
+      "description": "Is the site within an area at risk of flooding?",
+      "path": "/fields/flood-risk-area"
+    },
+    {
+      "type": "field",
+      "reference": "flood-risk-assessment",
+      "name": "Flood risk assessment",
+      "description": "Reference of the flood risk assessment document",
+      "path": "/fields/flood-risk-assessment"
+    },
+    {
+      "type": "field",
+      "reference": "floorspace-details",
+      "name": "Floorspace details",
+      "description": "List of non-residential floorspace changes by use class",
+      "path": "/fields/floorspace-details"
+    },
+    {
+      "type": "field",
+      "reference": "floorspace-lost",
+      "name": "Floorspace lost",
+      "description": "Gross floorspace to be lost by change of use, in sqm",
+      "path": "/fields/floorspace-lost"
+    },
+    {
+      "type": "field",
+      "reference": "floorspace",
+      "name": "Floorspace",
+      "description": "Total floorspace for a use in square metres",
+      "path": "/fields/floorspace"
+    },
+    {
+      "type": "field",
+      "reference": "foul-sewage-disposal-types",
+      "name": "Foul sewage disposal types",
+      "description": "List of ways foul sewage will be disposed of",
+      "path": "/fields/foul-sewage-disposal-types"
+    },
+    {
+      "type": "field",
+      "reference": "full-time",
+      "name": "Full-time",
+      "description": "Number of full-time employees",
+      "path": "/fields/full-time"
+    },
+    {
+      "type": "field",
+      "reference": "fullname",
+      "name": "Full name",
+      "description": "The complete name of a person",
+      "path": "/fields/fullname"
+    },
+    {
+      "type": "field",
+      "reference": "future-new-right-of-way",
+      "name": "Future new right of way",
+      "description": "Will new public rights of way be provided after extraction?",
+      "path": "/fields/future-new-right-of-way"
+    },
+    {
+      "type": "field",
+      "reference": "geological-features-impact",
+      "name": "Geological features impact",
+      "description": "Where is there a likelihood of features of geological conservation importance being affected?",
+      "path": "/fields/geological-features-impact"
+    },
+    {
+      "type": "field",
+      "reference": "grounds-for-application",
+      "name": "Grounds for application",
+      "description": "Reason(s) why Certificate of Lawfulness of Proposed Works should be granted,\nincluding explanation of why listed building consent is not required\n",
+      "path": "/fields/grounds-for-application"
+    },
+    {
+      "type": "field",
+      "reference": "grounds-post-2024",
+      "name": "Grounds post 2024",
+      "description": "List of grounds post 2024-04-25 under which the certificate is sought",
+      "path": "/fields/grounds-post-2024"
+    },
+    {
+      "type": "field",
+      "reference": "grounds-pre-2024",
+      "name": "Grounds pre 2024",
+      "description": "List of grounds pre 2024-04-25 under which the certificate is sought",
+      "path": "/fields/grounds-pre-2024"
+    },
+    {
+      "type": "field",
+      "reference": "habitat-loss-after-2020",
+      "name": "Habitat loss after 2020",
+      "description": "Indicates whether there has been degradation of onsite habitat(s) after 30 Jan 2020",
+      "path": "/fields/habitat-loss-after-2020"
+    },
+    {
+      "type": "field",
+      "reference": "habitat-loss-details",
+      "name": "Habitat loss details",
+      "description": "Details of habitat loss or degradation events",
+      "path": "/fields/habitat-loss-details"
+    },
+    {
+      "type": "field",
+      "reference": "has-additional-storeys",
+      "name": "Additional storeys added",
+      "description": "Have additional storeys already been added to the original building? If True, application cannot proceed.",
+      "path": "/fields/has-additional-storeys"
+    },
+    {
+      "type": "field",
+      "reference": "has-development-completed",
+      "name": "Has development completed",
+      "description": "Whether the development has been completed",
+      "path": "/fields/has-development-completed"
+    },
+    {
+      "type": "field",
+      "reference": "has-development-started",
+      "name": "Has development started",
+      "description": "Whether the development has already started",
+      "path": "/fields/has-development-started"
+    },
+    {
+      "type": "field",
+      "reference": "has-existing-use-changed",
+      "name": "Existing use change",
+      "description": "Indicate whether there has been any change in the existing use since it commenced",
+      "path": "/fields/has-existing-use-changed"
+    },
+    {
+      "type": "field",
+      "reference": "has-existing-use-interrupted",
+      "name": "Existing use interrupted",
+      "description": "Indicating whether the existing use has been interrupted since it commenced",
+      "path": "/fields/has-existing-use-interrupted"
+    },
+    {
+      "type": "field",
+      "reference": "has-falling-trees-risk",
+      "name": "Falling trees risk",
+      "description": "Whether there are falling trees on-premises or adjacent premises that are a risk to the development",
+      "path": "/fields/has-falling-trees-risk"
+    },
+    {
+      "type": "field",
+      "reference": "has-new-disposal-arrangements",
+      "name": "Has new disposal arrangements",
+      "description": "Does the proposal include any new foul sewage disposal arrangments",
+      "path": "/fields/has-new-disposal-arrangements"
+    },
+    {
+      "type": "field",
+      "reference": "has-related-applications",
+      "name": "Has related applications",
+      "description": "Are there any related applications, previous proposals or demolitions for the site",
+      "path": "/fields/has-related-applications"
+    },
+    {
+      "type": "field",
+      "reference": "have-consulted",
+      "name": "Have consulted",
+      "description": "Whether community consultation has been carried out",
+      "path": "/fields/have-consulted"
+    },
+    {
+      "type": "field",
+      "reference": "hazardous-sub-consent-details",
+      "name": "Hazardous substance consent details",
+      "description": "Details of hazardous substance consent requirements",
+      "path": "/fields/hazardous-sub-consent-details"
+    },
+    {
+      "type": "field",
+      "reference": "hazardous-sub-consent-req",
+      "name": "Hazardous substance consent required",
+      "description": "Does the proposal involve the use or storage of any substances requiring hazardous substances consent",
+      "path": "/fields/hazardous-sub-consent-req"
+    },
+    {
+      "type": "field",
+      "reference": "hazardous-substance-other",
+      "name": "Hazardous substance other",
+      "description": "The specific name of the hazardous substance if other is selected",
+      "path": "/fields/hazardous-substance-other"
+    },
+    {
+      "type": "field",
+      "reference": "hazardous-substance-type",
+      "name": "Hazardous substance type",
+      "description": "Reference of hazardous substance type from predefined list",
+      "path": "/fields/hazardous-substance-type"
+    },
+    {
+      "type": "field",
+      "reference": "hazardous",
+      "name": "Hazardous",
+      "description": "Maximum throughput for hazardous waste (annual throughput in tonnes/litres)",
+      "path": "/fields/hazardous"
+    },
+    {
+      "type": "field",
+      "reference": "hedgerow-length",
+      "name": "Hedgerow length",
+      "description": "Total length, in metres, of hedgerow proposed for removal",
+      "path": "/fields/hedgerow-length"
+    },
+    {
+      "type": "field",
+      "reference": "hedgerow-less-than-30-years",
+      "name": "Hedgerow less than 30 years",
+      "description": "Is the hedgerow less than 30 years old?",
+      "path": "/fields/hedgerow-less-than-30-years"
+    },
+    {
+      "type": "field",
+      "reference": "height-from-ground",
+      "name": "Height from ground",
+      "description": "Height, in metres, from ground to the base of the advertisement",
+      "path": "/fields/height-from-ground"
+    },
+    {
+      "type": "field",
+      "reference": "height",
+      "name": "Height",
+      "description": "Height, in metres, of dimensions of advertisement",
+      "path": "/fields/height"
+    },
+    {
+      "type": "field",
+      "reference": "hours-not-known",
+      "name": "Hours not known",
+      "description": "Applicant states they do not know the hours of operation",
+      "path": "/fields/hours-not-known"
+    },
+    {
+      "type": "field",
+      "reference": "hours-of-operation",
+      "name": "Hours of operation",
+      "description": "List the hours of operation by non-residential use",
+      "path": "/fields/hours-of-operation"
+    },
+    {
+      "type": "field",
+      "reference": "housing-type",
+      "name": "Housing type",
+      "description": "Type of housing",
+      "path": "/fields/housing-type"
+    },
+    {
+      "type": "field",
+      "reference": "hydrocarbon-licence-block",
+      "name": "Hydrocarbon licence block",
+      "description": "Hydrocarbon licence block where the development is located",
+      "path": "/fields/hydrocarbon-licence-block"
+    },
+    {
+      "type": "field",
+      "reference": "illuminance-level",
+      "name": "Illuminance level",
+      "description": "Level of illuminance for the advertisement",
+      "path": "/fields/illuminance-level"
+    },
+    {
+      "type": "field",
+      "reference": "illuminated",
+      "name": "Illuminated",
+      "description": "Will the sign(s) be illuminated?",
+      "path": "/fields/illuminated"
+    },
+    {
+      "type": "field",
+      "reference": "illumination-method",
+      "name": "Illumination method",
+      "description": "Method of illumination for the advertisement",
+      "path": "/fields/illumination-method"
+    },
+    {
+      "type": "field",
+      "reference": "illumination-type",
+      "name": "Illumination type",
+      "description": "Type of illumination (static or intermittent)",
+      "path": "/fields/illumination-type"
+    },
+    {
+      "type": "field",
+      "reference": "impact-on-amenity",
+      "name": "Impact on amenity",
+      "description": "Details of the impacts on the amenity of any adjoining premises including overlooking, privacy and the loss of light including how these will be mitigated",
+      "path": "/fields/impact-on-amenity"
+    },
+    {
+      "type": "field",
+      "reference": "increases-flood-risk",
+      "name": "Increases flood risk",
+      "description": "Whether the development increases flood risk",
+      "path": "/fields/increases-flood-risk"
+    },
+    {
+      "type": "field",
+      "reference": "informed-of-application",
+      "name": "Informed of application",
+      "description": "Whether the person has been informed of the application",
+      "path": "/fields/informed-of-application"
+    },
+    {
+      "type": "field",
+      "reference": "inspection-address",
+      "name": "Inspection address",
+      "description": "Full postal address where supporting material can be inspected",
+      "path": "/fields/inspection-address"
+    },
+    {
+      "type": "field",
+      "reference": "interest-declaration",
+      "name": "Interest declaration",
+      "description": "The applicant's interest or ownership in the hedgerow",
+      "path": "/fields/interest-declaration"
+    },
+    {
+      "type": "field",
+      "reference": "interested-persons",
+      "name": "Interested persons",
+      "description": "Details of persons with an interest in the property including their personal information, nature of interest, and notification status",
+      "path": "/fields/interested-persons"
+    },
+    {
+      "type": "field",
+      "reference": "interruption-details",
+      "name": "Interruption details",
+      "description": "Details of any interruption to the existing use including dates and circumstances",
+      "path": "/fields/interruption-details"
+    },
+    {
+      "type": "field",
+      "reference": "involves-hazardous-substances",
+      "name": "Involves hazardous substances",
+      "description": "Indicates if hazardous substances are involved in the proposal",
+      "path": "/fields/involves-hazardous-substances"
+    },
+    {
+      "type": "field",
+      "reference": "irreplaceable-habitats-details",
+      "name": "Irreplaceable habitats details",
+      "description": "Description and references for any irreplaceable habitats identified on the site",
+      "path": "/fields/irreplaceable-habitats-details"
+    },
+    {
+      "type": "field",
+      "reference": "irreplaceable-habitats",
+      "name": "Irreplaceable habitats",
+      "description": "Indicates whether the site contains any irreplaceable habitats",
+      "path": "/fields/irreplaceable-habitats"
+    },
+    {
+      "type": "field",
+      "reference": "is-advert-in-place",
+      "name": "Is advert in place",
+      "description": "Whether the advertisement is already in place",
+      "path": "/fields/is-advert-in-place"
+    },
+    {
+      "type": "field",
+      "reference": "is-advert-overhanging",
+      "name": "Is advert overhanging",
+      "description": "Whether the advertisement will project over a footpath or other public highway",
+      "path": "/fields/is-advert-overhanging"
+    },
+    {
+      "type": "field",
+      "reference": "is-annual-throughput-known",
+      "name": "Is annual throughput known",
+      "description": "Whether the annual throughput is known",
+      "path": "/fields/is-annual-throughput-known"
+    },
+    {
+      "type": "field",
+      "reference": "is-applicant-owner",
+      "name": "Is applicant owner",
+      "description": "Whether the applicant owns the trees affected by the proposed works",
+      "path": "/fields/is-applicant-owner"
+    },
+    {
+      "type": "field",
+      "reference": "is-demolishing-building-in-curtilage",
+      "name": "Demolition building in curtilage",
+      "description": "True or False indicating whether the proposal involves demolition of a building in the curtilage of a listed building",
+      "path": "/fields/is-demolishing-building-in-curtilage"
+    },
+    {
+      "type": "field",
+      "reference": "is-discharging-part",
+      "name": "Is discharging part",
+      "description": "Is applicant trying to discharge part of condition?",
+      "path": "/fields/is-discharging-part"
+    },
+    {
+      "type": "field",
+      "reference": "is-disposal-required",
+      "name": "Disposal required",
+      "description": "Does the proposal involve the disposal of trade effluents or waste (true/false)",
+      "path": "/fields/is-disposal-required"
+    },
+    {
+      "type": "field",
+      "reference": "is-dwelling-detached",
+      "name": "Dwelling detached",
+      "description": "Is the dwelling detached",
+      "path": "/fields/is-dwelling-detached"
+    },
+    {
+      "type": "field",
+      "reference": "is-existing-parking-affected",
+      "name": "Existing parking affected",
+      "description": "Will the proposed works affect existing car parking arrangements",
+      "path": "/fields/is-existing-parking-affected"
+    },
+    {
+      "type": "field",
+      "reference": "is-extension-beyond-rear-wall",
+      "name": "Extension beyond rear wall",
+      "description": "Will the extension extend beyond the rear wall of the original dwelling",
+      "path": "/fields/is-extension-beyond-rear-wall"
+    },
+    {
+      "type": "field",
+      "reference": "is-extension-height-over-4m",
+      "name": "Extension height over 4m",
+      "description": "Will the extension exceed 4 metres in height",
+      "path": "/fields/is-extension-height-over-4m"
+    },
+    {
+      "type": "field",
+      "reference": "is-householder-development",
+      "name": "Is householder development",
+      "description": "Is the development to an existing dwelling-house or development within its curtilage (true/false)",
+      "path": "/fields/is-householder-development"
+    },
+    {
+      "type": "field",
+      "reference": "is-partial-demolition",
+      "name": "Demolition part",
+      "description": "True or False indicating whether the proposal involves partial demolition of a listed building",
+      "path": "/fields/is-partial-demolition"
+    },
+    {
+      "type": "field",
+      "reference": "is-proposing-demolition",
+      "name": "Is propsing demolition",
+      "description": "The proposal includes partial or total demolition of a listed building?",
+      "path": "/fields/is-proposing-demolition"
+    },
+    {
+      "type": "field",
+      "reference": "is-psi",
+      "name": "Is public service infrastructure",
+      "description": "For applications made on or after 1 August 2021, is the proposal for public service infrastructure development",
+      "path": "/fields/is-psi"
+    },
+    {
+      "type": "field",
+      "reference": "is-replacement-advert",
+      "name": "Is replacement advert",
+      "description": "Whether this is a replacement advertisement",
+      "path": "/fields/is-replacement-advert"
+    },
+    {
+      "type": "field",
+      "reference": "is-single-storey-extension",
+      "name": "Single storey extension",
+      "description": "Will the extension be a single storey",
+      "path": "/fields/is-single-storey-extension"
+    },
+    {
+      "type": "field",
+      "reference": "is-site-different",
+      "name": "Is site different",
+      "description": "Whether the site where trees are located is different from the applicant's address",
+      "path": "/fields/is-site-different"
+    },
+    {
+      "type": "field",
+      "reference": "is-site-in-restricted-area",
+      "name": "Site in restricted area",
+      "description": "Is any part of the land or site located in a restricted area? If True, application cannot proceed.",
+      "path": "/fields/is-site-in-restricted-area"
+    },
+    {
+      "type": "field",
+      "reference": "is-substituting-document",
+      "name": "Substituting document",
+      "description": "True or False indicating whether the amendment involves substituting documents",
+      "path": "/fields/is-substituting-document"
+    },
+    {
+      "type": "field",
+      "reference": "is-total-capacity-known",
+      "name": "Is total capacity known",
+      "description": "Whether the total capacity is known",
+      "path": "/fields/is-total-capacity-known"
+    },
+    {
+      "type": "field",
+      "reference": "is-total-demolition",
+      "name": "Is total demolition",
+      "description": "Indicating whether the proposal involves total demolition of a listed building",
+      "path": "/fields/is-total-demolition"
+    },
+    {
+      "type": "field",
+      "reference": "is-within-site-constraints",
+      "name": "Within site constraints",
+      "description": "Is the dwellinghouse within any restricted area",
+      "path": "/fields/is-within-site-constraints"
+    },
+    {
+      "type": "field",
+      "reference": "known-constraints",
+      "name": "Known constraints",
+      "description": "A list of the known constraints affecting the site",
+      "path": "/fields/known-constraints"
+    },
+    {
+      "type": "field",
+      "reference": "land-part",
+      "name": "Land part",
+      "description": "Which part of the land the use relates to",
+      "path": "/fields/land-part"
+    },
+    {
+      "type": "field",
+      "reference": "last-name",
+      "name": "Last Name",
+      "description": "The last name of the individual",
+      "path": "/fields/last-name"
+    },
+    {
+      "type": "field",
+      "reference": "latitude",
+      "name": "Latitude",
+      "description": "Latitude coordinate in WGS84 (EPSG:4326)",
+      "path": "/fields/latitude"
+    },
+    {
+      "type": "field",
+      "reference": "lbc-owners",
+      "name": "Owners of listed building",
+      "description": "List of known owners",
+      "path": "/fields/lbc-owners"
+    },
+    {
+      "type": "field",
+      "reference": "ldc-need",
+      "name": "LDC need",
+      "description": "What is the lawful development certificate needed for?",
+      "path": "/fields/ldc-need"
+    },
+    {
+      "type": "field",
+      "reference": "listed-building-grade",
+      "name": "Listed building grade",
+      "description": "The grade of the listed building, selected from the listed-building-grade codelist or \"don't know\"",
+      "path": "/fields/listed-building-grade"
+    },
+    {
+      "type": "field",
+      "reference": "listed-building-volume",
+      "name": "Listed building volume",
+      "description": "Volume of listed building in cubic metres",
+      "path": "/fields/listed-building-volume"
+    },
+    {
+      "type": "field",
+      "reference": "listed-building",
+      "name": "Listed building",
+      "description": "Listed building reference for cross-referencing with listed building records",
+      "path": "/fields/listed-building"
+    },
+    {
+      "type": "field",
+      "reference": "longitude",
+      "name": "Longitude",
+      "description": "Longitude coordinate in WGS84 (EPSG:4326)",
+      "path": "/fields/longitude"
+    },
+    {
+      "type": "field",
+      "reference": "loss-date",
+      "name": "Loss date",
+      "description": "Date the activity causing habitat loss or degradation occurred",
+      "path": "/fields/loss-date"
+    },
+    {
+      "type": "field",
+      "reference": "materials-not-applicable",
+      "name": "Materials not applicable",
+      "description": "Indicates this building element is not relevant to the application",
+      "path": "/fields/materials-not-applicable"
+    },
+    {
+      "type": "field",
+      "reference": "materials-not-known",
+      "name": "Materials not known",
+      "description": "Indicates the materials for this building element are not yet known",
+      "path": "/fields/materials-not-known"
+    },
+    {
+      "type": "field",
+      "reference": "materials-similar-exterior",
+      "name": "Materials similar exterior",
+      "description": "Will exterior materials be similar to those of the existing dwelling",
+      "path": "/fields/materials-similar-exterior"
+    },
+    {
+      "type": "field",
+      "reference": "materials",
+      "name": "Materials",
+      "description": "Materials of proposed sign",
+      "path": "/fields/materials"
+    },
+    {
+      "type": "field",
+      "reference": "max-extension-height",
+      "name": "Maximum extension height",
+      "description": "Maximum height of the extension, measured externally from natural ground level in metres",
+      "path": "/fields/max-extension-height"
+    },
+    {
+      "type": "field",
+      "reference": "max-projection",
+      "name": "Max projection",
+      "description": "Maximum projection, in metres, of the advertisement from the face of the building",
+      "path": "/fields/max-projection"
+    },
+    {
+      "type": "field",
+      "reference": "max",
+      "name": "Maximum value",
+      "description": "Upper bound of non-residential use, measured in square metres for floorspace or hectares for site area",
+      "path": "/fields/max"
+    },
+    {
+      "type": "field",
+      "reference": "metric-publication-date",
+      "name": "Metric publication date",
+      "description": "Publication date of the biodiversity metric tool used for calculations",
+      "path": "/fields/metric-publication-date"
+    },
+    {
+      "type": "field",
+      "reference": "mime-type",
+      "name": "MIME type",
+      "description": "The file's MIME type such as application/pdf or image/jpeg",
+      "path": "/fields/mime-type"
+    },
+    {
+      "type": "field",
+      "reference": "min",
+      "name": "Minimum value",
+      "description": "Lower bound of non-residential use, measured in square metres for floorspace or hectares for site area",
+      "path": "/fields/min"
+    },
+    {
+      "type": "field",
+      "reference": "modules",
+      "name": "Modules",
+      "description": "List of required modules for this application that can be used to validate the application",
+      "path": "/fields/modules"
+    },
+    {
+      "type": "field",
+      "reference": "municipal",
+      "name": "Municipal",
+      "description": "Maximum throughput for municipal waste (annual throughput in tonnes/litres)",
+      "path": "/fields/municipal"
+    },
+    {
+      "type": "field",
+      "reference": "name",
+      "name": "Name",
+      "description": "A name of a person",
+      "path": "/fields/name"
+    },
+    {
+      "type": "field",
+      "reference": "national-req-types",
+      "name": "National requirement types",
+      "description": "List of the document types required for the given application type",
+      "path": "/fields/national-req-types"
+    },
+    {
+      "type": "field",
+      "reference": "nature-of-interest",
+      "name": "Nature of interest",
+      "description": "Description of the nature of a person's interest in the property",
+      "path": "/fields/nature-of-interest"
+    },
+    {
+      "type": "field",
+      "reference": "needs-waste-storage-area-outline",
+      "name": "Needs waste storage area",
+      "description": "Does the proposal require a waste storage area?",
+      "path": "/fields/needs-waste-storage-area-outline"
+    },
+    {
+      "type": "field",
+      "reference": "needs-waste-storage-area",
+      "name": "Needs waste storage area",
+      "description": "Does the proposal require a waste storage area",
+      "path": "/fields/needs-waste-storage-area"
+    },
+    {
+      "type": "field",
+      "reference": "net-additional-floorspace",
+      "name": "Net additional floorspace",
+      "description": "Net additional gross internal floorspace, in sqm",
+      "path": "/fields/net-additional-floorspace"
+    },
+    {
+      "type": "field",
+      "reference": "net-additional-rooms",
+      "name": "Net additional rooms",
+      "description": "Net additional rooms following development",
+      "path": "/fields/net-additional-rooms"
+    },
+    {
+      "type": "field",
+      "reference": "net-change",
+      "name": "Net change",
+      "description": "Calculated net change in units",
+      "path": "/fields/net-change"
+    },
+    {
+      "type": "field",
+      "reference": "net-dwellings-max",
+      "name": "Net dwellings maximum",
+      "description": "The maximum number of net additional dwellings proposed as part of the development, allowing for flexibility in the final housing numbers",
+      "path": "/fields/net-dwellings-max"
+    },
+    {
+      "type": "field",
+      "reference": "net-dwellings-min",
+      "name": "Net dwellings minimum",
+      "description": "The minimum number of net additional dwellings proposed as part of the development, accounting for any existing dwellings lost and new dwellings created",
+      "path": "/fields/net-dwellings-min"
+    },
+    {
+      "type": "field",
+      "reference": "new-altered-pedestrian",
+      "name": "New or altered pedestrian access",
+      "description": "Is a new or altered pedestrian access proposed to/from the public highway",
+      "path": "/fields/new-altered-pedestrian"
+    },
+    {
+      "type": "field",
+      "reference": "new-altered-vehicle",
+      "name": "New or altered vehicle access",
+      "description": "Is a new or altered vehicle access proposed to/from the public highway",
+      "path": "/fields/new-altered-vehicle"
+    },
+    {
+      "type": "field",
+      "reference": "new-document",
+      "name": "New document",
+      "description": "Reference for the new document replacing the old document in the amendment",
+      "path": "/fields/new-document"
+    },
+    {
+      "type": "field",
+      "reference": "new-drawing-reference",
+      "name": "New drawing reference",
+      "description": "Reference for the new drawing that replaces the old drawing",
+      "path": "/fields/new-drawing-reference"
+    },
+    {
+      "type": "field",
+      "reference": "new-public-road",
+      "name": "New public road",
+      "description": "Will new public roads be provided within the site",
+      "path": "/fields/new-public-road"
+    },
+    {
+      "type": "field",
+      "reference": "new-right-of-way",
+      "name": "New right of way",
+      "description": "Will new public rights of way be provided within or adjacent to the site",
+      "path": "/fields/new-right-of-way"
+    },
+    {
+      "type": "field",
+      "reference": "newspaper-name",
+      "name": "Newspaper name",
+      "description": "Name of the newspaper where the ownership notice was published",
+      "path": "/fields/newspaper-name"
+    },
+    {
+      "type": "field",
+      "reference": "newspaper-notices",
+      "name": "Newspaper notices",
+      "description": "Details of notices published in papers",
+      "path": "/fields/newspaper-notices"
+    },
+    {
+      "type": "field",
+      "reference": "no-bedrooms-unknown",
+      "name": "No bedrooms unknown",
+      "description": "Set to true when counting units where bedroom number is unknown",
+      "path": "/fields/no-bedrooms-unknown"
+    },
+    {
+      "type": "field",
+      "reference": "no-of-bedrooms",
+      "name": "Number of bedrooms",
+      "description": "The number of bedrooms in unit",
+      "path": "/fields/no-of-bedrooms"
+    },
+    {
+      "type": "field",
+      "reference": "non-residential-change",
+      "name": "Non residential change",
+      "description": "Does the proposal involve the loss, gain, or change of non-residential floorspace?",
+      "path": "/fields/non-residential-change"
+    },
+    {
+      "type": "field",
+      "reference": "non-residential-measurement-type",
+      "name": "Non-residential measurement type",
+      "description": "The type of value being provided for non-residential use - either floorspace or site-area",
+      "path": "/fields/non-residential-measurement-type"
+    },
+    {
+      "type": "field",
+      "reference": "non-residential-use",
+      "name": "Non-residential use",
+      "description": "The amount of non-residential use, which can be expressed as floorspace, site area, or both",
+      "path": "/fields/non-residential-use"
+    },
+    {
+      "type": "field",
+      "reference": "northing",
+      "name": "Northing",
+      "description": "Northing coordinate in British National Grid (EPSG:27700)",
+      "path": "/fields/northing"
+    },
+    {
+      "type": "field",
+      "reference": "not-applicable",
+      "name": "Not applicable",
+      "description": "Whether the facility is not applicable",
+      "path": "/fields/not-applicable"
+    },
+    {
+      "type": "field",
+      "reference": "notice-date",
+      "name": "Notice date",
+      "description": "Date when notice was served to an owner or tenant",
+      "path": "/fields/notice-date"
+    },
+    {
+      "type": "field",
+      "reference": "notified-persons",
+      "name": "Notified persons",
+      "description": "List of persons notified, including address and date",
+      "path": "/fields/notified-persons"
+    },
+    {
+      "type": "field",
+      "reference": "number",
+      "name": "Phone number",
+      "description": "A phone number",
+      "path": "/fields/number"
+    },
+    {
+      "type": "field",
+      "reference": "officer-name",
+      "name": "Officer name",
+      "description": "Name of the planning officer who provided the pre-application advice",
+      "path": "/fields/officer-name"
+    },
+    {
+      "type": "field",
+      "reference": "old-document",
+      "name": "Old document",
+      "description": "Reference of the old document being replaced in the amendment",
+      "path": "/fields/old-document"
+    },
+    {
+      "type": "field",
+      "reference": "old-drawing-reference",
+      "name": "Old drawing reference",
+      "description": "Reference of the old drawing being replaced",
+      "path": "/fields/old-drawing-reference"
+    },
+    {
+      "type": "field",
+      "reference": "open-time",
+      "name": "Open time",
+      "description": "Opening time",
+      "path": "/fields/open-time"
+    },
+    {
+      "type": "field",
+      "reference": "operation-type",
+      "name": "Operation type",
+      "description": "Whether the proposed use is temporary or permanent",
+      "path": "/fields/operation-type"
+    },
+    {
+      "type": "field",
+      "reference": "operational-times",
+      "name": "Operational times",
+      "description": "Structured data for operational hours by day",
+      "path": "/fields/operational-times"
+    },
+    {
+      "type": "field",
+      "reference": "original-application-type",
+      "name": "Original application type",
+      "description": "Type of original planning application",
+      "path": "/fields/original-application-type"
+    },
+    {
+      "type": "field",
+      "reference": "other-contact",
+      "name": "Other site visit contact",
+      "description": "Details of specifically named contact for site visits",
+      "path": "/fields/other-contact"
+    },
+    {
+      "type": "field",
+      "reference": "other-details",
+      "name": "Other details",
+      "description": "Explanation if other ground is selected",
+      "path": "/fields/other-details"
+    },
+    {
+      "type": "field",
+      "reference": "owner-details",
+      "name": "Owner details",
+      "description": "Details of property owners including their personal information and notification status",
+      "path": "/fields/owner-details"
+    },
+    {
+      "type": "field",
+      "reference": "owner",
+      "name": "Tree owner",
+      "description": "Details of the owner of trees when the applicant is not the owner",
+      "path": "/fields/owner"
+    },
+    {
+      "type": "field",
+      "reference": "owners-and-tenants",
+      "name": "Owners and tenants",
+      "description": "List of known owners and agricultural tenants",
+      "path": "/fields/owners-and-tenants"
+    },
+    {
+      "type": "field",
+      "reference": "ownership-cert-option",
+      "name": "Ownership certificate type",
+      "description": "The type of ownership certificate based on ownership and tenancy status",
+      "path": "/fields/ownership-cert-option"
+    },
+    {
+      "type": "field",
+      "reference": "ownership-notification",
+      "name": "Ownership notification",
+      "description": "If not the sole owner, has notification been given under Article 10",
+      "path": "/fields/ownership-notification"
+    },
+    {
+      "type": "field",
+      "reference": "parking-space-type",
+      "name": "Parking space type",
+      "description": "Type of parking space or vehicle type",
+      "path": "/fields/parking-space-type"
+    },
+    {
+      "type": "field",
+      "reference": "parking-spaces",
+      "name": "Parking spaces",
+      "description": "Array of parking space information by vehicle type",
+      "path": "/fields/parking-spaces"
+    },
+    {
+      "type": "field",
+      "reference": "part-built-date",
+      "name": "Part built date",
+      "description": "The approximate date the part to be removed was built, in YYYY-MM-DD format.",
+      "path": "/fields/part-built-date"
+    },
+    {
+      "type": "field",
+      "reference": "part-time",
+      "name": "Part-time",
+      "description": "Number of part-time employees",
+      "path": "/fields/part-time"
+    },
+    {
+      "type": "field",
+      "reference": "permission-not-obtained-details",
+      "name": "Permission not obtained details",
+      "description": "Details explaining why permission from the land owner has not been obtained for the advertisement display",
+      "path": "/fields/permission-not-obtained-details"
+    },
+    {
+      "type": "field",
+      "reference": "permission-obtained",
+      "name": "Permission obtained",
+      "description": "True or False indicating whether permission of the owner for the display of an advertisement has been obtained",
+      "path": "/fields/permission-obtained"
+    },
+    {
+      "type": "field",
+      "reference": "permission-period-years",
+      "name": "Permission period years",
+      "description": "Period of permission sought in years",
+      "path": "/fields/permission-period-years"
+    },
+    {
+      "type": "field",
+      "reference": "person",
+      "name": "Person",
+      "description": "Detail to help identify a person",
+      "path": "/fields/person"
+    },
+    {
+      "type": "field",
+      "reference": "phone-number",
+      "name": "Phone number",
+      "description": "Contact telephone number",
+      "path": "/fields/phone-number"
+    },
+    {
+      "type": "field",
+      "reference": "phone-numbers",
+      "name": "Phone number(s)",
+      "description": "One or more telephone numbers to contact individual",
+      "path": "/fields/phone-numbers"
+    },
+    {
+      "type": "field",
+      "reference": "pip-reference",
+      "name": "PIP reference",
+      "description": "Reference number for the Planning in Principle (PIP) application this relates to",
+      "path": "/fields/pip-reference"
+    },
+    {
+      "type": "field",
+      "reference": "plan-references",
+      "name": "Plan references",
+      "description": "References to plans showing the stretches of hedgerows to be removed",
+      "path": "/fields/plan-references"
+    },
+    {
+      "type": "field",
+      "reference": "planning-authority",
+      "name": "Planning authority",
+      "description": "The reference of the planning authority the application has been submitted to, e.g. local-authority:CMD",
+      "path": "/fields/planning-authority"
+    },
+    {
+      "type": "field",
+      "reference": "plans-documents",
+      "name": "Plans documents",
+      "description": "List of plans, drawings, and supporting documents",
+      "path": "/fields/plans-documents"
+    },
+    {
+      "type": "field",
+      "reference": "planting-evidence-attached",
+      "name": "Planting evidence attached",
+      "description": "Is evidence of the date of planting attached?",
+      "path": "/fields/planting-evidence-attached"
+    },
+    {
+      "type": "field",
+      "reference": "postcode",
+      "name": "Postcode",
+      "description": "The postal code",
+      "path": "/fields/postcode"
+    },
+    {
+      "type": "field",
+      "reference": "pre-development-biodiversity-value",
+      "name": "Pre development biodiversity value",
+      "description": "Calculated biodiversity value in Habitat Biodiversity Units",
+      "path": "/fields/pre-development-biodiversity-value"
+    },
+    {
+      "type": "field",
+      "reference": "pre-development-date",
+      "name": "Pre development date",
+      "description": "Date of pre-development biodiversity value calculation, must align with application or justified earlier date",
+      "path": "/fields/pre-development-date"
+    },
+    {
+      "type": "field",
+      "reference": "pre-loss-biodiversity-value",
+      "name": "Pre loss biodiversity value",
+      "description": "Biodiversity value immediately before habitat loss or degradation occurred, measured in Habitat Biodiversity Units",
+      "path": "/fields/pre-loss-biodiversity-value"
+    },
+    {
+      "type": "field",
+      "reference": "principal-part-only",
+      "name": "Principal part only",
+      "description": "Will the additional storeys be constructed only on the principal part of the building",
+      "path": "/fields/principal-part-only"
+    },
+    {
+      "type": "field",
+      "reference": "produce-foul-sewage",
+      "name": "Produce foul sewage",
+      "description": "Whether the proposed development will produce any foul sewage",
+      "path": "/fields/produce-foul-sewage"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-alter-lb-types",
+      "name": "Proposal alteration types",
+      "description": "Select from a list of listed building alteration types, select all that apply",
+      "path": "/fields/proposal-alter-lb-types"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-alter-lb",
+      "name": "Proposal alter listed building",
+      "description": "True or False if proposal includes alterations to a listed building",
+      "path": "/fields/proposal-alter-lb"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-building-operations-description",
+      "name": "Proposal building operations description",
+      "description": "Description of the building operations included in the proposal",
+      "path": "/fields/proposal-building-operations-description"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-change-of-use-description",
+      "name": "Proposal change of use description",
+      "description": "Description of the change of use included in the proposal",
+      "path": "/fields/proposal-change-of-use-description"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-completed-date",
+      "name": "Proposal completion date",
+      "description": "The date when work on the proposal was completed, in YYYY-MM-DD format",
+      "path": "/fields/proposal-completed-date"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-completed",
+      "name": "Proposal completed",
+      "description": "Has any work on the proposal already been completed",
+      "path": "/fields/proposal-completed"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-description",
+      "name": "Proposal description",
+      "description": "A description of what is being proposed, including the development, works, or change of use",
+      "path": "/fields/proposal-description"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-existing-use-description",
+      "name": "Proposal existing use description",
+      "description": "Description of the existing use before the proposed change of use",
+      "path": "/fields/proposal-existing-use-description"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-existing-use-stop-date",
+      "name": "Proposal existing use stop date",
+      "description": "Date when the existing use stopped or will stop",
+      "path": "/fields/proposal-existing-use-stop-date"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-incl-building-operations",
+      "name": "Proposal incl building operations",
+      "description": "Does the proposal include building operations?",
+      "path": "/fields/proposal-incl-building-operations"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-incl-change-of-use",
+      "name": "Proposal incl change of use",
+      "description": "Does the proposal include a change of use?",
+      "path": "/fields/proposal-incl-change-of-use"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-started-date",
+      "name": "Proposal start date",
+      "description": "The date when work on the proposal started, in YYYY-MM-DD format",
+      "path": "/fields/proposal-started-date"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-started",
+      "name": "Proposal started",
+      "description": "Has any work on the proposal already been started",
+      "path": "/fields/proposal-started"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-waste-management-outline",
+      "name": "Proposal waste management outline variant",
+      "description": "Whether the proposal involves waste management development (yes/no/unknown)",
+      "path": "/fields/proposal-waste-management-outline"
+    },
+    {
+      "type": "field",
+      "reference": "proposal-waste-management",
+      "name": "Proposal waste management",
+      "description": "Whether the proposal involves waste management development",
+      "path": "/fields/proposal-waste-management"
+    },
+    {
+      "type": "field",
+      "reference": "proposed-employees",
+      "name": "Proposed employees",
+      "description": "Counts of proposed employees",
+      "path": "/fields/proposed-employees"
+    },
+    {
+      "type": "field",
+      "reference": "proposed-height",
+      "name": "Proposed height",
+      "description": "Height once the additional storeys have been added in metres",
+      "path": "/fields/proposed-height"
+    },
+    {
+      "type": "field",
+      "reference": "proposed-materials",
+      "name": "Proposed materials",
+      "description": "Description of the materials proposed for this building element as part of the development",
+      "path": "/fields/proposed-materials"
+    },
+    {
+      "type": "field",
+      "reference": "proposed-unit-breakdown",
+      "name": "Proposed unit breakdown",
+      "description": "Number of proposed units by bedroom count",
+      "path": "/fields/proposed-unit-breakdown"
+    },
+    {
+      "type": "field",
+      "reference": "proposed-works-details",
+      "name": "Proposed works details",
+      "description": "Description of the proposed works including detailed explanation of the work",
+      "path": "/fields/proposed-works-details"
+    },
+    {
+      "type": "field",
+      "reference": "protected-species-impact",
+      "name": "Protected species impact",
+      "description": "Where is there a likelihood of protected and priority species being affected?",
+      "path": "/fields/protected-species-impact"
+    },
+    {
+      "type": "field",
+      "reference": "protected-view-impact",
+      "name": "Protected view impact",
+      "description": "Details of the impact on any protected view where relevant",
+      "path": "/fields/protected-view-impact"
+    },
+    {
+      "type": "field",
+      "reference": "provided-by",
+      "name": "Provided by",
+      "description": "Whether the information was provided by the applicant or calculated by the system",
+      "path": "/fields/provided-by"
+    },
+    {
+      "type": "field",
+      "reference": "publication-date",
+      "name": "Publication date",
+      "description": "Date when the ownership notice was published in the newspaper",
+      "path": "/fields/publication-date"
+    },
+    {
+      "type": "field",
+      "reference": "quantity-cubic-metres",
+      "name": "Quantity cubic metres",
+      "description": "Quantity of oil or gas involved in cubic metres",
+      "path": "/fields/quantity-cubic-metres"
+    },
+    {
+      "type": "field",
+      "reference": "reason-not-informed",
+      "name": "Reason not informed",
+      "description": "Reason why a person was not informed of the application",
+      "path": "/fields/reason-not-informed"
+    },
+    {
+      "type": "field",
+      "reference": "reason",
+      "name": "Reason",
+      "description": "A textual reason",
+      "path": "/fields/reason"
+    },
+    {
+      "type": "field",
+      "reference": "reference-number",
+      "name": "Reference number",
+      "description": "Reference number of the planning permission",
+      "path": "/fields/reference-number"
+    },
+    {
+      "type": "field",
+      "reference": "reference",
+      "name": "Reference",
+      "description": "A unique reference for the data item",
+      "path": "/fields/reference"
+    },
+    {
+      "type": "field",
+      "reference": "related-application",
+      "name": "Related application",
+      "description": "Details about the approved development, as shown in the decision letter",
+      "path": "/fields/related-application"
+    },
+    {
+      "type": "field",
+      "reference": "related-applications",
+      "name": "Related applications",
+      "description": "List of related applications, previous proposals or demolitions for the site",
+      "path": "/fields/related-applications"
+    },
+    {
+      "type": "field",
+      "reference": "removal-reasons",
+      "name": "Removal reasons",
+      "description": "Reasons for the proposed removal of hedgerow(s)",
+      "path": "/fields/removal-reasons"
+    },
+    {
+      "type": "field",
+      "reference": "replacement-documents",
+      "name": "Replacement documents",
+      "description": "List of documents being replaced in the amendment with old and new document references",
+      "path": "/fields/replacement-documents"
+    },
+    {
+      "type": "field",
+      "reference": "replacement-drawings",
+      "name": "Replacement drawings",
+      "description": "List of approved drawings being replaced by new drawings",
+      "path": "/fields/replacement-drawings"
+    },
+    {
+      "type": "field",
+      "reference": "replanting-description",
+      "name": "Replanting description",
+      "description": "Details of replanting arrangements if applicable",
+      "path": "/fields/replanting-description"
+    },
+    {
+      "type": "field",
+      "reference": "reserved-matters",
+      "name": "Reserved matters",
+      "description": "Identifies which reserved matters are being submitted for approval as part of this application",
+      "path": "/fields/reserved-matters"
+    },
+    {
+      "type": "field",
+      "reference": "residential-unit-summary",
+      "name": "Residential unit summary",
+      "description": "Breakdown of unit counts by tenure and housing type",
+      "path": "/fields/residential-unit-summary"
+    },
+    {
+      "type": "field",
+      "reference": "roof-height-exceeds-3-5m",
+      "name": "Roof height exceeds 3.5m",
+      "description": "Will the roof exceed 3.5 metres above the highest part of the existing roof",
+      "path": "/fields/roof-height-exceeds-3-5m"
+    },
+    {
+      "type": "field",
+      "reference": "roof-height-exceeds-7m",
+      "name": "Roof height exceeds 7m",
+      "description": "Will the roof exceed 7 metres above the highest part of the existing roof",
+      "path": "/fields/roof-height-exceeds-7m"
+    },
+    {
+      "type": "field",
+      "reference": "roof-pitch-matching",
+      "name": "Roof pitch matching",
+      "description": "Will the roof pitch of the extended dwelling match the existing roof pitch",
+      "path": "/fields/roof-pitch-matching"
+    },
+    {
+      "type": "field",
+      "reference": "room-details",
+      "name": "Room details",
+      "description": "List of room changes for hotels, residential institutions and hostels",
+      "path": "/fields/room-details"
+    },
+    {
+      "type": "field",
+      "reference": "separate-recycling-arrangements-details",
+      "name": "Separate recycling arrangements details",
+      "description": "Details of the recycling arrangements including types of materials, collection methods and storage facilities",
+      "path": "/fields/separate-recycling-arrangements-details"
+    },
+    {
+      "type": "field",
+      "reference": "separate-recycling-arrangements-outline",
+      "name": "Separate recycling arrangements (outline)",
+      "description": "Does the proposal include separate recycling arrangements?",
+      "path": "/fields/separate-recycling-arrangements-outline"
+    },
+    {
+      "type": "field",
+      "reference": "separate-recycling-arrangements",
+      "name": "Separate recycling arrangements",
+      "description": "Does the proposal include separate recycling arrangements",
+      "path": "/fields/separate-recycling-arrangements"
+    },
+    {
+      "type": "field",
+      "reference": "signature-date",
+      "name": "Signature date",
+      "description": "Date when the ownership certificate was signed",
+      "path": "/fields/signature-date"
+    },
+    {
+      "type": "field",
+      "reference": "site-activity-details",
+      "name": "Site activity details",
+      "description": "Description of activities, processes, and end products including site operations, plant, ventilation, and machinery",
+      "path": "/fields/site-activity-details"
+    },
+    {
+      "type": "field",
+      "reference": "site-area-in-hectares",
+      "name": "Site area in hectares",
+      "description": "The size of the site in hectares",
+      "path": "/fields/site-area-in-hectares"
+    },
+    {
+      "type": "field",
+      "reference": "site-area-provided-by",
+      "name": "Site area provided by",
+      "description": "Who provided the site area value",
+      "path": "/fields/site-area-provided-by"
+    },
+    {
+      "type": "field",
+      "reference": "site-area",
+      "name": "Site area",
+      "description": "The total area of the site where development is proposed",
+      "path": "/fields/site-area"
+    },
+    {
+      "type": "field",
+      "reference": "site-boundary",
+      "name": "Site boundary",
+      "description": "Geometry of the site of the development, typically in GeoJSON format",
+      "path": "/fields/site-boundary"
+    },
+    {
+      "type": "field",
+      "reference": "site-constraints",
+      "name": "Site constraints",
+      "description": "List of specific site constraints that restrict development",
+      "path": "/fields/site-constraints"
+    },
+    {
+      "type": "field",
+      "reference": "site-hectares-provided-by",
+      "name": "Site hectares provided by",
+      "description": "Who provided the site hectares value (applicant or system)",
+      "path": "/fields/site-hectares-provided-by"
+    },
+    {
+      "type": "field",
+      "reference": "site-locations",
+      "name": "Site locations",
+      "description": "Details of the sites where development or works are proposed",
+      "path": "/fields/site-locations"
+    },
+    {
+      "type": "field",
+      "reference": "site-owner",
+      "name": "Site owner",
+      "description": "Details of the owner of the development site",
+      "path": "/fields/site-owner"
+    },
+    {
+      "type": "field",
+      "reference": "sole-owner",
+      "name": "Sole owner",
+      "description": "Is the applicant the sole owner of the land?",
+      "path": "/fields/sole-owner"
+    },
+    {
+      "type": "field",
+      "reference": "species",
+      "name": "Species",
+      "description": "The species of the tree",
+      "path": "/fields/species"
+    },
+    {
+      "type": "field",
+      "reference": "specified-use",
+      "name": "Specified use",
+      "description": "A specified use if no applicable use class is available",
+      "path": "/fields/specified-use"
+    },
+    {
+      "type": "field",
+      "reference": "steps-taken",
+      "name": "Steps taken",
+      "description": "Description of steps taken to identify unknown owners or tenants",
+      "path": "/fields/steps-taken"
+    },
+    {
+      "type": "field",
+      "reference": "storage-facilities-description",
+      "name": "Storage facilities description",
+      "description": "Details and proposed facilities for the storage of oil, fuel and chemicals and the proposed means of their protection",
+      "path": "/fields/storage-facilities-description"
+    },
+    {
+      "type": "field",
+      "reference": "submission-date",
+      "name": "Submission date",
+      "description": "Date the application is submitted in YYYY-MM-DD format",
+      "path": "/fields/submission-date"
+    },
+    {
+      "type": "field",
+      "reference": "substance-types",
+      "name": "Substance types",
+      "description": "List of hazardous substances and their quantities",
+      "path": "/fields/substance-types"
+    },
+    {
+      "type": "field",
+      "reference": "supporting-applications",
+      "name": "Supporting applications",
+      "description": "List of supporting planning permissions, certificates, or notices affecting the application site",
+      "path": "/fields/supporting-applications"
+    },
+    {
+      "type": "field",
+      "reference": "supporting-documents",
+      "name": "Supporting documents",
+      "description": "Supporting documents that provide additional information about the materials to be used",
+      "path": "/fields/supporting-documents"
+    },
+    {
+      "type": "field",
+      "reference": "supporting-evidence",
+      "name": "Supporting evidence",
+      "description": "Description or reference to supporting documents for habitat loss or degradation evidence",
+      "path": "/fields/supporting-evidence"
+    },
+    {
+      "type": "field",
+      "reference": "surface-site-area-hectares",
+      "name": "Surface site area hectares",
+      "description": "Surface site area in hectares",
+      "path": "/fields/surface-site-area-hectares"
+    },
+    {
+      "type": "field",
+      "reference": "surface-water-disposal",
+      "name": "Surface water disposal",
+      "description": "Method for disposing of surface water",
+      "path": "/fields/surface-water-disposal"
+    },
+    {
+      "type": "field",
+      "reference": "symbol-height-max",
+      "name": "Symbol height max",
+      "description": "Maximum height, in metres, of any individual letters or symbols",
+      "path": "/fields/symbol-height-max"
+    },
+    {
+      "type": "field",
+      "reference": "temp-right-of-way",
+      "name": "Temporary right of way changes",
+      "description": "Are temporary changes to rights of way needed while the site is worked",
+      "path": "/fields/temp-right-of-way"
+    },
+    {
+      "type": "field",
+      "reference": "temporary-details",
+      "name": "Temporary details",
+      "description": "Details of temporary use including duration and specific arrangements",
+      "path": "/fields/temporary-details"
+    },
+    {
+      "type": "field",
+      "reference": "tenure-type",
+      "name": "Tenure type",
+      "description": "Category of housing tenure",
+      "path": "/fields/tenure-type"
+    },
+    {
+      "type": "field",
+      "reference": "time-ranges",
+      "name": "Time ranges",
+      "description": "Opening and closing times for the day",
+      "path": "/fields/time-ranges"
+    },
+    {
+      "type": "field",
+      "reference": "title",
+      "name": "Title",
+      "description": "The title of the individual",
+      "path": "/fields/title"
+    },
+    {
+      "type": "field",
+      "reference": "total-capacity",
+      "name": "Total capacity",
+      "description": "Total capacity of void in cubic metres (or tonnes/litres)",
+      "path": "/fields/total-capacity"
+    },
+    {
+      "type": "field",
+      "reference": "total-existing-units",
+      "name": "Total existing units",
+      "description": "The total number of existing units",
+      "path": "/fields/total-existing-units"
+    },
+    {
+      "type": "field",
+      "reference": "total-existing",
+      "name": "Total existing",
+      "description": "Total number of existing parking spaces",
+      "path": "/fields/total-existing"
+    },
+    {
+      "type": "field",
+      "reference": "total-fte",
+      "name": "Total FTE",
+      "description": "Total full-time equivalent (FTE)",
+      "path": "/fields/total-fte"
+    },
+    {
+      "type": "field",
+      "reference": "total-gross-proposed",
+      "name": "Total gross proposed",
+      "description": "Total gross internal floorspace proposed, in sqm",
+      "path": "/fields/total-gross-proposed"
+    },
+    {
+      "type": "field",
+      "reference": "total-proposed-units",
+      "name": "Total proposed units",
+      "description": "The total number of proposed units",
+      "path": "/fields/total-proposed-units"
+    },
+    {
+      "type": "field",
+      "reference": "total-proposed",
+      "name": "Total proposed",
+      "description": "Total number of proposed parking spaces",
+      "path": "/fields/total-proposed"
+    },
+    {
+      "type": "field",
+      "reference": "total-rooms-proposed",
+      "name": "Total rooms proposed",
+      "description": "Total rooms proposed (including change of use)",
+      "path": "/fields/total-rooms-proposed"
+    },
+    {
+      "type": "field",
+      "reference": "total-units",
+      "name": "Total units",
+      "description": "Total number of units",
+      "path": "/fields/total-units"
+    },
+    {
+      "type": "field",
+      "reference": "tpo-provided-by",
+      "name": "TPO provided by",
+      "description": "How was the list of TPO references generated - by the applicant or system/service",
+      "path": "/fields/tpo-provided-by"
+    },
+    {
+      "type": "field",
+      "reference": "tpo-reference",
+      "name": "TPO reference",
+      "description": "Reference for a Tree Preservation Order covering affected trees",
+      "path": "/fields/tpo-reference"
+    },
+    {
+      "type": "field",
+      "reference": "transactions",
+      "name": "Transactions",
+      "description": "References to payments or financial transactions related to this application",
+      "path": "/fields/transactions"
+    },
+    {
+      "type": "field",
+      "reference": "tree-details",
+      "name": "Tree details",
+      "description": "Details of each tree that is part of the proposal including work to be carried out",
+      "path": "/fields/tree-details"
+    },
+    {
+      "type": "field",
+      "reference": "tree-removal-plan",
+      "name": "Tree removal plan",
+      "description": "Details of document showing location of trees and hedges to be removed or pruned",
+      "path": "/fields/tree-removal-plan"
+    },
+    {
+      "type": "field",
+      "reference": "tree-removal",
+      "name": "Tree removal",
+      "description": "Whether trees or hedges need to be pruned or removed",
+      "path": "/fields/tree-removal"
+    },
+    {
+      "type": "field",
+      "reference": "trees-on-adj-land",
+      "name": "Trees on adjacent land",
+      "description": "Whether trees or hedges on land adjacent to the proposed development site could influence the development or might be important as part of the local landscape character",
+      "path": "/fields/trees-on-adj-land"
+    },
+    {
+      "type": "field",
+      "reference": "trees-on-site",
+      "name": "Trees on site",
+      "description": "Whether trees or hedges are present on the proposed development site",
+      "path": "/fields/trees-on-site"
+    },
+    {
+      "type": "field",
+      "reference": "unit",
+      "name": "Unit",
+      "description": "Unit of measurement for a value",
+      "path": "/fields/unit"
+    },
+    {
+      "type": "field",
+      "reference": "units-per-bedroom-no",
+      "name": "Units per bedroom number",
+      "description": "Number of units broken down by bedroom count",
+      "path": "/fields/units-per-bedroom-no"
+    },
+    {
+      "type": "field",
+      "reference": "units-unknown",
+      "name": "Units unknown",
+      "description": "Whether the number of units is unknown",
+      "path": "/fields/units-unknown"
+    },
+    {
+      "type": "field",
+      "reference": "units",
+      "name": "Units",
+      "description": "The number of units of that bedroom count",
+      "path": "/fields/units"
+    },
+    {
+      "type": "field",
+      "reference": "unknown-proposed",
+      "name": "Unknown proposed",
+      "description": "If proposed parking spaces is unknown",
+      "path": "/fields/unknown-proposed"
+    },
+    {
+      "type": "field",
+      "reference": "uprn",
+      "name": "UPRN",
+      "description": "Unique Property Reference Number",
+      "path": "/fields/uprn"
+    },
+    {
+      "type": "field",
+      "reference": "uprns",
+      "name": "UPRNs",
+      "description": "Unique Property Reference Numbers (UPRNs) for properties within the site boundary",
+      "path": "/fields/uprns"
+    },
+    {
+      "type": "field",
+      "reference": "url",
+      "name": "URL",
+      "description": "A URL pointing to the stored file for previously uploaded or hosted files",
+      "path": "/fields/url"
+    },
+    {
+      "type": "field",
+      "reference": "use-class",
+      "name": "Use class",
+      "description": "Type of non-residential use class",
+      "path": "/fields/use-class"
+    },
+    {
+      "type": "field",
+      "reference": "use-details",
+      "name": "Use details",
+      "description": "Further detail of the use",
+      "path": "/fields/use-details"
+    },
+    {
+      "type": "field",
+      "reference": "use-lawful-reason",
+      "name": "Use lawful reason",
+      "description": "Explanation of why the existing or last use is considered lawful, \nproviding justification for a lawful development certificate application\n",
+      "path": "/fields/use-lawful-reason"
+    },
+    {
+      "type": "field",
+      "reference": "use-other",
+      "name": "Use other",
+      "description": "Specify use if use is \"other\"",
+      "path": "/fields/use-other"
+    },
+    {
+      "type": "field",
+      "reference": "use",
+      "name": "Use",
+      "description": "A use class or type of use",
+      "path": "/fields/use"
+    },
+    {
+      "type": "field",
+      "reference": "user-role",
+      "name": "User role",
+      "description": "The role of the named individual. Agent or proxy",
+      "path": "/fields/user-role"
+    },
+    {
+      "type": "field",
+      "reference": "uses",
+      "name": "Uses",
+      "description": "List of applicable uses for a site or development",
+      "path": "/fields/uses"
+    },
+    {
+      "type": "field",
+      "reference": "value",
+      "name": "Value",
+      "description": "Numeric value representing a measurement or quantity",
+      "path": "/fields/value"
+    },
+    {
+      "type": "field",
+      "reference": "vehicle-type-other",
+      "name": "Vehicle type other",
+      "description": "Vehicle type when parking space type is 'other'",
+      "path": "/fields/vehicle-type-other"
+    },
+    {
+      "type": "field",
+      "reference": "was-constructed-btw-1948-2018",
+      "name": "Was constructed between 1948 and 2018",
+      "description": "Was the current building constructed between 1 July 1948 and 28 October 2018? If False, application cannot proceed.",
+      "path": "/fields/was-constructed-btw-1948-2018"
+    },
+    {
+      "type": "field",
+      "reference": "was-use-granted-by-pdr",
+      "name": "Use granted by permitted development right",
+      "description": "Was the current use of the building granted by permitted development rights? If True, application cannot proceed.",
+      "path": "/fields/was-use-granted-by-pdr"
+    },
+    {
+      "type": "field",
+      "reference": "waste-management-facility-type",
+      "name": "Waste management facility type",
+      "description": "Type of waste management facility",
+      "path": "/fields/waste-management-facility-type"
+    },
+    {
+      "type": "field",
+      "reference": "waste-management-outline",
+      "name": "Waste management",
+      "description": "List of waste management facilities involved in the proposal. Specifically for outline applications",
+      "path": "/fields/waste-management-outline"
+    },
+    {
+      "type": "field",
+      "reference": "waste-management",
+      "name": "Waste management",
+      "description": "List of waste management facilities involved in the proposal",
+      "path": "/fields/waste-management"
+    },
+    {
+      "type": "field",
+      "reference": "waste-storage-area-details",
+      "name": "Waste storage area details",
+      "description": "Details of the waste storage area including location, size, design and access arrangements",
+      "path": "/fields/waste-storage-area-details"
+    },
+    {
+      "type": "field",
+      "reference": "waste-streams",
+      "name": "Waste streams throughput",
+      "description": "Annual throughput for waste streams by waste type",
+      "path": "/fields/waste-streams"
+    },
+    {
+      "type": "field",
+      "reference": "width",
+      "name": "Width",
+      "description": "Width of dimensions of advertisement",
+      "path": "/fields/width"
+    },
+    {
+      "type": "field",
+      "reference": "will-residential-units-change",
+      "name": "Residential unit change",
+      "description": "Proposal includes the gain, loss or change of use of residential units",
+      "path": "/fields/will-residential-units-change"
+    },
+    {
+      "type": "field",
+      "reference": "window-on-side-elevation",
+      "name": "Window on side elevation",
+      "description": "Will the development include a side elevation window or roof slope window",
+      "path": "/fields/window-on-side-elevation"
+    },
+    {
+      "type": "field",
+      "reference": "within-20m-watercourse",
+      "name": "Within 20m watercourse",
+      "description": "Whether the development is within 20 metres of a watercourse",
+      "path": "/fields/within-20m-watercourse"
+    }
+  ]
+}

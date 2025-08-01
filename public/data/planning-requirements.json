@@ -1,0 +1,405 @@
+{
+  "success": true,
+  "data": [
+    {
+      "reference": "acoustic-report",
+      "name": "Acoustic report",
+      "description": "A report measuring the noise environment for a new development or its effect within a proposed development",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "affordable-housing-statement",
+      "name": "Affordable housing statement",
+      "description": "This statement should set out how the development scheme will comply with the local authority’s  affordable housing policy",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "air-quality-assessment",
+      "name": "Air quality assessment (AQA)",
+      "description": "An assessment of the impact on air quality around the development and during the construction phase",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "arboriculturist-report",
+      "name": "Arboricultural impact assessment",
+      "description": "A supporting report from an arboriculturist for any proposed work on trees - providing detail on the conditions of the trees on or next to the development site",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "archaeological-assessment",
+      "name": "Archaeological assessment",
+      "description": "An evaluation to identify and assess the potential of an area to contain as-yet unrecorded archaeological sites",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "biodiversity-survey-report",
+      "name": "Biodiversity survey and report",
+      "description": "Information on biodiversity interests and protected species and any possible impacts on them from the development, plus details of any measures proposed to mitigate or compensate for the impacts",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "cil-form",
+      "name": "Community infrastructure levy (CIL) form",
+      "description": "A form that must be completed to determine whether the development is subject to a CIL payment",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "condition-of-trees",
+      "name": "Condition of Trees",
+      "description": "Written arboricultural advice",
+      "notes": "Covers if tree is diseased, at risk of breaking or falling",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "completed-app-form",
+      "name": "Completed application form",
+      "description": "The application form that must be completed for all planning applications, including the relevant sections and questions",
+      "notes": "",
+      "entryDate": "2025-05-07",
+      "endDate": ""
+    },
+    {
+      "reference": "daylight-sunlight-assessment",
+      "name": "Daylight and sunlight assessment",
+      "description": "An assessment to evaluate the potential impact of a proposed development on the amount of natural light received by surrounding properties",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "design-and-access-statement",
+      "name": "Design and access statement",
+      "description": "A report accompanying and supporting a planning application that explains how a proposed development is a suitable response to the site and its setting, and demonstrates that it can be adequately accessed by prospective users",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "elevation-existing",
+      "name": "Elevation - existing",
+      "description": "What a building or structure currently looks like from the outside at a scale of 1:50 or 1:100",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "elevation-proposed",
+      "name": "Elevation - proposed",
+      "description": "Showing how the building will look after work has been carried out at a scale of 1:50 or 1:100",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "energy-statement",
+      "name": "Energy statement",
+      "description": "A detailed report about how a planned development will meet the energy efficiency standards set by the local planning authority",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "eia",
+      "name": "Environmental Impact Assessment (EIA)",
+      "description": "",
+      "notes": "Required if the site exceeds certain thresholds or is near sensitive areas re onshore extraction of oil and gas",
+      "entryDate": "",
+      "endDate": "2025-03-27"
+    },
+    {
+      "reference": "environmental-statement",
+      "name": "Environmental Statement",
+      "description": "A statement setting out an assessment of the likely environmental effects of the proposed development - this is only required if the local planning authority deem the application to have environmental impacts after the Environmental Impact Assessment has been assessed",
+      "notes": "Required by Development relating to the onshore extraction of oil and gas applications",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "flood-risk-assessment",
+      "name": "Flood risk assessment",
+      "description": "An assessment of flood risk that needs to be completed if the proposed development is within a flood risk zone to show the potential impacts of the development on flooding and propose mitigation, such as SuDs",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "floor-plan-existing",
+      "name": "Floor plan - existing",
+      "description": "Floor plans showing the building as it is now, usually at a scale of 1:100, but can be 1:50 if done to maintain consistency from the elevation drawings",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "floor-plan-proposed",
+      "name": "Floor plan - proposed",
+      "description": "Floor plans showing the proposed changes to the building, usually at a scale of 1:100, but can be 1:50 if done to maintain consistency from the elevation drawings",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "heritage-impact-assessment",
+      "name": "Heritage impact assessment",
+      "description": "If the site is close to a heritage asset or conservation area a report is needed to assess the effect of the proposed development on the significance of the heritage",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "heritage-statement",
+      "name": "Heritage statement",
+      "description": "This statement describes a heritage asset, its significance and the proposed works that are being applied for",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "hydrocarbon-licence",
+      "name": "Hydrocarbon Licence",
+      "description": "Proof of exploration rights from North Sea Transition Authority (NSTA)",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "land-contamination-assessment",
+      "name": "Land contamination assessment",
+      "description": "Report on potential land contamination issues - if contamination is found on site remediation and mitigation proposals will need to be included",
+      "notes": "Needed if the site is known or suspected to be contaminated.",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "landscaping-plan",
+      "name": "Landscaping plan",
+      "description": "A plan of a site considering both soft-landscaping (natural elements like flowers, trees, and grass) as well as hard-landscaping (man-made features like lawn furniture, fountains, and sheds)",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "lighting-assessment",
+      "name": "Lighting assessment",
+      "description": "A lighting assessment is required for all applications that include use of floodlighting or a significant amount of external lighting",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "location-plan",
+      "name": "Location plan",
+      "description": "A location plan that shows the site outlined clearly in red in relation to the surrounding area, at a scale of 1:1250 or 1:2500, showing at least 2 named roads and surrounding land and buildings. A blue line must be drawn around any other land owned by the applicant close to or adjoining the application site",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "noise-and-traffic-assessment",
+      "name": "Noise and Traffic Assessment",
+      "description": "Evaluates operational impact on surrounding communities",
+      "notes": "",
+      "entryDate": "",
+      "endDate": "2025-03-27"
+    },
+    {
+      "reference": "noise-assessment",
+      "name": "Noise assessment",
+      "description": "A report that assesses the impact of noise from the proposed development on the surrounding area",
+      "notes": "",
+      "entryDate": "2025-04-25",
+      "endDate": ""
+    },
+    {
+      "reference": "photos",
+      "name": "Site photographs",
+      "description": "Pictures to show the existing context and condition of the site and surrounding area",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "planning-statement",
+      "name": "Planning statement",
+      "description": "The statement identifies the context and need for a proposed development, and assesses how the development is in accordance with the relevant national and local policies",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "roof-plan-existing",
+      "name": "Roof plan - existing",
+      "description": "Drawing showing the roof as it is now",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "roof-plan-proposed",
+      "name": "Roof plan - proposed",
+      "description": "Drawing showing the proposed changes to the roof",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "schedule-of-works",
+      "name": "Schedule of Works",
+      "description": "",
+      "notes": "required by Camden for all lbc applications",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "section-existing",
+      "name": "Section - existing",
+      "description": "A plan that shows an existing vertical cut through a building or site, revealing the interior and exterior profiles",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "section-proposed",
+      "name": "Section - proposed",
+      "description": "A plan that shows the proposed vertical cut through a building or site, revealing the interior and exterior profiles",
+      "notes": "general requirement",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "site-plan",
+      "name": "Site plan",
+      "description": "A site plan that shows the proposed development in relation to the site boundaries and other existing buildings at a scale of 1:200 or 1:500 is advised",
+      "notes": "general requirement. For extraction of oil and gas needs to Needed to show site layout, access, and safety zones",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "site-restoration",
+      "name": "Site restoration plan",
+      "description": "",
+      "notes": "Required under UK planning conditions to ensure post-production remediation",
+      "entryDate": "",
+      "endDate": "2025-03-27"
+    },
+    {
+      "reference": "sketch-plan",
+      "name": "Sketch Plan",
+      "description": "Often a plan showing the position of the trees listed in an application",
+      "notes": "",
+      "entryDate": "",
+      "endDate": "2025-03-27"
+    },
+    {
+      "reference": "sci",
+      "name": "Statement of community involvement (SCI)",
+      "description": "Sets out how residents and businesses have been involved in the design and development process of the proposals",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "structural-damage",
+      "name": "Structural damage report",
+      "description": "A report that relates specifically to the structural condition of the property if it has been affected by nearby trees",
+      "notes": "Mentioned in \"Trees - Addtional information\" section of tree works form",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "subsidence-report",
+      "name": "Subsidence Report",
+      "description": "A report by an engineer or surveyor describing damage, vegetation, soil, roots, and repair proposals",
+      "notes": "",
+      "entryDate": "",
+      "endDate": "2025-03-27"
+    },
+    {
+      "reference": "sustainable-drainage-strategy",
+      "name": "Sustainable Drainage Strategy (SuDS)",
+      "description": "",
+      "notes": "",
+      "entryDate": "",
+      "endDate": "2025-03-27"
+    },
+    {
+      "reference": "transport-assessment",
+      "name": "Transport assessment or statement",
+      "description": "A description and analysis of the existing transport conditions and details of the expected impact of the proposed development on the local transportation system",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "travel-plan",
+      "name": "Travel plan",
+      "description": "A package of actions to encourage safe, healthy and sustainable travel options for a new development",
+      "notes": "",
+      "entryDate": "",
+      "endDate": ""
+    },
+    {
+      "reference": "ecology-assessment",
+      "name": "Ecology Assessment",
+      "description": "A document to identify how protection of biodiversity and habitat quality will be achieved and enhanced, where possible.",
+      "notes": "",
+      "entryDate": "2025-03-27",
+      "endDate": ""
+    },
+    {
+      "reference": "fire-statement",
+      "name": "Fire statement",
+      "description": "A report that sets out how the proposal handles the fire safety aspects, including details of fire safety measures, access for firefighting, and evacuation plans.",
+      "notes": "",
+      "entryDate": "2025-04-25",
+      "endDate": ""
+    },
+    {
+      "reference": "habitat-baseline",
+      "name": "Habitat baseline plan",
+      "description": "",
+      "notes": "",
+      "entryDate": "2025-04-25",
+      "endDate": ""
+    },
+    {
+      "reference": "proposed-habitat-plan",
+      "name": "Proposed habitat plan",
+      "description": "",
+      "notes": "",
+      "entryDate": "2025-04-25",
+      "endDate": ""
+    },
+    {
+      "reference": "sustainability-statement",
+      "name": "Sustainability statement",
+      "description": "A report that outlines how the development will meet sustainability objectives, including energy efficiency, water conservation, and waste management.",
+      "notes": "",
+      "entryDate": "2025-04-25",
+      "endDate": ""
+    },
+    {
+      "reference": "bng-metric",
+      "name": "Biodiveristy Net Gain Metric",
+      "description": "A metric used to assess the biodiversity value of a site before and after development, ensuring that the development results in a net gain for biodiversity.",
+      "notes": "",
+      "entryDate": "2025-04-25",
+      "endDate": ""
+    }
+  ]
+}

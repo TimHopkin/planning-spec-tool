@@ -26,7 +26,7 @@ export default function ApplicationsPage() {
   const fetchApplications = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('/api/applications');
+      const response = await fetch('/data/applications.json');
       const data = await response.json();
       
       if (data.success) {
