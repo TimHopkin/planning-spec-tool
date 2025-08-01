@@ -17,7 +17,7 @@ import {
 } from '@/types/planning';
 
 // Base path to the planning specification data
-const SPEC_BASE_PATH = path.resolve(process.cwd(), '../');
+const SPEC_BASE_PATH = path.resolve(process.cwd(), '../planning-application-data-specification');
 
 export class DataParser {
   private static instance: DataParser;
@@ -46,6 +46,7 @@ export class DataParser {
         this.loadApplicationTypes(),
         this.loadApplicationSubTypes(),
         this.loadPlanningModules(),
+        this.loadApplicationModuleJoins(),
         this.loadPlanningRequirements(),
         this.loadFields(),
         this.loadComponents(),
@@ -134,6 +135,19 @@ export class DataParser {
           endDate: row['end-date']
         };
       }
+    );
+  }
+
+  private async loadApplicationModuleJoins(): Promise<void> {
+    this.applicationModuleJoins = await this.loadCSV(
+      'data/application-type-module.csv',
+      (row): ApplicationModuleJoin => ({
+        applicationType: row['application-type'],
+        applicationSubType: row['application-sub-type'],
+        applicationModule: row['application-module'],
+        entryDate: row['entry-date'],
+        endDate: row['end-date']
+      })
     );
   }
 

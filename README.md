@@ -42,14 +42,62 @@ A comprehensive web-based tool for exploring and working with the UK Planning Ap
 
 ## 🚀 Quick Start
 
+### Prerequisites
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+
+### Step-by-Step Setup
+
+1. **Clone the repository and data source:**
 ```bash
+# Clone the tool repository
 git clone https://github.com/TimHopkin/planning-spec-tool.git
 cd planning-spec-tool
+
+# Clone the planning specification data (required for the tool to work)
+cd ..
+git clone https://github.com/digital-land/planning-application-data-specification.git
+cd planning-spec-tool
+```
+
+2. **Install dependencies:**
+```bash
 npm install
+```
+
+3. **Start the development server:**
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. **Wait for the server to start completely.** You should see output like:
+```
+✓ Ready in 1079ms
+- Local: http://localhost:3000
+```
+
+5. **Access the application:**
+   - The development server will automatically try to open your browser
+   - If it doesn't open automatically, manually navigate to: **http://localhost:3000**
+   - If you see "This site can't be reached" or "Connection refused", wait a few more seconds for the server to fully start
+
+## 🖥️ Starting the Development Server
+
+**Important:** You must start the development server before accessing the application.
+
+```bash
+# In your terminal, navigate to the project directory
+cd planning-spec-tool
+
+# Start the development server
+npm run dev
+```
+
+**What to expect:**
+- The terminal will show "Starting..." then "Ready in [time]"
+- You'll see the local URL (usually http://localhost:3000)
+- The server must remain running while you use the application
+- Press `Ctrl+C` to stop the server when you're done
 
 ## 📖 Complete Setup & Usage Guide
 
@@ -64,13 +112,36 @@ The setup guide covers:
 - ✅ Troubleshooting common issues
 - ✅ Future enhancement possibilities
 
+## 🔧 Troubleshooting
+
+### "This site can't be reached" or "Connection refused"
+- **Make sure the development server is running:** Check your terminal for the "Ready" message
+- **Wait for complete startup:** The server takes a few seconds to fully initialize
+- **Check the port:** The server might be running on a different port if 3000 is busy
+- **Restart the server:** Press `Ctrl+C` to stop, then run `npm run dev` again
+
+### "Failed to fetch applications" error
+- **Check data directory:** Ensure the `planning-application-data-specification` repository is cloned as a sibling directory
+- **Verify file paths:** The data should be in `../planning-application-data-specification/data/`
+- **Restart the server:** After fixing data issues, restart with `npm run dev`
+
+### Port already in use
+If port 3000 is busy, Next.js will automatically use the next available port (3001, 3002, etc.). Check your terminal output for the correct URL.
+
+### Installation issues
+```bash
+# Clear npm cache if you encounter package installation errors
+npm cache clean --force
+npm install
+```
+
 ### Building for Production
 
 ```bash
-npm run build  # Creates static files in 'out/' directory
+npm run build  # Creates optimized build
 ```
 
-The build creates a static export suitable for deployment to Netlify, Vercel, or any static hosting platform.
+**Note:** For production deployment, API routes require a server environment (not static hosting).
 
 ## Project Structure
 
